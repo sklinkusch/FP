@@ -1,0 +1,101 @@
+\input{header}
+\input{colors}
+\input{S1}  %Linie S1
+\input{S2}  %Linie S2
+\input{S25} %Linie S25/S26
+\input{S3}  %Linie S3
+\input{S41} %Linie S41
+\input{S42} %Linie S42
+\input{S45} %Linie S45
+\input{S46} %Linie S46
+\input{S47} %Linie S47
+\input{S5}  %Linie S5
+\input{S7}  %Linie S7
+\input{S75} %Linie S75
+\input{S8}  %Linie S8
+\input{S85} %Linie S85
+\input{S9}  %Linie S9
+\begin{document}
+\normalem
+\miniscule
+\ifsplan
+ \input{splana}
+ \newpage
+ \input{splanb}
+\fi
+\ifstabelle
+ \newpage
+ \input{splanc}
+\fi
+\ifuplan
+ \begin{center}
+  \input{U1-fp}
+
+  \input{U3-fp}
+
+  \input{U2-fp}
+
+  \input{U5-fp}
+  
+  \input{U4-fp}
+  \input{U55-fp}
+
+  \input{U6-fp}
+
+  \input{U8-fp}
+
+  \input{U9-fp}
+
+  \input{U7-fp}
+ \end{center}
+\fi
+\ifunacht
+ \begin{center}
+   \input{N1-fp}
+   \input{N3-fp}
+
+   \input{N2-fp}
+   \input{N6-fp}
+
+   \input{N8-fp}
+   \input{N5-fp}
+
+   \input{N7-fp}
+   \input{N9-fp}
+ \end{center}
+\fi
+\ifuplan
+ \newpage
+\fi
+\ifrplan
+ \input{rplanW}
+ \newpage
+ \input{rplanE}
+ \newpage
+\fi
+\ifsnacht
+ \input{splanan}
+ \newpage
+ \input{splanbn}
+ \newpage
+\fi
+\ifsntabelle
+ \input{spland}
+ \newpage
+\fi
+\ifgleise
+ \input{gleise}
+ \newpage
+ \input{ugleise-201805}
+ \newpage
+\fi
+\ifumsteige
+ \input{ubahn-umsteige-201805}
+\fi
+\ifumfahrung
+ \input{sbahn-umfahrung2}
+\fi
+\ifbusumsteige
+ \input{umsteige}
+\fi
+\end{document}
