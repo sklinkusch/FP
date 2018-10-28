@@ -1,6 +1,6 @@
 # ignore LaTeX files
 *.log
-*.fdb_latexmk
+*latexmk
 *.dvi
 *.fls
 *.aux
