@@ -1,0 +1,63 @@
+\documentclass[a4paper,landscape,10pt]{memoir}
+\usepackage[dvips,left=0.0cm,right=0.0cm,top=0.3cm,bottom=0.3cm]{geometry}
+\usepackage{tabulary}
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{pstricks}
+\usepackage{pst-node,pst-blur}
+\usepackage{graphics,epsfig}
+%\usepackage[dvipsnames]{color}
+\usepackage{xifthen}
+\newcommand{\ifequals}[3]{\ifthenelse{\equal{#1}{#2}}{#3}{}}
+\newcommand{\case}[2]{#1 #2} % Dummy, so \renewcommand has something to overwrite
+\newenvironment{switch}[1]{\renewcommand{\case}{\ifequals{#1}}}{}
+\usepackage{colortbl}
+\usepackage[normalem]{ulem}
+\usepackage{/usr/share/texmf/tex/latex/psnfss/pifont}
+\usepackage{setspace}
+\usepackage[nice]{nicefrac}
+\usepackage{amsmath,amssymb,textcomp,marvosym,hhline}
+\usepackage{verbatim}
+\usepackage{arydshln}
+\usepackage{etoolbox}
+\usepackage{textpos}
+\input{switches}
+\input{switched}
+\input{styles}
+\input{arrows}
+\input{lines}
+\input{rbf}
+\input{sbf}
+\input{sbfn}
+\input{spaces}
+\newcommand{\rbf}[2]{\rnode{#2}{\psframebox[linestyle=solid,fillstyle=none,linecolor=black,linewidth=1pt]{#1}}}
+\newcommand{\sbf}[2]{\rnode{#2}{\psframebox[linestyle=solid,fillstyle=none,linecolor=Green,linewidth=0.15em]{#1}}}
+\definecolor{dunkelgrau}{rgb}{0.25,0.25,0.25}
+\definecolor{mittelgrau}{rgb}{0.78,0.78,0.78}
+\definecolor{hellgrau}{rgb}{0.82,0.82,0.82}
+\setlength{\fboxsep}{0.5pt}
+\newcommand{\nvb}[1]{\colorbox{dunkelgrau}{\textcolor{white}{\textbf{#1}}}}               % nur Mo-Fr vormittags
+\newcommand{\hvo}[1]{\colorbox{hellgrau}{\textbf{#1}}}                                    % nur Mo-Fr außerhalb der HVZ
+\newcommand{\hvx}[1]{\colorbox{hellgrau}{\textbf{\itshape #1}}}
+\newcommand{\bfu}[1]{\textcolor{blue}{\textbf{#1}}}
+\newcommand{\bfs}[1]{\textcolor{Green}{\textbf{#1}}}
+\newcommand{\sfer}{\sout{F}}                                                         % nicht in den Ferien
+\newcommand{\ssfn}{\sout{SF}}                                                        % nicht in den Sommerferien
+\newcommand{\dft}[0]{\textbar}                                                       % Durchfahrt
+\newcommand{\mcn}[4]{\multicolumn{#1}{#2}{\textcolor{#3}{\bfseries #4}}}
+\newcommand{\mxn}[5]{\multicolumn{#1}{#2}{\cellcolor{#3}\textcolor{#4}{\bfseries #5}}}
+\newcommand{\flh}[0]{\ding{40}}
+\usepackage[utf8]{inputenc}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0.5pt}
+\newcommand{\myhline}{\noalign{\global\arrayrulewidth2pt}\hline\noalign{\global\arrayrulewidth0.4pt}}
+\newcommand{\mycline}[1]{\noalign{\global\arrayrulewidth2pt}\cline{#1}\noalign{\global\arrayrulewidth0.4pt}}
+\newcolumntype{g}{>{\columncolor{tbl-yellow}}c}
+\newcolumntype{s}{>{\slshape}l}
+\newcolumntype{z}{>{\columncolor{tbl-blau}}c}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcommand{\standdate}{} % enter date here
+\pagestyle{empty}
