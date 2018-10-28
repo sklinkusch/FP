@@ -1,0 +1,2808 @@
+% Ahrensfelde
+\newcommand{\BAF}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BAF \rbahn \bus} \\\hline
+   \ifoo
+    \BAFOfo  & \BAFOpo  & $\arrW$ & \bli{7} & $\arre$ & \BAFOfw  & \BAFOpw  \\
+   \fi
+   \ifo
+             & \BAFOfo  & $\arrW$ & \bli{7} & $\arre$ & \BAFOfw  &          \\
+   \fi
+ \end{tabular}
+}
+% Bergfelde
+\newcommand{\BBFE}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BBFE \bus} \\\hline
+   \ifnordpol
+    \BBFENaun & $\arrw$ & \hgr{8} & $\arre$ & \BBFENaus \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Adlershof
+\newcommand{\BADL}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BADL \tram \bus} \\\hline
+   \ifulrich
+               & \BADLUfs  & $\arrw$ & \mbr{45} & $\arrn$ & \BADLUfn  &           \\
+   \fi
+   \ifdora
+               & \BADLDfs  & $\arre$ & \mbr{46} & $\arrn$ & \BADLDfn  &           \\
+   \fi
+%   \ifnn
+%     \BADLNafs & \BADLNbhs & $\arre$ & \oct     & $\arrn$ & \BADLNafn & \BADLNbhn \\
+%   \fi
+   \ifnordpol
+               & \BADLNafs & $\arre$ & \hgr{8}  & $\arrn$ & \BADLNafn &           \\
+   \fi
+   \ifneisse
+               & \BADLNbhs & $\arre$ & \hgr{85} & $\arrn$ & \BADLNbhn &           \\
+   \fi
+   \ifcaesar
+               & \BADLCfs  & $\arrw$ & \rbr{9}  & $\arrn$ & \BADLCfn  &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Alexanderplatz
+\newcommand{\BALX}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BALX} \\
+  \multicolumn{11}{c}{\rbahn \ubahn \mtram \mbus \xbus \bus} \\\hline
+   \ifba
+               &           &           & \BALXBfw  & $\arrw$ & \ebl{3}  & $\arrn$ & \BALXBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BALXEafw & \BALXEbfw & $\arrw$ & \por{5}  & $\arrn$ & \BALXEafo & \BALXEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BALXEafw & $\arrw$ & \por{5}  & $\arrn$ & \BALXEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BALXOfw  & \BALXOpw  & $\arrw$ & \bli{7}  & $\arrn$ & \BALXOfo  & \BALXOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BALXOfw  & $\arrw$ & \bli{7}  & $\arrn$ & \BALXOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BALXCfn  & $\arrw$ & \rbr{9}  & $\arrn$ & \BALXCfs  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Altglienicke
+\newcommand{\BAGL}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BAGL \bus} \\\hline
+   \ifulrich
+     \BAGLUfs & $\arrw$ & \mbr{45} & $\arre$ & \BAGLUfn \\
+   \fi
+   \ifcaesar
+     \BAGLCfs & $\arrw$ & \rbr{9}  & $\arre$ & \BAGLCfn \\
+   \fi
+ \end{tabular}
+}
+% Berlin Alt-Reinickendorf
+\newcommand{\BARF}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BARF} \\\hline
+   \ifva
+    \BARFVfn & $\arrw$ & \dgr{25} & $\arre$ & \BARFVfs \\
+   \fi
+  \end{tabular}
+}
+% Berlin Anhalter Bahnhof
+\newcommand{\BAHU}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BAHU \mbus} \\\hline
+   \ifppp
+               & \BAHUPfs & \BAHUPhs & \BAHUPps & $\arrw$ & \mgt{1}  & $\arrnw$ & \BAHUPfn & \BAHUPhn & \BAHUPpn &          \\
+   \fi
+   \ifpp
+               &          & \BAHUPfs & \BAHUPps & $\arrw$ & \mgt{1}  & $\arrnw$ & \BAHUPfn & \BAHUPpn &          &          \\
+   \fi
+   \ifp
+               &          &          & \BAHUPfs & $\arrw$ & \mgt{1}  & $\arrnw$ & \BAHUPfn &          &          &          \\
+   \fi
+   \ifww
+               &          & \BAHUWfs & \BAHUWps & $\arrw$ & \dgr{2}  & $\arrnw$ & \BAHUWfn & \BAHUWpn &          &          \\
+   \fi
+   \ifw
+               &          &          & \BAHUWfs & $\arrw$ & \dgr{2}  & $\arrnw$ & \BAHUWfn &          &          &          \\
+   \fi
+   \ifvv
+               &          & \BAHUVfs & \BAHUVps & $\arrw$ & \dos     & $\arrnw$ & \BAHUVfn & \BAHUVpn &          &          \\
+   \fi 
+   \ifv
+               &          &          & \BAHUVfs & $\arrw$ & \dgr{25} & $\arrnw$ & \BAHUVfn &          &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Attilastraße
+\newcommand{\BATS}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BATS \bus} \\\hline
+   \ifww
+     \BATSWfs & \BATSWps & $\arrs$ & \dgr{2} & $\arrw$ & \BATSWfn & \BATSWpn \\
+   \fi
+   \ifw
+              & \BATSWfs & $\arrs$ & \dgr{2} & $\arrw$ & \BATSWfn &          \\
+   \fi
+  \hline
+%  \end{tabular}
+}
+% Berlin-Baumschulenweg
+\newcommand{\BBMW}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BBMW \bus} \\\hline
+%   \ifud
+%    \BBMWUfs  & \BBMWDfs  & $\arrs$ & \quar    & $\arrw$ & \BBMWUfn  & \BBMWDfn  \\ 
+%   \fi
+   \ifulrich
+              & \BBMWUfs  & $\arrs$ & \mbr{45} & $\arrw$ & \BBMWUfn  &           \\
+   \fi
+   \ifdora
+              & \BBMWDfs  & $\arrs$ & \mbr{46} & $\arre$ & \BBMWDfn  &           \\
+   \fi
+   \ifkonrad
+              & \BBMWKpo  & $\arrs$ & \mbr{47} & $\arrw$ & \BBMWKlw  & \BBMWKpw  \\
+   \fi
+%   \ifnn
+%    \BBMWNafs & \BBMWNbas & $\arrs$ & \oct     & $\arrn$ & \BBMWNafn & \BBMWNbas \\
+%   \fi
+   \ifnordpol
+              & \BBMWNafs & $\arrs$ & \hgr{8}  & $\arrn$ & \BBMWNafn &           \\
+   \fi
+   \ifneisse
+              & \BBMWNbas & $\arrs$ & \hgr{85} & $\arrn$ & \BBMWNban &           \\
+   \fi
+   \ifcaesar
+              & \BBMWCfs  & $\arrs$ & \rbr{9}  & $\arrn$ & \BBMWCfn  &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Bellevue
+\newcommand{\BBEV}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BBEV} \\\hline
+   \ifba
+               &           &           & \BBEVBfw  & $\arrs$ & \ebl{3}  & $\arre$ & \BBEVBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BBEVEafw & \BBEVEbfw & $\arrs$ & \por{5}  & $\arre$ & \BBEVEafo & \BBEVEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BBEVEafw & $\arrs$ & \por{5}  & $\arre$ & \BBEVEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BBEVOfw  & \BBEVOpw  & $\arrs$ & \bli{7}  & $\arre$ & \BBEVOfo  & \BBEVOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BBEVOfw  & $\arrs$ & \bli{7}  & $\arre$ & \BBEVOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BBEVCfn  & $\arrs$ & \rbr{9}  & $\arre$ & \BBEVCfs  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Beusselstraße
+\newcommand{\BBEU}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BBEU \xbus \bus} \\\hline
+   \ifrgall
+    \BBEURaf & \BBEURah & \BBEURbf & \BBEURbh & $\arrw$ & \ring    & $\arre$ & \BBEUAaf & \BBEUAah & \BBEUAbf & \BBEUAbh \\
+   \fi
+   \ifrgf
+             &          & \BBEURaf & \BBEURbf & $\arrw$ & \ring    & $\arre$ & \BBEUAaf & \BBEUAbf &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Biesdorf
+\newcommand{\BBDF}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BBDF \bus} \\\hline
+   \ifeees
+     \BBDFEafo & \BBDFSho  & \BBDFEbfo & \BBDFEho  & $\arrs$ & \por{5} & $\arrn$ & \BBDFEafw & \BBDFShw  & \BBDFEbfw & \BBDFEhw \\
+   \fi
+   \ifeee
+               & \BBDFEafo & \BBDFEbfo & \BBDFEho  & $\arrs$ & \por{5} & $\arrn$ & \BBDFEafw & \BBDFEbfw & \BBDFEhw  &          \\
+   \fi
+   \ifeex
+               &           & \BBDFEafo & \BBDFEbfo & $\arrs$ & \por{5} & $\arrn$ & \BBDFEafw & \BBDFEbfw &           &          \\
+   \fi
+   \ifex
+               &           &           & \BBDFEafo & $\arrs$ & \por{5} & $\arrn$ & \BBDFEafw &           &           &          \\
+   \fi
+  \hline
+% \end{tabular}
+}
+% Berlin-Blankenburg
+\newcommand{\BBLB}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BBLB \bus} \\\hline
+   \ifww
+    \BBLBWfs & \BBLBWps  & $\arrs$ & \dgr{2} & $\arre$  & \BBLBWfn  & \BBLBWpn \\ 
+   \fi
+   \ifw
+             & \BBLBWfs  & $\arrs$ & \dgr{2} & $\arre$  & \BBLBWfn  &          \\
+   \fi
+   \ifnordpol
+             & \BBLBNafs & $\arrs$ & \hgr{8} & $\arrn$  & \BBLBNafn &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Bornholmer Straße
+\newcommand{\BBOS}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BBOS \mtram \tram} \\\hline
+   \ifppa
+     \BBOSPfs & \BBOSPps  & $\arrsw$ & \mgt{1}  & $\arrw $ & \BBOSPfn  & \BBOSPpn \\
+   \fi
+   \ifp
+              & \BBOSPfs  & $\arrsw$ & \mgt{1}  & $\arrw $ & \BBOSPfn  &          \\
+   \fi
+   \ifww
+     \BBOSWfs & \BBOSWps  & $\arrsw$ & \dgr{2}  & $\arre $ & \BBOSWfn  & \BBOSWpn \\
+   \fi
+   \ifw
+              & \BBOSWfs  & $\arrsw$ & \dgr{2}  & $\arre $ & \BBOSWfn  &          \\
+   \fi
+   \ifvv
+     \BBOSVfs & \BBOSVps  & $\arrsw$ & \dos     & $\arrw $ & \BBOSVfn  & \BBOSVpn \\
+   \fi
+   \ifv
+              & \BBOSVfs  & $\arrsw$ & \dgr{25} & $\arrw $ & \BBOSVfn  &          \\
+   \fi
+%   \ifnn
+%    \BBOSNafs & \BBOSNbas & $\arrse$ & \oct     & $\arre $ & \BBOSNafn & \BBOSNban\\
+%   \fi
+   \ifnordpol
+              & \BBOSNafs & $\arrse$ & \hgr{8}  & $\arre $ & \BBOSNafn &          \\
+   \fi
+   \ifneisse
+              & \BBOSNbas & $\arrse$ & \hgr{85} & $\arre $ & \BBOSNban &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Botanischer Garten
+\newcommand{\BBGT}{%
+% \begin{tabular}{ccccccccc}
+  \multicolumn{9}{c}{\bfseries BBGT \bus} \\\hline
+   \ifppp
+      \BBGTPfs & \BBGTPhs & \BBGTPps & $\arrw$ & \mgt{1} & $\arrn$ & \BBGTPfn & \BBGTPhn & \BBGTPpn \\
+   \fi
+   \ifpp
+               & \BBGTPfs & \BBGTPps & $\arrw$ & \mgt{1} & $\arrn$ & \BBGTPfn & \BBGTPpn &          \\
+   \fi
+   \ifp
+               &          & \BBGTPfs & $\arrw$ & \mgt{1} & $\arrn$ & \BBGTPfn &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Brandenburger Tor
+\newcommand{\BTOR}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BTOR \ubahn \xbus \bus} \\\hline
+   \ifppa
+              &          & \BTORPfs & \BTORPps & $\arrw$ & \mgt{1}  & $\arrn$ & \BTORPfn & \BTORPpn &          &          \\
+   \fi
+   \ifp
+              &          &          & \BTORPfs & $\arrw$ & \mgt{1}  & $\arrn$ & \BTORPfn &          &          &          \\
+   \fi
+   \ifww
+              &          & \BTORWfs & \BTORWps & $\arrw$ & \dgr{2}  & $\arrn$ & \BTORWfn & \BTORWpn &          &          \\
+   \fi
+   \ifw
+              &          &          & \BTORWfs & $\arrw$ & \dgr{2}  & $\arrn$ & \BTORWfn &          &          &          \\
+   \fi
+   \ifvv
+              &          & \BTORVfs & \BTORVps & $\arrw$ & \dos     & $\arrn$ & \BTORVfn & \BTORVpn &          &          \\
+   \fi
+   \ifv
+              &          &          & \BTORVfs & $\arrw$ & \dgr{25} & $\arrn$ & \BTORVfn &          &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Buch
+\newcommand{\BBU}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BBU \bus} \\\hline
+   \ifww
+    \BBUWfs  & \BBUWps  & $\arrs$ & \dgr{2} & $\arre$ & \BBUWfn  & \BBUWpn  \\ 
+   \fi
+   \ifw
+             & \BBUWfs  & $\arrs$ & \dgr{2} & $\arre$ & \BBUWfn  &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Buckower Chaussee
+\newcommand{\BBCH}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BBCH \mbus \xbus \bus} \\\hline
+   \ifww
+     \BBCHWfs & \BBCHWps & $\arrs$ & \dgr{2} & $\arrn$ & \BBCHWfn & \BBCHWpn \\
+   \fi
+   \ifw
+              & \BBCHWfs & $\arrs$ & \dgr{2} & $\arrn$ & \BBCHWfn &          \\
+   \fi
+  \hline
+%  \end{tabular}
+}
+% Berlin Bundesplatz
+\newcommand{\BBUP}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BBUP \ubahn \bus} \\\hline
+   \ifrgall
+    \BBUPAaf & \BBUPAah & \BBUPAbf & \BBUPAbh & $\arrn$   & \ring    & $\arre$ & \BBUPRaf & \BBUPRah & \BBUPRbf & \BBUPRbh \\
+   \fi
+   \ifrgf
+             &          & \BBUPAaf & \BBUPAbf & $\arrn$   & \ring    & $\arre$ & \BBUPRaf & \BBUPRbf &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BBUPDfn & $\arrn$   & \mbr{46} & $\arre$ & \BBUPDfs &          &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin-Charlottenburg
+\newcommand{\BCHS}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BCHS \rbahn \ubahn \bus} \\\hline
+   \ifba
+               &           &           & \BCHSBfw  & $\arrw$ & \ebl{3}  & $\arre$ & \BCHSBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BCHSEafw & \BCHSEbfw & $\arrw$ & \por{5}  & $\arre$ & \BCHSEafo & \BCHSEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BCHSEafw & $\arrw$ & \por{5}  & $\arre$ & \BCHSEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BCHSOfw  & \BCHSOpw  & $\arrw$ & \bli{7}  & $\arre$ & \BCHSOfo  & \BCHSOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BCHSOfw  & $\arrw$ & \bli{7}  & $\arre$ & \BCHSOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BCHSCfn  & $\arrw$ & \rbr{9}  & $\arre$ & \BCHSCfs  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Eichborndamm
+\newcommand{\BEBD}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BEBD \bus} \\\hline
+   \ifva
+    \BEBDVfs & $\arre$ & \dgr{25} & $\arrn$ & \BEBDVfn \\
+   \fi
+ \end{tabular}
+}
+% Berlin Feuerbachstraße
+\newcommand{\BFB}{%
+% \begin{tabular}{ccccccccc}
+  \multicolumn{9}{c}{\bfseries BFB \mbus \xbus \bus} \\\hline
+   \ifppp
+      \BFBPfs  & \BFBPhs  & \BFBPps  & $\arrsw$ & \mgt{1}  & $\arrn$  & \BFBPfn  & \BFBPhn  & \BFBPpn  \\
+   \fi
+   \ifpp
+               & \BFBPfs  & \BFBPps  & $\arrsw$ & \mgt{1}  & $\arrn$  & \BFBPfn  & \BFBPpn  &          \\
+   \fi
+   \ifp
+               &          & \BFBPfs  & $\arrsw$ & \mgt{1}  & $\arrn$  & \BFBPfn  &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Frankfurter Allee
+\newcommand{\BFA}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BFA \ubahn \mtram \tram} \\\hline
+   \ifrgall
+    \BFAAaf  & \BFAAah  & \BFAAbf  & \BFAAbh   & $\arrs$ & \ring    & $\arrn$ & \BFARaf   & \BFARah  & \BFARbf  & \BFARbh  \\
+   \fi
+   \ifrgf
+             &          & \BFAAaf  & \BFAAbf   & $\arrs$ & \ring    & $\arrn$ & \BFARaf   & \BFARbf  &          &          \\
+   \fi
+%   \ifnn
+%             &          & \BFANafs & \BFANbas  & $\arrs$ & \oct     & $\arrn$ & \BFANafn  & \BFANban &          &          \\
+%   \fi
+   \ifnordpol
+             &          &          & \BFANafs  & $\arrs$ & \hgr{8}  & $\arrn$ & \BFANafn  &          &          &          \\
+   \fi
+   \ifneisse
+             &          &          & \BFANbas  & $\arrs$ & \hgr{85} & $\arrn$ & \BFANban  &          &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Friedenau
+\newcommand{\BFRU}{%
+ \begin{tabular}{ccccccccc}
+  \multicolumn{9}{c}{\bfseries BFRU \bus} \\\hline
+   \ifppp
+      \BFRUPfs & \BFRUPhs & \BFRUPps & $\arrs$ & \mgt{1}  & $\arrne$ & \BFRUPfn & \BFRUPhn & \BFRUPpn \\
+   \fi
+   \ifpp
+               & \BFRUPfs & \BFRUPps & $\arrs$ & \mgt{1}  & $\arrne$ & \BFRUPfn & \BFRUPpn &          \\
+   \fi
+   \ifp
+               &          & \BFRUPfs & $\arrs$ & \mgt{1}  & $\arrne$ & \BFRUPfn &          &          \\
+   \fi
+  \hline
+%  \end{tabular}
+}
+% Berlin-Friedrichsfelde Ost
+\newcommand{\BFFO}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BFFO \mtram \tram \bus} \\\hline
+   \ifeees
+       \BFFOEafw & \BFFOShw  & \BFFOEbfw & \BFFOEhw  & $\arrw$ & \por{5}  & $\arrs$ & \BFFOEafo & \BFFOSho  & \BFFOEbfo & \BFFOEho  \\
+   \fi
+   \ifeee
+                 & \BFFOEafw & \BFFOEbfw & \BFFOEhw  & $\arrw$ & \por{5}  & $\arrs$ & \BFFOEafo & \BFFOEbfo & \BFFOEho  &           \\
+   \fi
+   \ifeex
+                 &           & \BFFOEafw & \BFFOEbfw & $\arrw$ & \por{5}  & $\arrs$ & \BFFOEafo & \BFFOEbfo &           &           \\
+   \fi
+   \ifex
+                 &           &           & \BFFOEafw & $\arrw$ & \por{5}  & $\arrs$ & \BFFOEafo &           &           &           \\
+   \fi
+   \ifoo
+                 &           & \BFFOOfw  & \BFFOOpw  & $\arrw$ & \bli{7}  & $\arrn$ & \BFFOOfo  & \BFFOOpo  &           &           \\
+   \fi
+   \ifo
+                 &           &           & \BFFOOfw  & $\arrw$ & \bli{7}  & $\arrn$ & \BFFOOfo  &           &           &           \\
+   \fi
+   \iftt
+                 &           & \BFFOTfw  & \BFFOTpw  & $\arrw$ & \bli{75} & $\arrn$ & \BFFOTfo  & \BFFOTpo  &           &           \\
+   \fi
+   \ift
+                 &           &           & \BFFOTfw  & $\arrw$ & \bli{75} & $\arrn$ & \BFFOTfo  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Friedrichshagen
+\newcommand{\BFRH}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BFRH \tram} \\\hline
+   \ifbb
+    \BFRHBfw & \BFRHBpw & $\arrs$ & \ebl{3} & $\arrn$ & \BFRHBfo & \BFRHBpo \\
+   \fi
+   \ifb
+             & \BFRHBfw & $\arrs$ & \ebl{3} & $\arrn$ & \BFRHBfo &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Friedrichstraße (oben)
+\newcommand{\BFST}{%
+ \begin{tabular}{ccccccccccc}
+  \ifwsb
+  \multicolumn{11}{c}{\bfseries BFST \rbahn \ubahn \mtram \tram \bus} \\\hline
+   \ifba
+               &           &           & \BFSTBfw  & $\arrw$ & \ebl{3}  & $\arre$ & \BFSTBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BFSTEafw & \BFSTEbfw & $\arrw$ & \por{5}  & $\arre$ & \BFSTEafo & \BFSTEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BFSTEafw & $\arrw$ & \por{5}  & $\arre$ & \BFSTEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BFSTOfw  & \BFSTOpw  & $\arrw$ & \bli{7}  & $\arre$ & \BFSTOfo  & \BFSTOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BFSTOfw  & $\arrw$ & \bli{7}  & $\arre$ & \BFSTOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BFSTCfn  & $\arrw$ & \rbr{9}  & $\arre$ & \BFSTCfs  &           &           &           \\
+   \fi
+  \ifsntunnel
+   \hline
+  \fi
+ \fi
+% \end{tabular}
+}
+% Berlin Friedrichstraße (unten)
+\newcommand{\BFSTT}{%
+% \begin{tabular}{ccccccccccc}
+ \ifsntunnel
+  \multicolumn{11}{c}{\bfseries BFSTT \rbahn \ubahn \mtram \tram \bus} \\\hline
+   \ifppa
+               &           & \BFSTTPfs & \BFSTTPps & $\arrs$ & \mgt{1}  & $\arrn$ & \BFSTTPfn & \BFSTTPpn &           &           \\
+   \fi
+   \ifp
+               &           &           & \BFSTTPfs & $\arrs$ & \mgt{1}  & $\arrn$ & \BFSTTPfn &           &           &           \\
+   \fi
+   \ifww
+               &           & \BFSTTWfs & \BFSTTWps & $\arrs$ & \dgr{2}  & $\arrn$ & \BFSTTWfn & \BFSTTWpn &           &           \\
+   \fi
+   \ifw
+               &           &           & \BFSTTWfs & $\arrs$ & \dgr{2}  & $\arrn$ & \BFSTTWfn &           &           &           \\
+   \fi
+   \ifvv
+               &           & \BFSTTVfs & \BFSTTVps & $\arrs$ & \dos     & $\arrn$ & \BFSTTVfn & \BFSTTVpn &           &           \\
+   \fi
+   \ifv
+               &           &           & \BFSTTVfs & $\arrs$ & \dgr{25} & $\arrn$ & \BFSTTVfn &           &           &           \\
+   \fi
+  \fi
+ \end{tabular}
+}
+% Berlin-Frohnau
+\newcommand{\BFOH}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BFOH \bus} \\\hline
+   \ifppa
+    \BFOHPfs & \BFOHPps & $\arre$ & \mgt{1} & $\arrn$ & \BFOHPfn & \BFOHPpn \\
+   \fi
+   \ifp
+             & \BFOHPfs & $\arre$ & \mgt{1} & $\arrn$ & \BFOHPfn &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Gehrenseestraße
+\newcommand{\BGSE}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BGSE \bus} \\\hline
+   \iftt
+    \BGSETfw & \BGSETpw & $\arre$  & \bli{75} & $\arrn$ & \BGSETfo & \BGSETpo \\
+   \fi
+   \ift
+             & \BGSETfw & $\arre$  & \bli{75} & $\arrn$ & \BGSETfo &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Gesundbrunnen
+\newcommand{\BGB}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BGB \fbahn \rbahn \ubahn \bus} \\\hline
+   \ifppa
+             &          & \BGBPfs  & \BGBPps     & $\arrs$ & \mgt{1}  & $\arrne$ & \BGBPfn  & \BGBPpn  &          &          \\
+   \fi
+   \ifp
+             &          &          & \BGBPfs     & $\arrs$ & \mgt{1}  & $\arrne$ & \BGBPfn  &          &          &          \\
+   \fi
+   \ifww
+             &          & \BGBWfs  & \BGBWps     & $\arrs$ & \dgr{2}  & $\arrne$ & \BGBWfn  & \BGBWpn  &          &          \\
+   \fi
+   \ifw
+             &          &          & \BGBWfs     & $\arrs$ & \dgr{2}  & $\arrne$ & \BGBWfn  &          &          &          \\
+   \fi
+   \ifvv
+             &          & \BGBVfs  & \BGBVps     & $\arrs$ & \dos     & $\arrne$ & \BGBVfn  & \BGBVpn  &          &          \\
+   \fi
+   \ifv
+             &          &          & \BGBVfs     & $\arrs$ & \dgr{25} & $\arrne$ & \BGBVfn  &          &          &          \\
+   \fi
+   \ifrgall
+    \BGBRaf  & \BGBRah  & \BGBRbf  & \BGBRbh     & $\arrw$ & \ring    & $\arre$  & \BGBAaf  & \BGBAah  & \BGBAbf  & \BGBAbh  \\
+   \fi
+   \ifrgf
+             &          & \BGBRaf  & \BGBRbf     & $\arrw$ & \ring    & $\arre$  & \BGBAaf  & \BGBAbf  &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Greifswalder Straße
+\newcommand{\BGSS}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BGSS \mtram} \\\hline
+   \ifrgall
+    \BGSSRaf  & \BGSSRah & \BGSSRbf  & \BGSSRbh  & $\arrs$ & \ring    & $\arre$ & \BGSSAaf  & \BGSSAah  & \BGSSAbf & \BGSSAbh \\
+   \fi
+   \ifrgf
+              &          & \BGSSRaf  & \BGSSRbf  & $\arrs$ & \ring    & $\arre$ & \BGSSAaf  & \BGSSAbf  &          &          \\
+   \fi
+%   \ifnn
+%              &          & \BGSSNafn & \BGSSNban & $\arrs$ & \oct     & $\arre$ & \BGSSNafs & \BGSSNbas &          &          \\
+%   \fi
+   \ifnordpol
+              &          &           & \BGSSNafn & $\arrs$ & \hgr{8}  & $\arre$ & \BGSSNafs &           &          &          \\
+   \fi
+   \ifneisse
+              &          &           & \BGSSNban & $\arrs$ & \hgr{85} & $\arre$ & \BGSSNbas &           &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Großgörschenstraße
+\newcommand{\BGGS}{%
+ \begin{tabular}{ccccccccccc}
+  \ifpa
+  \multicolumn{11}{c}{\bfseries BGGS \ubahn \mbus} \\\hline
+   \ifppp
+               & \BGGSPfs & \BGGSPhs & \BGGSPps & $\arrw$  & \mgt{1}  & $\arre$ & \BGGSPfn & \BGGSPhn & \BGGSPpn &          \\
+   \fi
+   \ifpp
+               &          & \BGGSPfs & \BGGSPps & $\arrw$  & \mgt{1}  & $\arre$ & \BGGSPfn & \BGGSPpn &          &          \\
+   \fi
+   \ifp
+               &          &          & \BGGSPfs & $\arrw$  & \mgt{1}  & $\arre$ & \BGGSPfn &          &          &          \\
+   \fi
+   \ifduoany
+    \hline
+   \fi
+   \fi
+%  \end{tabular}
+}
+% Berlin-Grünau
+\newcommand{\BGAS}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BGAS \tram \bus} \\\hline
+   \ifdora
+    \BGASDfn  & $\arrw$ & \mbr{46} & $\arre$ & \BGASDfs  \\
+   \fi
+   \ifna
+   \ifnordpol
+    \BGASNafn & $\arrw$ & \hgr{8}  & $\arre$ & \BGASNafs \\
+   \fi
+   \ifneisse
+    \BGASNbhn & $\arrw$ & \hgr{85} & $\arrE$ & \BGASNbhs \\
+   \fi
+   \fi
+ \end{tabular}
+}
+% Berlin Grünbergallee
+\newcommand{\BGBA}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BGBA}\\\hline
+   \ifulrich
+     \BGBAUfs & $\arrw$ & \mbr{45} & $\arre$ & \BGBAUfn \\
+   \fi
+   \ifcaesar
+     \BGBACfs & $\arrw$ & \rbr{9}  & $\arre$ & \BGBACfn \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Grunewald
+\newcommand{\BGWD}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BGWD \mbus \bus} \\\hline
+   \ifoo
+    \BGWDOfw & \BGWDOpw & $\arrs$ & \bli{7}  & $\arrne$ & \BGWDOfo & \BGWDOpo \\
+   \fi
+   \ifo
+             & \BGWDOfw & $\arrs$ & \bli{7}  & $\arrne$ & \BGWDOfo &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Hackescher Markt
+\newcommand{\BHKM}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BHKM \mtram \tram} \\\hline
+   \ifba
+               &           &           & \BHKMBfw  & $\arrw$ & \ebl{3}  & $\arre$ & \BHKMBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BHKMEafw & \BHKMEbfw & $\arrw$ & \por{5}  & $\arre$ & \BHKMEafo & \BHKMEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BHKMEafw & $\arrw$ & \por{5}  & $\arre$ & \BHKMEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BHKMOfw  & \BHKMOpw  & $\arrw$ & \bli{7}  & $\arre$ & \BHKMOfo  & \BHKMOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BHKMOfw  & $\arrw$ & \bli{7}  & $\arre$ & \BHKMOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BHKMCfn  & $\arrw$ & \rbr{9}  & $\arre$ & \BHKMCfs  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Halensee
+\newcommand{\BHAL}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BHAL \mbus \xbus \bus} \\\hline
+   \ifrgall
+    \BHALRaf & \BHALRah & \BHALRbf & \BHALRbh & $\arrs$ & \ring    & $\arrn$    & \BHALAaf & \BHALAah & \BHALAbf & \BHALAbh \\
+   \fi
+   \ifrgf
+             &          & \BHALRaf & \BHALRbf & $\arrs$ & \ring    & $\arrn$    & \BHALAaf & \BHALAbf &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BHALDfs & $\arrs$ & \mbr{46} & $\arrn$    & \BHALDfn &          &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Hauptbahnhof (oben)
+\newcommand{\BHBF}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BHBF} \\
+  \multicolumn{11}{c}{\fbahn \rbahn \ubahn \mtram \mbus \xbus \bus} \\\hline
+   \ifba
+               &           &           & \BHBFBfw  & $\arrw$ & \ebl{3}  & $\arre$ & \BHBFBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BHBFEafw & \BHBFEbfw & $\arrw$ & \por{5}  & $\arre$ & \BHBFEafo & \BHBFEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BHBFEafw & $\arrw$ & \por{5}  & $\arre$ & \BHBFEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BHBFOfw  & \BHBFOpw  & $\arrw$ & \bli{7}  & $\arre$ & \BHBFOfo  & \BHBFOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BHBFOfw  & $\arrw$ & \bli{7}  & $\arre$ & \BHBFOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BHBFCfn  & $\arrw$ & \rbr{9}  & $\arre$ & \BHBFCfs  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Heerstraße
+\newcommand{\BHST}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BHST} \\
+  \multicolumn{7}{c}{\mbus \xbus \bus} \\\hline
+   \ifba
+             & \BHSTBfo & $\arrs$ & \ebl{3} & $\arrn$ & \BHSTBfw &           \\
+   \fi
+   \ifcaesar
+             & \BHSTCfs & $\arrs$ & \rbr{9} & $\arrn$ & \BHSTCfn &           \\
+   \fi
+%   \hline
+ \end{tabular}
+}
+% Berlin Heidelberger Platz
+\newcommand{\BHEI}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BHEI \ubahn \bus} \\\hline
+   \ifrgall
+    \BHEIRaf & \BHEIRah & \BHEIRbf & \BHEIRbh & $\arrs$ & \ring    & $\arrw$ & \BHEIAaf & \BHEIAah & \BHEIAbf & \BHEIAbh \\
+   \fi
+   \ifrgf
+             &          & \BHEIRaf & \BHEIRbf & $\arrs$ & \ring    & $\arrw$ & \BHEIAaf & \BHEIAbf &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BHEIDfs & $\arrs$ & \mbr{46} & $\arrw$ & \BHEIDfn &          &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin-Heiligensee
+\newcommand{\BHLS}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BHLS \bus} \\\hline
+   \ifva
+    \BHLSVfs & $\arrw$ & \dgr{25} & $\arre$ & \BHLSVfn \\
+   \fi
+ \end{tabular}
+}
+% Berlin Hermannstraße
+\newcommand{\BHER}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BHER \ubahn \mbus \bus} \\\hline
+   \ifrgall
+    \BHERAaf & \BHERAah & \BHERAbf & \BHERAbh & $\arrw$ & \ring    & $\arre$ & \BHERRaf & \BHERRah & \BHERRbf & \BHERRbh \\
+   \fi
+   \ifrgf
+             &          & \BHERAaf & \BHERAbf & $\arrw$ & \ring    & $\arre$ & \BHERRaf & \BHERRbf &          &          \\
+   \fi
+%   \ifud
+%             &          & \BHERUfn & \BHERDfn & $\arrw$ & \quar    & $\arre$ & \BHERUfs & \BHERDfs &          &          \\
+%   \fi
+   \ifulrich
+             &          &          & \BHERUfn & $\arrw$ & \mbr{45} & $\arre$ & \BHERUfs &          &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BHERDfn & $\arrw$ & \mbr{46} & $\arre$ & \BHERDfs &          &          &          \\
+   \fi
+   \ifkonrad
+             &          & \BHERKlw & \BHERKpw & $\arrW$ & \mbr{47} & $\arre$ & \BHERKpo &          &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Hermsdorf
+\newcommand{\BHED}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BHED \bus} \\\hline
+   \ifppa
+     \BHEDPfs & \BHEDPps & $\arrsw$ & \mgt{1} & $\arrw$ & \BHEDPfn & \BHEDPpn \\
+   \fi
+   \ifp
+              & \BHEDPfs & $\arrsw$ & \mgt{1} & $\arrw$ & \BHEDPfn &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Hirschgarten
+\newcommand{\BHI}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BHI} \\\hline
+   \ifbb
+    \BHIBfw  & \BHIBpw  & $\arrw$ & \ebl{3} & $\arrn$ & \BHIBfo  & \BHIBpo  \\
+   \fi
+   \ifb
+             & \BHIBfw  & $\arrw$ & \ebl{3} & $\arrn$ & \BHIBfo  &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Hohenschönhausen
+\newcommand{\BHH}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BHH \rbahn \mtram \xbus \bus} \\\hline
+   \iftt
+    \BHHTfw  & \BHHTpw  & $\arrs$  & \bli{75} & $\arrn$  & \BHHTfo  & \BHHTpo  \\
+   \fi
+   \ift
+             & \BHHTfw  & $\arrs$  & \bli{75} & $\arrn$  & \BHHTfo  &          \\
+   \fi
+%  \hline
+ \end{tabular}
+}
+% Berlin Hohenzollerndamm
+\newcommand{\BHO}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BHO \bus} \\\hline
+   \ifrgall
+    \BHORaf & \BHORah & \BHORbf & \BHORbh & $\arre$ & \ring    & $\arrn$ & \BHOAaf & \BHOAah & \BHOAbf & \BHOAbh \\
+   \fi
+   \ifrgf
+            &         & \BHORaf & \BHORbf & $\arre$ & \ring    & $\arrn$ & \BHOAaf & \BHOAbf &         &         \\
+   \fi
+   \ifdora
+            &         &         & \BHODfs & $\arre$ & \mbr{46} & $\arrn$ & \BHODfn &         &         &         \\
+   \fi
+ \end{tabular}
+}
+% Berlin Humboldthain
+\newcommand{\BHUM}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BHUM \bus} \\\hline
+   \ifppa
+              &          & \BHUMPfs & \BHUMPps & $\arre$ & \mgt{1}  & $\arrn$ & \BHUMPfn & \BHUMPpn &          &          \\
+   \fi
+   \ifp
+              &          &          & \BHUMPfs & $\arre$ & \mgt{1}  & $\arrn$ & \BHUMPfn &          &          &          \\
+   \fi
+   \ifww
+              &          & \BHUMWfs & \BHUMWps & $\arre$ & \dgr{2}  & $\arrn$ & \BHUMWfn & \BHUMWpn &          &          \\
+   \fi
+   \ifw
+              &          &          & \BHUMWfs & $\arre$ & \dgr{2}  & $\arrn$ & \BHUMWfn &          &          &          \\
+   \fi
+   \ifvv
+              &          & \BHUMVfs & \BHUMVps & $\arre$ & \dos     & $\arrn$ & \BHUMVfn & \BHUMVpn &          &          \\
+   \fi
+   \ifv
+              &          &          & \BHUMVfs & $\arre$ & \dgr{25} & $\arrn$ & \BHUMVfn &          &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Innsbrucker Platz
+\newcommand{\BIP}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BIP \ubahn \mbus \bus} \\\hline
+   \ifrgall
+    \BIPAaf  & \BIPAah  & \BIPAbf  & \BIPAbh  & $\arrw$ & \ring    & $\arre$ & \BIPRaf  & \BIPRah  & \BIPRbf  & \BIPRbh  \\
+   \fi
+   \ifrgf
+             &          & \BIPAaf  & \BIPAbf  & $\arrw$ & \ring    & $\arre$ & \BIPRaf  & \BIPRbf  &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BIPDfn  & $\arrw$ & \mbr{46} & $\arre$ & \BIPDfs  &          &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Jannowitzbrücke
+\newcommand{\BJB}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BJB \ubahn \bus} \\\hline
+   \ifba
+               &           &           & \BJBBfw   & $\arrs$ & \ebl{3}  & $\arre$ & \BJBBfo   &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BJBEafw  & \BJBEbfw  & $\arrs$ & \por{5}  & $\arre$ & \BJBEafo  & \BJBEbfo  &           &           \\
+   \fi
+   \ifey
+               &           &           & \BJBEafw  & $\arrs$ & \por{5}  & $\arre$ & \BJBEafo  &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BJBOfw   & \BJBOpw   & $\arrs$ & \bli{7}  & $\arre$ & \BJBOfo   & \BJBOpo   &           &           \\
+   \fi
+   \ifo
+               &           &           & \BJBOfw   & $\arrs$ & \bli{7}  & $\arre$ & \BJBOfo   &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BJBCfn   & $\arrs$ & \rbr{9}  & $\arre$ & \BJBCfs   &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Julius-Leber-Brücke
+\newcommand{\BJLB}{%
+ \begin{tabular}{ccccccccc}
+  \multicolumn{9}{c}{\bfseries BJLB \bus} \\\hline
+   \ifppp
+      \BJLBPfs & \BJLBPhs & \BJLBPps & $\arrs$ & \mgt{1} & $\arre$ & \BJLBPfn & \BJLBPhn & \BJLBPpn \\
+   \fi
+   \ifpp
+               & \BJLBPfs & \BJLBPps & $\arrs$ & \mgt{1} & $\arre$ & \BJLBPfn & \BJLBPpn &          \\
+   \fi
+   \ifp
+               &          & \BJLBPfs & $\arrs$ & \mgt{1} & $\arre$ & \BJLBPfn &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Jungfernheide
+\newcommand{\BJUN}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BJUN \rbahn \ubahn \mbus \xbus \bus} \\\hline
+   \ifrgall
+    \BJUNRaf & \BJUNRah & \BJUNRbf & \BJUNRbh & $\arrs$ & \ring    & $\arre$ & \BJUNAaf & \BJUNAah & \BJUNAbf & \BJUNAbh \\
+   \fi
+   \ifrgf
+             &          & \BJUNRaf & \BJUNRbf & $\arrs$ & \ring    & $\arre$ & \BJUNAaf & \BJUNAbf &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Karl-Bonhoeffer-Nervenklinik
+\newcommand{\BKBO}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BKBO \ubahn \mbus \xbus} \\\hline
+   \ifva
+    \BKBOVfn & $\arrw$ & \dgr{25} & $\arre$ & \BKBOVfs \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Karlshorst
+\newcommand{\BKLH}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BKLH \rbahn \mtram \tram \bus} \\\hline
+   \ifbb
+    \BKLHBfo & \BKLHBpo & $\arrs$ & \ebl{3} & $\arrn$  & \BKLHBfw & \BKLHBpw \\
+   \fi
+   \ifb
+             & \BKLHBfo & $\arrs$ & \ebl{3} & $\arrn$  & \BKLHBfw &          \\
+   \fi
+ \hline
+% \end{tabular} 
+}
+% Berlin-Karow
+\newcommand{\BKRW}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BKRW \rbahn \bus} \\\hline
+   \ifww
+    \BKRWWfs & \BKRWWps & $\arrw$ & \dgr{2} & $\arrn$ & \BKRWWfn & \BKRWWpn \\ 
+   \fi
+   \ifw
+             & \BKRWWfs & $\arrw$ & \dgr{2} & $\arrn$ & \BKRWWfn &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Kaulsdorf
+\newcommand{\BKAD}{%
+% \begin{tabular}{ccccccccccccc}
+  \ifeeesany
+  \multicolumn{13}{c}{\bfseries BKAD \bus} \\\hline
+   \ifeees
+                 & \BKADEafw & \BKADShw  & \BKADEbfw & \BKADEhw  & $\arrw$ & \por{5} & $\arrn$ & \BKADEafo & \BKADSho  & \BKADEbfo & \BKADEho  &           \\
+   \fi
+   \ifeee
+                 &           & \BKADEafw & \BKADEbfw & \BKADEhw  & $\arrw$ & \por{5} & $\arrn$ & \BKADEafo & \BKADEbfo & \BKADEho  &           &           \\
+   \fi
+   \ifeex
+                 &           &           & \BKADEafw & \BKADEbfw & $\arrw$ & \por{5} & $\arrn$ & \BKADEafo & \BKADEbfo &           &           &           \\
+   \fi
+   \ifex
+                 &           &           &           & \BKADEafw & $\arrw$ & \por{5} & $\arrn$ & \BKADEafo &           &           &           &           \\
+   \fi
+%  \hline
+   \fi
+ \end{tabular}
+}
+% Berlin Köllnische Heide
+\newcommand{\BKHD}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BKHD \mbus \bus} \\\hline
+%   \ifud
+%    \BKHDUfs & \BKHDDfs & $\arre$ & \quar    & $\arrn$ & \BKHDUfn & \BKHDDfn \\
+%   \fi
+   \ifulrich
+             & \BKHDUfs & $\arre$ & \mbr{45} & $\arrn$ & \BKHDUfn &          \\
+   \fi
+   \ifdora
+             & \BKHDDfs & $\arre$ & \mbr{46} & $\arrn$ & \BKHDDfn &          \\
+   \fi
+   \ifkonrad
+             & \BKHDKpo & $\arre$ & \mbr{47} & $\arrn$ & \BKHDKlw & \BKHDKpw \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Köpenick
+\newcommand{\BKPK}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BKPK \tram \xbus \bus} \\\hline
+   \ifbb
+    \BKPKBfo & \BKPKBpo & $\arre$ & \ebl{3} & $\arrn$ & \BKPKBfw & \BKPKBpw \\
+   \fi
+   \ifb
+             & \BKPKBfo & $\arre$ & \ebl{3} & $\arrn$ & \BKPKBfw &          \\
+   \fi
+%  \hline
+ \end{tabular}
+}
+% Berlin Landsberger Allee
+\newcommand{\BLST}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BLST \mtram \bus} \\\hline
+    \ifrgall
+     \BLSTRaf & \BLSTRah & \BLSTRbf  & \BLSTRbh  & $\arrw$ & \ring    & $\arrs$ & \BLSTAaf  & \BLSTAah  & \BLSTAbf & \BLSTAbh \\
+    \fi
+    \ifrgf
+              &          & \BLSTRaf  & \BLSTRbf  & $\arrw$ & \ring    & $\arrs$ & \BLSTAaf  & \BLSTAbf  &          &          \\
+    \fi
+%    \ifnn
+%              &          & \BLSTNafn & \BLSTNban & $\arrw$ & \oct     & $\arrs$ & \BLSTNafs & \BLSTNbas &          &          \\
+%    \fi
+    \ifnordpol
+              &          &           & \BLSTNafn & $\arrw$ & \hgr{8}  & $\arrs$ & \BLSTNafs &           &          &          \\
+    \fi
+    \ifneisse
+              &          &           & \BLSTNban & $\arrw$ & \hgr{85} & $\arrs$ & \BLSTNbas &           &          &          \\
+    \fi
+ \end{tabular}
+}
+% Berlin-Lankwitz
+\newcommand{\BLAK}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BLAK \mbus \xbus \bus} \\\hline
+   \ifvv
+     \BLAKVfs & \BLAKVps & $\arrs$ & \dos     & $\arrn$ & \BLAKVfn & \BLAKVpn \\
+   \fi
+   \ifv
+              & \BLAKVfs & $\arrs$ & \dgr{25} & $\arrn$ & \BLAKVfn &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Lichtenberg
+\newcommand{\BLI}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BLI \rbahn \ubahn \tram \bus} \\\hline
+   \ifeees
+       \BLIEafw  & \BLIShw   & \BLIEbfw  & \BLIEhw   & $\arrs$ & \por{5}  & $\arre$ & \BLIEafo  & \BLISho   & \BLIEbfo  & \BLIEho   \\
+   \fi
+   \ifeee
+                 & \BLIEafw  & \BLIEbfw  & \BLIEhw   & $\arrs$ & \por{5}  & $\arre$ & \BLIEafo  & \BLIEbfo  & \BLIEho   &           \\
+   \fi
+   \ifeex
+                 &           & \BLIEafw  & \BLIEbfw  & $\arrs$ & \por{5}  & $\arre$ & \BLIEafo  & \BLIEbfo  &           &           \\
+   \fi
+   \ifex
+                 &           &           & \BLIEafw  & $\arrs$ & \por{5}  & $\arre$ & \BLIEafo  &           &           &           \\
+   \fi
+   \ifoo
+                 &           & \BLIOfw   & \BLIOpw   & $\arrs$ & \bli{7}  & $\arre$ & \BLIOfo   & \BLIOpo   &           &           \\
+   \fi
+   \ifo
+                 &           &           & \BLIOfw   & $\arrs$ & \bli{7}  & $\arre$ & \BLIOfo   &           &           &           \\
+   \fi
+   \iftt
+                 &           & \BLITfw   & \BLITpw   & $\arrs$ & \bli{75} & $\arre$ & \BLITfo   & \BLITpo   &           &           \\
+   \fi
+   \ift
+                 &           &           & \BLITfw   & $\arrs$ & \bli{75} & $\arre$ & \BLITfo   &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Lichtenrade
+\newcommand{\BLRD}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BLRD \mbus \bus} \\\hline
+   \ifww
+     \BLRDWfs & \BLRDWps & $\arrs$ & \dgr{2} & $\arre$ & \BLRDWfn & \BLRDWpn \\
+   \fi
+   \ifw
+              & \BLRDWfs & $\arrs$ & \dgr{2} & $\arre$ & \BLRDWfn &          \\
+   \fi
+  \hline
+% \end{tabular}
+}
+% Berlin-Lichterfelde Ost
+\newcommand{\BLIO}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BLIO \rbahn \mbus \xbus \bus} \\\hline
+   \ifvv
+     \BLIOVfs & \BLIOVps & $\arrs$ & \dos     & $\arrn$ & \BLIOVfn & \BLIOVpn \\
+   \fi
+   \ifv
+              & \BLIOVfs & $\arrs$ & \dgr{25} & $\arrn$ & \BLIOVfn &          \\
+   \fi
+  \hline
+%  \end{tabular}
+}
+% Berlin-Lichterfelde Süd
+\newcommand{\BLIS}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BLIS \mbus \bus} \\\hline
+   \ifvv
+     \BLISVfs & \BLISVps & $\arrs$ & \dos     & $\arre$ & \BLISVfn & \BLISVpn \\
+   \fi
+   \ifv
+              & \BLISVfs & $\arrs$ & \dgr{25} & $\arre$ & \BLISVfn &          \\
+   \fi
+  \hline
+% \end{tabular}
+}
+% Berlin-Lichterfelde West
+\newcommand{\BLWE}{%
+% \begin{tabular}{ccccccccc}
+  \multicolumn{9}{c}{\bfseries BLWE \mbus} \\\hline
+   \ifppp
+      \BLWEPfn & \BLWEPhn & \BLWEPpn & $\arre$ & \mgt{1} & $\arrn$ & \BLWEPfs & \BLWEPhs & \BLWEPps \\
+   \fi
+   \ifpp
+               & \BLWEPfn & \BLWEPpn & $\arre$ & \mgt{1} & $\arrn$ & \BLWEPfs & \BLWEPps &          \\
+   \fi
+   \ifp
+               &          & \BLWEPfn & $\arre$ & \mgt{1} & $\arrn$ & \BLWEPfs &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Mahlsdorf
+\newcommand{\BMDF}{%
+ \begin{tabular}{ccccccccccccc}
+  \ifeeezsany
+  \multicolumn{13}{c}{\bfseries BMDF \tram \bus} \\\hline
+   \ifeeezs
+        \BMDFEcfw & \BMDFEafw & \BMDFShw  & \BMDFEbfw & \BMDFEhw  & $\arrs$ & \por{5} & $\arrn$ & \BMDFEafo & \BMDFEcfo & \BMDFSho  & \BMDFEbfo & \BMDFEho  \\
+   \fi
+   \ifeeez
+                  & \BMDFEcfw & \BMDFEafw & \BMDFEbfw & \BMDFEhw  & $\arrs$ & \por{5} & $\arrn$ & \BMDFEafo & \BMDFEcfo & \BMDFEbfo & \BMDFEho  &           \\
+   \fi
+   \ifeez
+                  &           & \BMDFEcfw & \BMDFEafw & \BMDFEbfw & $\arrs$ & \por{5} & $\arrn$ & \BMDFEafo & \BMDFEcfo & \BMDFEbfo &           &           \\
+   \fi
+   \ifee
+                  &           &           & \BMDFEafw & \BMDFEbfw & $\arrs$ & \por{5} & $\arrn$ & \BMDFEafo & \BMDFEbfo &           &           &           \\
+   \fi
+   \ifez
+                  &           &           & \BMDFEcfw & \BMDFEafw & $\arrs$ & \por{5} & $\arrn$ & \BMDFEafo & \BMDFEcfo &           &           &           \\
+   \fi
+   \ife
+                  &           &           &           & \BMDFEafw & $\arrs$ & \por{5} & $\arrn$ & \BMDFEafo &           &           &           &           \\
+   \fi 
+  \ifeeesany
+   \hline
+  \fi
+  \fi
+% \end{tabular}
+}
+% Berlin-Marienfelde
+\newcommand{\BMF}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BMF \mbus \bus} \\\hline
+   \ifww
+     \BMFWfs  & \BMFWps  & $\arrs$ & \dgr{2} & $\arrn$ & \BMFWfn  & \BMFWpn  \\
+   \fi
+   \ifw
+              & \BMFWfs  & $\arrs$ & \dgr{2} & $\arrn$ & \BMFWfn  &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin-Marzahn
+\newcommand{\BMAZ}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BMAZ \mtram \tram \xbus \bus} \\\hline
+   \ifoo
+    \BMAZOfw & \BMAZOpw & $\arrs$ & \bli{7} & $\arrn$ & \BMAZOfo & \BMAZOpo \\
+   \fi
+   \ifo
+             & \BMAZOfw & $\arrs$ & \bli{7} & $\arrn$ & \BMAZOfo &          \\
+   \fi
+  \hline
+% \end{tabular}
+}
+% Berlin Mehrower Allee
+\newcommand{\BMEA}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BMEA \xbus \bus} \\\hline
+   \ifoo
+    \BMEAOfo & \BMEAOpo & $\arrw$ & \bli{7} & $\arre$ & \BMEAOfw & \BMEAOpw \\
+   \fi
+   \ifo
+             & \BMEAOfo & $\arrw$ & \bli{7} & $\arre$ & \BMEAOfw &          \\
+   \fi
+%  \hline
+ \end{tabular}
+}%
+% Berlin Messe Nord (Witzleben)
+\newcommand{\BMN}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BMN \ubahn \mbus \xbus \bus} \\\hline
+   \ifrgall
+    \BMNRaf  & \BMNRah  & \BMNRbf  & \BMNRbh  & $\arrs$ & \ring    & $\arrn$ & \BMNAaf  & \BMNAah  & \BMNAbf  & \BMNAbh  \\
+   \fi
+   \ifrgf
+             &          & \BMNRaf  & \BMNRbf  & $\arrs$ & \ring    & $\arrn$ & \BMNAaf  & \BMNAbf  &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BMNDfs  & $\arrs$ & \mbr{46} & $\arrn$ & \BMNDfn  &          &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Messe Süd (Eichkamp)
+\newcommand{\BMS}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BMS \bus} \\\hline
+   \ifba
+               & \BMSBfo   & $\arre$ & \ebl{3} & $\arrn$ & \BMSBfw   &           \\
+   \fi
+   \ifcaesar
+               & \BMSCfs   & $\arre$ & \rbr{9} & $\arrn$ & \BMSCfn   &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Mexikoplatz
+\newcommand{\BMEX}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BMEX \bus} \\\hline
+   \ifppa
+     \BMEXPfn & \BMEXPpn & $\arrs$ & \mgt{1} & $\arrn$ & \BMEXPfs & \BMEXPps \\
+   \fi
+   \ifp
+              & \BMEXPfn & $\arrs$ & \mgt{1} & $\arrn$ & \BMEXPfs &          \\
+   \fi
+%  \hline
+  \end{tabular}
+}
+% Berlin-Neukölln
+\newcommand{\BNK}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BNK \ubahn \bus} \\\hline
+   \ifrgall
+    \BNKAaf  & \BNKAah  & \BNKAbf  & \BNKAbh  & $\arrw$ & \ring    & $\arrn$  & \BNKRaf  & \BNKRah  & \BNKRbf  & \BNKRbh  \\
+   \fi
+   \ifrgf
+             &          & \BNKAaf  & \BNKAbf  & $\arrw$ & \ring    & $\arrn$  & \BNKRaf  & \BNKRbf  &          &          \\
+   \fi
+%   \ifud
+%             &          & \BNKUfn  & \BNKDfn  & $\arrw$ & \quar    & $\arrs$  & \BNKUfs  & \BNKDfs  &          &          \\
+%   \fi
+   \ifulrich
+             &          &          & \BNKUfn  & $\arrw$ & \mbr{45} & $\arrs$  & \BNKUfs  &          &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BNKDfn  & $\arrw$ & \mbr{46} & $\arrs$  & \BNKDfs  &          &          &          \\
+   \fi
+   \ifkonrad
+             &          & \BNKKlw  & \BNKKpw  & $\arrw$ & \mbr{47} & $\arrs$  & \BNKKpo  &          &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Nikolassee (Stadtbahn)
+\newcommand{\BNIS}{%
+ \begin{tabular}{ccccccc}
+ \ifoa
+  \multicolumn{7}{c}{\bfseries BNIS \bus} \\\hline
+   \ifoo
+    \BNISOfw & \BNISOpw & $\arrs$ & \bli{7} & $\arrn$  & \BNISOfo & \BNISOpo \\
+   \fi
+   \ifo
+             & \BNISOfw & $\arrs$ & \bli{7} & $\arrn$  & \BNISOfo &          \\
+   \fi
+  \ifpa
+   \hline
+  \fi
+% \end{tabular}
+ \fi
+}
+% Berlin-Nikolassee (Wannseebahn)
+\newcommand{\BNIW}{%
+% \begin{tabular}{ccccccc}
+ \ifpa
+  \multicolumn{7}{c}{\bfseries BNIW \bus} \\\hline
+   \ifppa
+     \BNIWPfs & \BNIWPps & $\arrs$ & \mgt{1} & $\arrse$ & \BNIWPfn & \BNIWPpn \\
+   \fi
+   \ifp
+              & \BNIWPfs & $\arrs$ & \mgt{1} & $\arrse$ & \BNIWPfn &          \\
+   \fi
+  \fi
+ \end{tabular}
+}
+% Berlin Nöldnerplatz
+\newcommand{\BNPL}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BNPL \bus} \\\hline
+   \ifeey
+               &           & \BNPLEafw & \BNPLEbfw & $\arrw$ & \por{5}  & $\arrn$ & \BNPLEafo & \BNPLEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BNPLEafw & $\arrw$ & \por{5}  & $\arrn$ & \BNPLEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BNPLOfw  & \BNPLOpw  & $\arrw$ & \bli{7}  & $\arrn$ & \BNPLOfo  & \BNPLOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BNPLOfw  & $\arrw$ & \bli{7}  & $\arrn$ & \BNPLOfo  &           &           &           \\
+   \fi
+   \iftt
+               &           & \BNPLTfw  & \BNPLTpw  & $\arrw$ & \bli{75} & $\arrn$ & \BNPLTfo  & \BNPLTpo  &           &           \\
+   \fi
+   \ift
+               &           &           & \BNPLTfw  & $\arrw$ & \bli{75} & $\arrn$ & \BNPLTfo  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Nordbahnhof
+\newcommand{\BNB}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BNB \mtram \bus} \\\hline
+   \ifppa
+             &          & \BNBPfs  & \BNBPps  & $\arrs$ & \mgt{1}  & $\arrw$    & \BNBPfn  & \BNBPpn  &          &          \\
+   \fi
+   \ifp
+             &          &          & \BNBPfs  & $\arrs$ & \mgt{1}  & $\arrw$    & \BNBPfn  &          &          &          \\
+   \fi
+   \ifww
+             &          & \BNBWfs  & \BNBWps  & $\arrs$ & \dgr{2}  & $\arrw$    & \BNBWfn  & \BNBWpn  &          &          \\
+   \fi
+   \ifw
+             &          &          & \BNBWfs  & $\arrs$ & \dgr{2}  & $\arrw$    & \BNBWfn  &          &          &          \\
+   \fi
+   \ifvv
+             &          & \BNBVfs  & \BNBVps  & $\arrs$ & \dos     & $\arrw$    & \BNBVfn  & \BNBVpn  &          &          \\
+   \fi
+   \ifv
+             &          &          & \BNBVfs  & $\arrs$ & \dgr{25} & $\arrw$    & \BNBVfn  &          &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Oberspree
+\newcommand{\BOSP}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BOSP} \\\hline
+   \ifkonrad
+    \BOSPKiw & \BOSPKlw &                         & \mbr{}                   &                         & \BOSPKpo &          \\
+             & \BOSPKpw & \multirow{-2}*{$\arrw$} & \multirow{-2}*{\mbr{47}} & \multirow{-2}*{$\arre$} & \BOSPKio &          \\
+   \fi
+%   \hline
+ \end{tabular}
+}
+% Berlin Olympiastadion
+\newcommand{\BOLS}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BOLS} \\\hline
+   \ifba
+               & \BOLSBfo  & $\arrs$ & \ebl{3} & $\arrn$ & \BOLSBfw  &           \\
+   \fi
+   \ifcaesar
+               & \BOLSCfs  & $\arrs$ & \rbr{9} & $\arrn$ & \BOLSCfn  &           \\
+   \fi
+%   \hline
+ \end{tabular}
+}
+% Berlin Oranienburger Straße
+\newcommand{\BORS}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BORS \mtram \tram} \\\hline
+   \ifppa
+              &          & \BORSPfs & \BORSPps & $\arrs$ & \mgt{1}  & $\arrn$ & \BORSPfn & \BORSPpn &          &          \\
+   \fi
+   \ifp
+              &          &          & \BORSPfs & $\arrs$ & \mgt{1}  & $\arrn$ & \BORSPfn &          &          &          \\
+   \fi
+   \ifww
+              &          & \BORSWfs & \BORSWps & $\arrs$ & \dgr{2}  & $\arrn$ & \BORSWfn & \BORSWpn &          &          \\
+   \fi
+   \ifw
+              &          &          & \BORSWfs & $\arrs$ & \dgr{2}  & $\arrn$ & \BORSWfn &          &          &          \\
+   \fi
+   \ifvv
+              &          & \BORSVfs & \BORSVps & $\arrs$ & \dos     & $\arrn$ & \BORSVfn & \BORSVpn &          &          \\
+   \fi
+   \ifv
+              &          &          & \BORSVfs & $\arrs$ & \dgr{25} & $\arrn$ & \BORSVfn &          &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Osdorfer Straße
+\newcommand{\BOSS}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BOSS \bus} \\\hline
+   \ifvv
+     \BOSSVfs & \BOSSVps & $\arrw$ & \dos     & $\arrn$ & \BOSSVfn & \BOSSVpn \\
+   \fi
+   \ifv
+              & \BOSSVfs & $\arrw$ & \dgr{25} & $\arrn$ & \BOSSVfn &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Ostbahnhof
+\newcommand{\BOSB}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BOSB \fbahn \rbahn \bus} \\\hline
+   \ifbb
+               &           & \BOSBBfw  & \BOSBBpw  & $\arrw$ & \ebl{3}  & $\arrs$ & \BOSBBfo  & \BOSBBpo  &           &           \\
+   \fi
+   \ifb
+               &           &           & \BOSBBfw  & $\arrw$ & \ebl{3}  & $\arrs$ & \BOSBBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BOSBEafw & \BOSBEbfw & $\arrw$ & \por{5}  & $\arrs$ & \BOSBEafo & \BOSBEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BOSBEafw & $\arrw$ & \por{5}  & $\arrs$ & \BOSBEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BOSBOfw  & \BOSBOpw  & $\arrw$ & \bli{7}  & $\arrs$ & \BOSBOfo  & \BOSBOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BOSBOfw  & $\arrw$ & \bli{7}  & $\arrs$ & \BOSBOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BOSBCfn  & $\arrw$ & \rbr{9}  & $\arrs$ & \BOSBCfs  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Ostkreuz (Ringbahn)
+\newcommand{\BOK}{%
+ \begin{tabular}{ccccccccccc}
+  \iforing
+  \multicolumn{11}{c}{\bfseries BOK Bst. F \rbahn \bus} \\\hline
+   \ifrgall
+    \BOKAaf  & \BOKAah  & \BOKAbf  & \BOKAbh   & $\arrs$ & \ring    & $\arrn$  & \BOKRaf   & \BOKRah  & \BOKRbf  & \BOKRbh  \\
+   \fi
+   \ifrgf
+             &          & \BOKAaf  & \BOKAbf   & $\arrs$ & \ring    & $\arrn$  & \BOKRaf   & \BOKRbf  &          &          \\
+   \fi
+%   \ifnn
+%             &          & \BOKNafs & \BOKNbas  & $\arrs$ & \oct     & $\arrn$  & \BOKNafn  & \BOKNban &          &          \\
+%   \fi
+   \ifnordpol
+             &          &          & \BOKNafs  & $\arrs$ & \hgr{8}  & $\arrn$  & \BOKNafn  &          &          &          \\
+   \fi
+   \ifneisse
+             &          &          & \BOKNbas  & $\arrs$ & \hgr{85} & $\arrn$  & \BOKNban  &          &          &          \\
+   \fi
+  \ifosb
+   \hline
+  \fi
+% \end{tabular}
+  \fi
+}
+% Berlin Ostkreuz (Stadtbahn)
+\newcommand{\BOKS}{%
+ \ifosb
+% \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BOKS Bst. D/E \rbahn \bus} \\\hline
+   \ifbb
+               &           & \BOKSBfw  & \BOKSBpw  & $\arrw$ & \ebl{3}  & $\arrse$ & \BOKSBfo  & \BOKSBpo  &           &           \\
+   \fi
+   \ifb
+               &           &           & \BOKSBfw  & $\arrw$ & \ebl{3}  & $\arrse$ & \BOKSBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BOKSEafw & \BOKSEbfw & $\arrw$ & \por{5}  & $\arre$  & \BOKSEafo & \BOKSEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BOKSEafw & $\arrw$ & \por{5}  & $\arre$  & \BOKSEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BOKSOfw  & \BOKSOpw  & $\arrw$ & \bli{7}  & $\arre$  & \BOKSOfo  & \BOKSOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BOKSOfw  & $\arrw$ & \bli{7}  & $\arre$  & \BOKSOfo  &           &           &           \\
+   \fi
+   \iftt
+               &           & \BOKSTfw  & \BOKSTpw  & $\arrW$ & \bli{75} & $\arre$  & \BOKSTfo  & \BOKSTpo  &           &           \\
+   \fi
+   \ift
+               &           &           & \BOKSTfw  & $\arrW$ & \bli{75} & $\arre$  & \BOKSTfo  &           &           &           \\
+   \fi
+  \fi
+ \end{tabular}
+}%
+% Berlin-Pankow
+\newcommand{\BPKW}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BPKW}\\\multicolumn{7}{c}{\ubahn \mtram \tram \mbus \xbus \bus}\\\hline
+   \ifww
+    \BPKWWfs & \BPKWWps  & $\arrw$   & \dgr{2}  & $\arrn$ & \BPKWWfn  & \BPKWWpn \\ 
+   \fi
+   \ifw
+             & \BPKWWfs  & $\arrw$   & \dgr{2}  & $\arrn$ & \BPKWWfn  &          \\
+   \fi
+   \ifnordpol
+             & \BPKWNafs & $\arrw$   & \hgr{8} & $\arrn$ & \BPKWNafn &           \\
+   \fi
+   \ifneisse
+             & \BPKWNbas & $\arrw$   & \hgr{85} & $\arrN$ & \BPKWNban &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Pankow-Heinersdorf
+\newcommand{\BPHD}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BPHD \tram} \\\hline
+   \ifww
+    \BPHDWfs & \BPHDWps  & $\arrs$ & \dgr{2}  & $\arrn$ & \BPHDWfn  & \BPHDWpn \\
+   \fi
+   \ifw
+             & \BPHDWfs  & $\arrs$ & \dgr{2}  & $\arrn$ & \BPHDWfn  &          \\
+   \fi
+   \ifnordpol
+             & \BPHDNafs & $\arrs$ & \hgr{8}  & $\arrn$ & \BPHDNafn &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Pichelsberg
+\newcommand{\BPIC}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BPIC} \\\hline
+   \ifba
+               & \BPICBfo  & $\arrs$ & \ebl{3} & $\arrn$ & \BPICBfw  &           \\
+   \fi
+   \ifcaesar
+               & \BPICCfs  & $\arrs$ & \rbr{9} & $\arrn$ & \BPICCfn  &           \\
+   \fi
+  \end{tabular}
+}
+% Berlin-Plänterwald
+\newcommand{\BPWA}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BPWA \bus} \\\hline
+%   \ifnn
+%    \BPWANafs & \BPWANbas & $\arrs$ & \oct     & $\arrn$ & \BPWANafn & \BPWANban \\
+%   \fi
+   \ifnordpol
+              & \BPWANafs & $\arrs$ & \hgr{8}  & $\arrn$ & \BPWANafn &           \\
+   \fi
+   \ifneisse
+              & \BPWANbas & $\arrs$ & \hgr{85} & $\arrn$ & \BPWANban &           \\
+   \fi
+   \ifcaesar
+              & \BPWACfs  & $\arrs$ & \rbr{9}  & $\arrn$ & \BPWACfn  &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Poelchaustraße
+\newcommand{\BPOE}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BPOE \bus} \\\hline
+   \ifoo
+    \BPOEOfw & \BPOEOpw & $\arrs$ & \bli{7} & $\arrn$ & \BPOEOfo & \BPOEOpo \\
+   \fi
+   \ifo
+             & \BPOEOfw & $\arrs$ & \bli{7} & $\arrn$ & \BPOEOfo &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Potsdamer Platz
+\newcommand{\BPOP}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BPOP \rbahn \ubahn \mbus \bus}            \\\hline
+   \ifppp
+               & \BPOPPfs & \BPOPPhs & \BPOPPps & $\arrse$ & \mgt{1}  & $\arre$   & \BPOPPfn & \BPOPPhn & \BPOPPpn &          \\
+   \fi
+   \ifpp
+               &          & \BPOPPfs & \BPOPPps & $\arrse$ & \mgt{1}  & $\arre$   & \BPOPPfn & \BPOPPpn &          &          \\
+   \fi
+   \ifp
+               &          &          & \BPOPPfs & $\arrse$ & \mgt{1}  & $\arre$   & \BPOPPfn &          &          &          \\
+   \fi
+   \ifww
+               &          & \BPOPWfs & \BPOPWps & $\arrse$ & \dgr{2}  & $\arre$   & \BPOPWfn & \BPOPWpn &          &          \\
+   \fi
+   \ifw
+               &          &          & \BPOPWfs & $\arrse$ & \dgr{2}  & $\arre$   & \BPOPWfn &          &          &          \\
+   \fi
+   \ifvv
+               &          & \BPOPVfs & \BPOPVps & $\arrse$ & \dos     & $\arre$   & \BPOPVfn & \BPOPVpn &          &          \\
+   \fi
+   \ifv
+               &          &          & \BPOPVfs & $\arrse$ & \dgr{25} & $\arre$   & \BPOPVfn &          &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Prenzlauer Allee
+\newcommand{\BPLA}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BPLA \mtram \bus} \\\hline
+   \ifrgall
+     \BPLARaf  & \BPLARah & \BPLARbf  & \BPLARbh  & $\arrw$ & \ring    & $\arrn$ & \BPLAAaf  & \BPLAAah  & \BPLAAbf & \BPLAAbh \\
+   \fi
+   \ifrgf
+               &          & \BPLARaf  & \BPLARbf  & $\arrw$ & \ring    & $\arrn$ & \BPLAAaf  & \BPLAAbf  &          &          \\
+   \fi
+%   \ifnn
+%               &          & \BPLANafn & \BPLANban & $\arrw$ & \oct     & $\arrn$ & \BPLANafs & \BPLANbas &          &          \\
+%   \fi
+   \ifnordpol
+               &          &           & \BPLANafn & $\arrw$ & \hgr{8}  & $\arrn$ & \BPLANafs &           &          &          \\
+   \fi
+   \ifneisse
+               &          &           & \BPLANban & $\arrw$ & \hgr{85} & $\arrn$ & \BPLANbas &           &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Priesterweg
+\newcommand{\BPRS}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BPRS \mbus \xbus \bus} \\\hline
+   \ifww
+     \BPRSWfs & \BPRSWps & $\arre$  & \dgr{2}  & $\arrn$    & \BPRSWfn & \BPRSWpn \\
+   \fi
+   \ifw
+              & \BPRSWfs & $\arre$  & \dgr{2}  & $\arrn$    & \BPRSWfn &          \\
+   \fi
+   \ifvv
+     \BPRSVfs & \BPRSVps & $\arrw$  & \dos     & $\arrn$    & \BPRSVfn & \BPRSVpn \\
+   \fi
+   \ifv
+              & \BPRSVfs & $\arrw$  & \dgr{25} & $\arrn$    & \BPRSVfn &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Raoul-Wallenberg-Straße
+\newcommand{\BRW}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BRW \xbus \bus} \\\hline
+   \ifoo
+    \BRWOfw  & \BRWOpw  & $\arrs$ & \bli{7} & $\arrw$ & \BRWOfo  & \BRWOpo  \\
+   \fi
+   \ifo
+             & \BRWOfw  & $\arrs$ & \bli{7} & $\arrw$ & \BRWOfo  &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Rahnsdorf
+\newcommand{\BRD}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BRD \tram \bus} \\\hline
+   \ifbb
+    \BRDBfw  & \BRDBxw  & $\arrs$ & \ebl{3} & $\arrn$ & \BRDBfo  & \BRDBxo  \\
+   \fi
+   \ifb
+             & \BRDBfw  & $\arrs$ & \ebl{3} & $\arrn$ & \BRDBfo  &          \\
+   \fi
+  \hline
+% \end{tabular}
+}
+% Berlin Rathaus Steglitz
+\newcommand{\BRST}{%
+ \begin{tabular}{ccccccccc}
+  \multicolumn{9}{c}{\bfseries BRST \ubahn \mbus \xbus \bus} \\\hline
+   \ifppp
+      \BRSTPfs & \BRSTPhs & \BRSTPps & $\arrs$ & \mgt{1} & $\arrne$ & \BRSTPfn & \BRSTPhn & \BRSTPpn \\
+   \fi
+   \ifpp
+               & \BRSTPfs & \BRSTPps & $\arrs$ & \mgt{1} & $\arrne$ & \BRSTPfn & \BRSTPpn &          \\
+   \fi
+   \ifp
+               &          & \BRSTPfs & $\arrs$ & \mgt{1} & $\arrne$ & \BRSTPfn &          &          \\
+   \fi
+  \hline
+% \end{tabular}
+}
+% Berlin-Rummelsburg
+\newcommand{\BRH}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BRH \tram \bus} \\\hline
+   \ifbb
+    \BRHBfo  & \BRHBpo  & $\arrs$ & \ebl{3} & $\arrnw$ & \BRHBfw  & \BRHBpw  \\
+   \fi
+   \ifb
+             & \BRHBfo  & $\arrs$ & \ebl{3} & $\arrnw$ & \BRHBfw  &          \\
+   \fi
+  \hline
+% \end{tabular} 
+}
+% Berlin-Rummelsburg Betriebsbahnhof
+\newcommand{\BRB}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BRB} \\\hline
+   \ifbb
+    \BRBBfo  & \BRBBpo  & $\arrs$ & \ebl{3} & $\arrn$  & \BRBBfw  & \BRBBpw  \\
+   \fi
+   \ifb
+             & \BRBBfo  & $\arrs$ & \ebl{3} & $\arrn$  & \BRBBfw  &          \\
+   \fi
+%  \hline
+ \end{tabular} 
+}
+% Berlin Savignyplatz
+\newcommand{\BSAP}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BSAP} \\\hline
+   \ifba
+               &           &           & \BSAPBfw  & $\arrw$ & \ebl{3}  & $\arrs$ & \BSAPBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BSAPEafw & \BSAPEbfw & $\arrw$ & \por{5}  & $\arrs$ & \BSAPEafo & \BSAPEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BSAPEafw & $\arrw$ & \por{5}  & $\arrs$ & \BSAPEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BSAPOfw  & \BSAPOpw  & $\arrw$ & \bli{7}  & $\arrs$ & \BSAPOfo  & \BSAPOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BSAPOfw  & $\arrw$ & \bli{7}  & $\arrs$ & \BSAPOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BSAPCfn  & $\arrw$ & \rbr{9}  & $\arrs$ & \BSAPCfs  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Schichauweg
+\newcommand{\BSC}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSC \xbus \bus} \\\hline
+   \ifww
+     \BSCWfs  & \BSCWps  & $\arrw$ & \dgr{2} & $\arrn$ & \BSCWfn  & \BSCWps  \\
+   \fi
+   \ifw
+              & \BSCWfs  & $\arrw$ & \dgr{2} & $\arrn$ & \BSCWfn  &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin-Schlachtensee
+\newcommand{\BSLS}{%
+ \begin{tabular}{ccccccc}
+   \ifpa
+  \multicolumn{7}{c}{\bfseries BSLS} \\\hline
+   \ifppa
+     \BSLSPfn & \BSLSPpn & $\arrs$ & \mgt{1} & $\arrnw$ & \BSLSPfs & \BSLSPps \\
+   \fi
+   \ifp
+              & \BSLSPfn & $\arrs$ & \mgt{1} & $\arrnw$ & \BSLSPfs &          \\
+   \fi
+    \hline
+   \fi
+%  \end{tabular}
+}
+% Berlin-Schöneberg (Ringbahn)
+\newcommand{\BSGR}{%
+ \begin{tabular}{ccccccccccc}
+ \ifswring
+  \multicolumn{11}{c}{\bfseries BSGR \mbus \bus} \\\hline
+   \ifrgall
+    \BSGRAaf & \BSGRAah & \BSGRAbf & \BSGRAbh & $\arrw$  & \ring    & $\arre$  & \BSGRRaf & \BSGRRah & \BSGRRbf & \BSGRRbh \\
+   \fi
+   \ifrgf
+             &          & \BSGRAaf & \BSGRAbf & $\arrw$  & \ring    & $\arre$  & \BSGRRaf & \BSGRRbf &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BSGRDfn & $\arrw$  & \mbr{46} & $\arre$  & \BSGRDfs &          &          &          \\
+   \fi
+   \ifpa
+    \hline
+   \fi
+  \fi
+%  \end{tabular}
+}
+% Berlin-Schöneberg (Vorortbahn)
+\newcommand{\BSGV}{%
+% \begin{tabular}{ccccccccccc}
+ \ifpa
+  \multicolumn{11}{c}{\bfseries BSGV \mbus \bus} \\\hline
+   \ifppp
+               & \BSGVPfs & \BSGVPhs & \BSGVPps & $\arrsw$ & \mgt{1}  & $\arrn$  & \BSGVPfn & \BSGVPhn & \BSGVPpn &          \\
+   \fi
+   \ifpp
+               &          & \BSGVPfs & \BSGVPps & $\arrsw$ & \mgt{1}  & $\arrn$  & \BSGVPfn & \BSGVPpn &          &          \\
+   \fi
+   \ifp
+               &          &          & \BSGVPfs & $\arrsw$ & \mgt{1}  & $\arrn$  & \BSGVPfn &          &          &          \\
+   \fi
+  \fi
+  \end{tabular}
+}
+% Berlin Schönefeld Flughafen
+\newcommand{\BFLH}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BFLH \ding{40} \rbahn \bus} \\\hline
+   \ifulrich
+    \BFLHUfs & $\arrw$ & \mbr{45} & $\arre$ & \BFLHUfn \\
+   \fi
+   \ifcaesar
+     \BFLHCfs & $\arrw$ & \rbr{9}  & $\arre$ & \BFLHCfn \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Schöneweide
+\newcommand{\BSW}{%
+ \begin{tabular}{ccccccccc}
+  \multicolumn{9}{c}{\bfseries BSW \rbahn \mtram \tram \mbus \xbus \bus} \\\hline
+%   \ifud
+%    \BSWUfs  & \BSWDfs   & $\arrw$ & \quar    & $\arrn$ & \BSWUfn & \BSWDfn    \\
+%   \fi
+   \ifulrich
+             &           & \BSWUfs   & $\arrw$ & \mbr{45} & $\arrn$ & \BSWUfn &            &            \\
+   \fi
+   \ifdora
+             &           & \BSWDfs   & $\arrw$ & \mbr{46} & $\arrn$ & \BSWDfn &            &            \\
+   \fi
+   \ifkonrad
+             & \BSWKpo   & \BSWKio   & $\arre$ & \mbr{47} & $\arrn$ & \BSWKiw & \BSWKlw    & \BSWKpw    \\
+   \fi
+%   \ifnn
+%    \BSWNafs & \BSWNbas & $\arrw$ & \oct     & $\arrn$ & \BSWNafn & \BSWNban   \\
+%   \fi
+   \ifnordpol
+             &           & \BSWNafs & $\arrw$ & \hgr{8}  & $\arrn$ & \BSWNafn &            &            \\
+   \fi
+   \ifneisse
+             &           & \BSWNbas & $\arrw$ & \hgr{85} & $\arrn$ & \BSWNban &            &            \\
+   \fi
+   \ifcaesar
+             &           & \BSWCfs  & $\arrw$ & \rbr{9}  & $\arrn$ & \BSWCfn  &            &            \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Schöneweide Betriebsbahnhof
+\newcommand{\BSCF}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSCF} \\\hline
+%   \ifud
+%    \BSCFUfs  & \BSCFDfs  & $\arrs$ & \quar    & $\arre$ & \BSCFUfn  & \BSCFDfn   \\ 
+%   \fi
+   \ifulrich
+              & \BSCFUfs  & $\arrs$ & \mbr{45} & $\arre$ & \BSCFUfn  &            \\
+   \fi
+   \ifdora
+              & \BSCFDfs  & $\arrs$ & \mbr{46} & $\arre$ & \BSCFDfn  &            \\
+   \fi
+%   \ifnn
+%    \BSCFNafs & \BSCFNbhs & $\arrs$ & \oct     & $\arre$ & \BSCFNafn & \BSCFNbhn  \\
+%   \fi
+   \ifnordpol
+              & \BSCFNafs & $\arrs$ & \hgr{8}  & $\arre$ & \BSCFNafn &            \\
+   \fi
+   \ifneisse
+              & \BSCFNbhs & $\arrs$ & \hgr{85} & $\arre$ & \BSCFNbhn &            \\
+   \fi
+   \ifcaesar
+              & \BSCFCfs  & $\arrs$ & \rbr{9}  & $\arre$ & \BSCFCfn  &            \\
+   \fi
+ \end{tabular}
+}
+% Berlin Schönhauser Allee
+\newcommand{\BSAL}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BSAL \ubahn \mtram} \\\hline
+   \ifrgall
+     \BSALRaf & \BSALRah & \BSALRbf  & \BSALRbh  & $\arrw$  & \ring    & $\arre$ & \BSALAaf  & \BSALAah  & \BSALAbf & \BSALAbh \\
+   \fi
+   \ifrgf
+              &          & \BSALRaf  & \BSALRbf  & $\arrw$  & \ring    & $\arre$ & \BSALAaf  & \BSALAbf  &          &          \\
+   \fi
+%   \ifnn
+%              &          & \BSALNafn & \BSALNban & $\arrnw$ & \oct     & $\arre$ & \BSALNafs & \BSALNbas &          &          \\
+%   \fi
+   \ifnordpol
+              &          &           & \BSALNafn & $\arrnw$ & \hgr{8}  & $\arre$ & \BSALNafs &           &          &          \\
+   \fi
+   \ifneisse
+              &          &           & \BSALNban & $\arrnw$ & \hgr{85} & $\arre$ & \BSALNbas &           &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Schönholz
+\newcommand{\BSNH}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSNH \bus} \\\hline
+   \ifppa
+     \BSNHPfn & \BSNHPpn  & $\arrnw$ & \mgt{1}  & $\arre$ & \BSNHPfs  & \BSNHPps \\
+   \fi
+   \ifp
+              & \BSNHPfn  & $\arrnw$ & \mgt{1}  & $\arre$ & \BSNHPfs  &          \\
+   \fi
+   \ifviktor
+              & \BSNHVfn  & $\arrw$  & \dgr{25} & $\arre$ & \BSNHVfs  &          \\
+   \fi
+   \ifvampir
+              & \BSNHVpn  & $\arrnw$ & \dgr{26} & $\arre$ & \BSNHVps  &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin-Schulzendorf
+\newcommand{\BSZF}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BSZF \bus} \\\hline
+   \ifva
+    \BSZFVfs  & $\arrs$ & \dgr{25} & $\arre$ & \BSZFVfn \\
+   \fi
+  \end{tabular}
+}
+% Berlin Sonnenallee
+\newcommand{\BSO}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BSO \mbus \bus} \\\hline
+   \ifrgall
+    \BSOAaf & \BSOAah & \BSOAbf & \BSOAbh & $\arrs$ & \ring    & $\arre$ & \BSORaf & \BSORah & \BSORbf & \BSORbh \\
+   \fi
+   \ifrgf
+            &         & \BSOAaf & \BSOAbf & $\arrs$ & \ring    & $\arre$ & \BSORaf & \BSORbf &         &         \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Spandau
+\newcommand{\BSPA}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSPA}\\\multicolumn{7}{c}{\fbahn \rbahn \ubahn \mbus \xbus \bus} \\\hline
+   \ifba
+               & \BSPABfo  & $\arrs$ & \ebl{3} & $\arrN$ & \BSPABfw  &           \\
+   \fi
+   \ifcaesar
+               & \BSPACfs  & $\arrs$ & \rbr{9} & $\arrN$ & \BSPACfn  &           \\
+   \fi
+  \end{tabular}
+}
+% Berlin-Spindlersfeld
+\newcommand{\BSPF}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSPF \tram \bus} \\\hline
+   \ifkonrad
+    \BSPFKiw & \BSPFKpw &                         & \mbr{}                   &                         & \BSPFKpo &          \\
+             & \BSPFKpw & \multirow{-2}*{$\arrw$} & \multirow{-2}*{\mbr{47}} & \multirow{-2}*{$\arrE$} & \BSPFKio &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Springpfuhl
+\newcommand{\BSPH}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSPH \mtram \tram \bus} \\\hline
+   \ifoo
+    \BSPHOfw & \BSPHOpw & $\arrs$ & \bli{7}  & $\arrn$  & \BSPHOfo & \BSPHOpo \\
+   \fi
+   \ifo
+             & \BSPHOfw & $\arrs$ & \bli{7}  & $\arrn$  & \BSPHOfo &          \\
+   \fi
+   \iftt
+    \BSPHTfw & \BSPHTpw & $\arrs$ & \bli{75} & $\arrw$  & \BSPHTfo & \BSPHTpo \\
+   \fi
+   \ift
+             & \BSPHTfw & $\arrs$ & \bli{75} & $\arrn$  & \BSPHTfo &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Storkower Straße
+\newcommand{\BSTO}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BSTO \bus} \\\hline
+   \ifrgall
+     \BSTOAaf  & \BSTOAah & \BSTOAbf  & \BSTOAbh  & $\arrs$ & \ring    & $\arrn$ & \BSTORaf  & \BSTORah  & \BSTORbf & \BSTORbh \\
+   \fi
+   \ifrgf
+               &          & \BSTOAaf  & \BSTOAbf  & $\arrs$ & \ring    & $\arrn$ & \BSTORaf  & \BSTORbf  &          &          \\
+   \fi
+%   \ifnn
+%               &          & \BSTONafs & \BSTONbas & $\arrs$ & \oct     & $\arrn$ & \BSTONafn & \BSTONban &          &          \\
+%   \fi
+   \ifnordpol
+               &          &           & \BSTONafs & $\arrs$ & \hgr{8}  & $\arrn$ & \BSTONafn &           &          &          \\
+   \fi
+   \ifneisse
+               &          &           & \BSTONbas & $\arrs$ & \hgr{85} & $\arrn$ & \BSTONban &           &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Stresow
+\newcommand{\BSRW}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSRW \bus} \\\hline
+   \ifba
+               & \BSRWBfo  & $\arrs$ & \ebl{3} & $\arrn$ & \BSRWBfw  &           \\
+   \fi
+   \ifcaesar
+               & \BSRWCfs  & $\arrs$ & \rbr{9} & $\arrn$ & \BSRWCfn  &           \\
+   \fi
+%  \hline
+  \end{tabular}
+}
+% Berlin Südende
+\newcommand{\BSDE}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSDE \bus} \\\hline
+   \ifvv
+     \BSDEVfs & \BSDEVps & $\arrs$ & \dos     & $\arre$ & \BSDEVfn & \BSDEVpn \\
+   \fi
+   \ifv
+              & \BSDEVfs & $\arrs$ & \dgr{25} & $\arre$ & \BSDEVfn &          \\
+   \fi
+  \hline
+% \end{tabular}
+}
+% Berlin Südkreuz (Ringbahn)
+\newcommand{\BSKR}{%
+ \begin{tabular}{ccccccccccc}
+  \ifswring
+  \multicolumn{11}{c}{\bfseries BSKR \fbahn \rbahn \mbus \bus} \\\hline
+   \ifrgall
+    \BSKRAaf & \BSKRAah & \BSKRAbf & \BSKRAbh & $\arrw$ & \ring    & $\arre$ & \BSKRRaf & \BSKRRah & \BSKRRbf & \BSKRRbh \\
+   \fi
+   \ifrgf
+             &          & \BSKRAaf & \BSKRAbf & $\arrw$ & \ring    & $\arre$ & \BSKRRaf & \BSKRRbf &          &          \\
+   \fi
+   \ifulrich
+             &          &          & \BSKRUfn & $\arrW$ & \mbr{45} & $\arre$ & \BSKRUfs &          &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BSKRDfn & $\arrw$ & \mbr{46} & $\arre$ & \BSKRDfs &          &          &          \\
+   \fi
+   \ifduoany
+    \hline
+   \fi
+   \fi
+%  \end{tabular}
+}
+% Berlin Südkreuz (Vorortbahn)
+\newcommand{\BSKV}{%
+% \begin{tabular}{ccccccccccc}
+ \ifduoany
+  \multicolumn{11}{c}{\bfseries BSKV \fbahn \rbahn \mbus \bus} \\\hline
+   \ifww
+                &          & \BSKVWfs & \BSKVWps & $\arrs$ & \dgr{2}  & $\arrn$ & \BSKVWfn & \BSKVWpn &          &          \\
+   \fi
+   \ifw
+                &          &          & \BSKVWfs & $\arrs$ & \dgr{2}  & $\arrn$ & \BSKVWfn &          &          &          \\
+   \fi
+   \ifvv
+                &          & \BSKVVfs & \BSKVVps & $\arrs$ & \dos     & $\arrn$ & \BSKVVfn & \BSKVVpn &          &          \\
+   \fi
+   \ifv
+                &          &          & \BSKVVfs & $\arrs$ & \sgr{25} & $\arrn$ & \BSKVVfn &          &          &          \\
+   \fi
+  \fi
+  \end{tabular}
+}
+% Berlin Sundgauer Straße
+\newcommand{\BSDG}{%
+ \begin{tabular}{ccccccccc}
+  \multicolumn{9}{c}{\bfseries BSDG \xbus} \\\hline
+   \ifppp
+      \BSDGPfn & \BSDGPhn & \BSDGPpn & $\arrs$ & \mgt{1} & $\arrn$ & \BSDGPfs & \BSDGPhs & \BSDGPps \\
+   \fi
+   \ifpp
+               & \BSDGPfn & \BSDGPpn & $\arrs$ & \mgt{1} & $\arrn$ & \BSDGPfs & \BSDGPps &          \\
+   \fi
+   \ifp
+               &          & \BSDGPfn & $\arrs$ & \mgt{1} & $\arrn$ & \BSDGPfs &          &          \\
+   \fi
+  \hline
+% \end{tabular}
+}
+% Berlin-Tegel
+\newcommand{\BTG}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BTG \ubahn \bus} \\\hline
+   \ifva
+    \BTGVfs  & $\arrs$ & \dgr{25} & $\arrn$ & \BTGVfn \\
+   \fi
+  \end{tabular}
+}
+% Berlin-Tempelhof
+\newcommand{\BTHF}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BTHF \ubahn \bus} \\\hline
+   \ifrgall
+    \BTHFAaf & \BTHFAah & \BTHFAbf & \BTHFAbh & $\arrw$ & \ring    & $\arre$ & \BTHFRaf & \BTHFRah & \BTHFRbf & \BTHFRbh \\
+   \fi
+   \ifrgf
+             &          & \BTHFAaf & \BTHFAbf & $\arrw$ & \ring    & $\arre$ & \BTHFRaf & \BTHFRbf &          &          \\
+   \fi
+%   \ifud
+%             &          & \BTHFUfn & \BTHFDfn & $\arrw$ & \quar    & $\arre$ & \BTHFUfs & \BTHFDfs &          &          \\
+%   \fi
+   \ifulrich
+             &          &          & \BTHFUfn & $\arrw$ & \mbr{45} & $\arre$ & \BTHFUfs &          &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BTHFDfn & $\arrw$ & \mbr{46} & $\arre$ & \BTHFDfs &          &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Tiergarten
+\newcommand{\BTGN}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BTGN} \\\hline
+   \ifba
+               &           &           & \BTGNBfw  & $\arrw$ & \ebl{3}  & $\arrn$ & \BTGNBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BTGNEafw & \BTGNEbfw & $\arrw$ & \por{5}  & $\arrn$ & \BTGNEafo & \BTGNEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BTGNEafw & $\arrw$ & \por{5}  & $\arrn$ & \BTGNEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BTGNOfw  & \BTGNOpw  & $\arrw$ & \bli{7}  & $\arrn$ & \BTGNOfo  & \BTGNOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BTGNOfw  & $\arrw$ & \bli{7}  & $\arrn$ & \BTGNOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BTGNCfn  & $\arrw$ & \rbr{9}  & $\arrn$ & \BTGNCfs  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin Treptower Park
+\newcommand{\BTP}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BTP \bus} \\\hline
+   \ifrgall
+    \BTPAaf  & \BTPAah  & \BTPAbf  & \BTPAbh   & $\arrw$  & \ring    & $\arrn$ & \BTPRaf   & \BTPRah  & \BTPRbf  & \BTPRbh  \\
+   \fi
+   \ifrgf
+             &          & \BTPAaf  & \BTPAbf   & $\arrw$  & \ring    & $\arrn$ & \BTPRaf   & \BTPRbf  &          &          \\
+   \fi
+%   \ifnn
+%             &          & \BTPNafs & \BTPNbas  & $\arrs$  & \oct     & $\arrn$ & \BTPNafn  & \BTPNban &          &          \\
+%   \fi
+   \ifnordpol
+             &          &          & \BTPNafs  & $\arrs$  & \hgr{8}  & $\arrn$ & \BTPNafn  &          &          &          \\
+   \fi
+   \ifneisse
+             &          &          & \BTPNbas  & $\arrs$  & \hgr{85} & $\arrn$ & \BTPNban  &          &          &          \\
+   \fi
+   \ifcaesar
+             &          &          & \BTPCfs   & $\arrs$  & \rbr{9}  & $\arrnw$& \BTPCfn   &          &          &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Waidmannslust
+\newcommand{\BWAI}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BWAI \bus} \\\hline
+   \ifppa
+     \BWAIPfs  & \BWAIPps  & $\arrw$ & \mgt{1}  & $\arrne$ & \BWAIPfn  & \BWAIPpn \\
+   \fi
+   \ifp
+               & \BWAIPfs  & $\arrw$ & \mgt{1}  & $\arrne$ & \BWAIPfn  &          \\
+   \fi
+   \ifvampir
+               & \BWAIVps  & $\arrw$ & \dgr{26} & $\arrNE$ & \BWAIVpn  &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Wannsee
+\newcommand{\BWSS}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BWSS \rbahn \bus \faehre} \\\hline
+   \ifppa
+     \BWSSPfs & \BWSSPps & $\arrS$ & \mgt{1} & $\arrn$ & \BWSSPfn & \BWSSPpn \\
+   \fi
+   \ifp
+              & \BWSSPfs & $\arrS$ & \mgt{1} & $\arrn$ & \BWSSPfn &          \\
+   \fi
+   \ifoo
+     \BWSSOfw & \BWSSOpw & $\arrs$ & \bli{7} & $\arrn$ & \BWSSOfo & \BWSSOpo \\
+   \fi
+   \ifo
+              & \BWSSOfw & $\arrs$ & \bli{7} & $\arrn$ & \BWSSOfo &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Warschauer Straße
+\newcommand{\BWRS}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BWRS \ubahn \mtram \bus} \\\hline
+   \ifbb
+               &           & \BWRSBfw  & \BWRSBpw  & $\arrn$ & \ebl{3}  & $\arre$ & \BWRSBfo  & \BWRSBpo  &           &           \\
+   \fi
+   \ifb
+               &           &           & \BWRSBfw  & $\arrn$ & \ebl{3}  & $\arre$ & \BWRSBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BWRSEafw & \BWRSEbfw & $\arrn$ & \por{5}  & $\arre$ & \BWRSEafo & \BWRSEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BWRSEafw & $\arrn$ & \por{5}  & $\arre$ & \BWRSEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BWRSOfw  & \BWRSOpw  & $\arrn$ & \bli{7}  & $\arre$ & \BWRSOfo  & \BWRSOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BWRSOfw  & $\arrn$ & \bli{7}  & $\arre$ & \BWRSOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BWRSCfn  & $\arrn$ & \rbr{9}  & $\arrse$& \BWRSCfs  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Wartenberg
+\newcommand{\BWAB}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BWAB \bus} \\\hline
+   \iftt
+    \BWABTfw & \BWABTpw & $\arrs$ & \bli{75} & $\arrN$ & \BWABTfo & \BWABTpo \\
+   \fi
+   \ift
+             & \BWABTfw & $\arrs$ & \bli{75} & $\arrN$ & \BWABTfo &          \\
+   \fi
+ \hline
+% \end{tabular}
+}
+% Berlin-Wedding
+\newcommand{\BWED}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BWED \ubahn \mbus \bus} \\\hline
+   \ifrgall
+    \BWEDRaf & \BWEDRah & \BWEDRbf & \BWEDRbh & $\arrw$ & \ring    & $\arre$ & \BWEDAaf & \BWEDAah & \BWEDAbf & \BWEDAbh \\
+   \fi
+   \ifrgf
+             &          & \BWEDRaf & \BWEDRbf & $\arrw$ & \ring    & $\arre$ & \BWEDAaf & \BWEDAbf &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin-Westend
+\newcommand{\BWES}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BWES \mbus} \\\hline
+   \ifrgall
+    \BWESRaf & \BWESRah & \BWESRbf & \BWESRbh & $\arrs$ & \ring    & $\arrn$ & \BWESAaf & \BWESAah & \BWESAbf & \BWESAbh \\
+   \fi
+   \ifrgf
+             &          & \BWESRaf & \BWESRbf & $\arrs$ & \ring    & $\arrn$ & \BWESAaf & \BWESAbf &          &          \\
+   \fi
+   \ifdora
+             &          &          & \BWESDfs & $\arrs$ & \mbr{46} & $\arrN$ & \BWESDfn &          &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Westhafen
+\newcommand{\BWF}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BWF \ubahn} \\\hline
+   \ifrgall
+    \BWFRaf  & \BWFRah  & \BWFRbf  & \BWFRbh  & $\arrw$ & \ring    & $\arre$ & \BWFAaf  & \BWFAah  & \BWFAbf  & \BWFAbh  \\
+   \fi
+   \ifrgf
+             &          & \BWFRaf  & \BWFRbf  & $\arrw$ & \ring    & $\arre$ & \BWFAaf  & \BWFAbf  &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Westkreuz (Ringbahn)
+\newcommand{\BWKRR}{%
+ \begin{tabular}{ccccccccccc}
+  \ifwestring
+  \multicolumn{11}{c}{\bfseries BWKRR \bus} \\\hline
+   \ifrgall
+    \BWKRRRaf & \BWKRRRah & \BWKRRRbf & \BWKRRRbh & $\arrs$  & \ring    & $\arrn$ & \BWKRRAaf & \BWKRRAah & \BWKRRAbf & \BWKRRAbh \\
+   \fi
+   \ifrgf
+              &           & \BWKRRRaf & \BWKRRRbf & $\arrs$  & \ring    & $\arrn$ & \BWKRRAaf & \BWKRRAbf &           &           \\
+   \fi
+   \ifdora
+              &           &           & \BWKRRDfs & $\arrs$  & \mbr{46} & $\arrn$ & \BWKRRDfn &           &           &           \\
+   \fi
+  \ifwsb
+   \hline
+  \fi
+  \fi
+% \end{tabular}
+}
+% Berlin Westkreuz (Stadtbahn)
+\newcommand{\BWKS}{%
+  \ifwsb
+% \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BWKS \bus} \\\hline
+   \ifba
+               &           &           & \BWKSBfw  & $\arrw$  & \ebl{3}  & $\arre$ & \BWKSBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BWKSEafw & \BWKSEbfw & $\arrW$  & \por{5}  & $\arre$ & \BWKSEafo & \BWKSEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BWKSEafw & $\arrW$  & \por{5}  & $\arre$ & \BWKSEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BWKSOfw  & \BWKSOpw  & $\arrsw$ & \bli{7}  & $\arre$ & \BWKSOfo  & \BWKSOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BWKSOfw  & $\arrsw$ & \bli{7}  & $\arre$ & \BWKSOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BWKSCfn  & $\arrw$  & \rbr{9}  & $\arre$ & \BWKSCfs  &           &           &           \\
+   \fi
+  \fi
+ \end{tabular}
+}
+% Berlin-Wilhelmshagen
+\newcommand{\BWIG}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BWIG \bus} \\\hline
+   \ifbb
+    \BWIGBfw & \BWIGBxw & $\arrs$ & \ebl{3} & $\arre$ & \BWIGBfo & \BWIGBxo \\
+   \fi
+   \ifb
+             & \BWIGBfw & $\arrs$ & \ebl{3} & $\arre$ & \BWIGBfo &          \\
+   \fi
+%  \hline
+ \end{tabular}
+}
+% Berlin-Wilhelmsruh
+\newcommand{\BWM}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BWM \bus} \\\hline
+   \ifppa
+     \BWMPfs & \BWMPps  & $\arrse$ & \mgt{1}  & $\arre$ & \BWMPfn  & \BWMPpn \\
+   \fi
+   \ifp
+             & \BWMPfs  & $\arrse$ & \mgt{1}  & $\arre$ & \BWMPfn  &         \\
+   \fi
+   \ifvampir
+             & \BWMVps  & $\arrse$ & \dgr{26} & $\arre$ & \BWMVpn  &         \\
+   \fi
+ \end{tabular}
+}
+% Berlin-Wittenau
+\newcommand{\BWIN}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BWIN \ubahn \mbus \xbus \bus}            \\\hline
+   \ifppa
+     \BWINPfs & \BWINPps  & $\arrw$ & \mgt{1} & $\arre$ & \BWINPfn  & \BWINPpn \\
+   \fi
+   \ifp
+              & \BWINPfs  & $\arrw$ & \mgt{1} & $\arre$ & \BWINPfn  &          \\
+   \fi
+   \ifvampir
+              & \BWINVps  & $\arrw$ & \dgr{26}& $\arre$ & \BWINVpn  &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Wollankstraße
+\newcommand{\BWOK}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BWOK \mbus \bus} \\\hline
+   \ifppa
+     \BWOKPfn & \BWOKPpn  & $\arrw$ & \mgt{1}  & $\arre$ & \BWOKPfs  & \BWOKPps \\
+   \fi
+   \ifp
+              & \BWOKPfn  & $\arrw$ & \mgt{1}  & $\arre$ & \BWOKPfs  &          \\
+   \fi
+   \ifvv
+    \BWOKVfn  & \BWOKVpn  & $\arrw$ & \dos     & $\arre$ & \BWOKVfs  & \BWOKVps \\
+   \fi
+   \ifv 
+              & \BWOKVfn  & $\arrw$ & \dgr{25} & $\arre$ & \BWOKVfs  &          \\
+   \fi
+ \end{tabular}
+}
+% Berlin Wuhletal
+\newcommand{\BWT}{%
+% \begin{tabular}{ccccccccc}
+  \multicolumn{11}{c}{\bfseries BWT \ubahn \bus} \\\hline
+   \ifeees
+      \BWTEafo  & \BWTSho   & \BWTEbfo  & \BWTEho   & $\arre$ & \por{5} & $\arrn$ & \BWTEafw  & \BWTShw   & \BWTEbfw  & \BWTEhw   \\
+   \fi
+   \ifeee
+                & \BWTEafo  & \BWTEbfo  & \BWTEho   & $\arre$ & \por{5} & $\arrn$ & \BWTEafw  & \BWTEbfw  & \BWTEhw   &           \\
+   \fi
+   \ifeex
+                &           & \BWTEafo  & \BWTEbfo  & $\arre$ & \por{5} & $\arrn$ & \BWTEafw  & \BWTEbfw  &           &           \\
+   \fi
+   \ifex
+                &           &           & \BWTEafo  & $\arre$ & \por{5} & $\arrn$ & \BWTEafw  &           &           &           \\
+   \fi
+%  \hline
+ \end{tabular}
+}
+% Berlin Wuhlheide
+\newcommand{\BWHH}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BWHH \bus} \\\hline
+   \ifbb
+    \BWHHBfo & \BWHHBpo & $\arrs$ & \ebl{3} & $\arrn$ & \BWHHBfw & \BWHHBpw \\
+   \fi
+   \ifb
+             & \BWHHBfo & $\arrs$ & \ebl{3} & $\arrn$ & \BWHHBfw &          \\
+   \fi
+%  \hline
+ \end{tabular}
+}
+% Berlin Yorckstraße
+\newcommand{\BYOR}{%
+% \begin{tabular}{ccccccccccc}
+ \ifduoany
+  \multicolumn{11}{c}{\bfseries BYOR \ubahn \mbus} \\\hline
+   \ifww
+             &          & \BYORWfs & \BYORWps & $\arrs$  & \dgr{2}  & $\arre$ & \BYORWfn & \BYORWpn &          &          \\
+   \fi
+   \ifw
+             &          &          & \BYORWfs & $\arrs$  & \dgr{2}  & $\arre$ & \BYORWfn &          &          &          \\
+   \fi
+   \ifvv
+             &          & \BYORVfs & \BYORVps & $\arrs$  & \dos     & $\arre$ & \BYORVfn & \BYORVpn &          &          \\
+   \fi
+   \ifv
+             &          &          & \BYORVfs & $\arrs$  & \dgr{25} & $\arre$ & \BYORVfn &          &          &          \\
+   \fi
+  \fi
+  \end{tabular}
+}
+% Berlin-Zehlendorf
+\newcommand{\BZD}{%
+ \begin{tabular}{ccccccccc}
+  \multicolumn{9}{c}{\bfseries BZD \xbus \bus} \\\hline
+   \ifppp
+      \BZDPfn  & \BZDPhn  & \BZDPpn  & $\arrs$ & \mgt{1} & $\arrn$ & \BZDPfs  & \BZDPhs  & \BZDPps  \\
+   \fi
+   \ifpp
+               & \BZDPfn  & \BZDPpn  & $\arrs$ & \mgt{1} & $\arrn$ & \BZDPfs  & \BZDPps  &          \\
+   \fi
+   \ifp
+               &          & \BZDPfn  & $\arrs$ & \mgt{1} & $\arrn$ & \BZDPfs  &          &          \\
+   \fi
+  \end{tabular}
+}
+% Berlin Zoologischer Garten
+\newcommand{\BZOS}{%
+ \begin{tabular}{ccccccccccc}
+  \multicolumn{11}{c}{\bfseries BZOS \rbahn \ubahn \mbus \xbus \bus} \\\hline
+   \ifba
+               &           &           & \BZOSBfw  & $\arrn$ & \ebl{3}  & $\arre$ & \BZOSBfo  &           &           &           \\
+   \fi
+   \ifeey
+               &           & \BZOSEafw & \BZOSEbfw & $\arrn$ & \por{5}  & $\arre$ & \BZOSEafo & \BZOSEbfo &           &           \\
+   \fi
+   \ifey
+               &           &           & \BZOSEafw & $\arrn$ & \por{5}  & $\arre$ & \BZOSEafo &           &           &           \\
+   \fi
+   \ifoo
+               &           & \BZOSOfw  & \BZOSOpw  & $\arrn$ & \bli{7}  & $\arre$ & \BZOSOfo  & \BZOSOpo  &           &           \\
+   \fi
+   \ifo
+               &           &           & \BZOSOfw  & $\arrn$ & \bli{7}  & $\arre$ & \BZOSOfo  &           &           &           \\
+   \fi
+   \ifcaesar
+               &           &           & \BZOSCfn  & $\arrn$ & \rbr{9}  & $\arre$ & \BZOSCfs  &           &           &           \\
+   \fi
+ \end{tabular}
+}
+% Bernau (bei Berlin)
+\newcommand{\BBER}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BBER \rbahn \bus} \\\hline
+   \ifwa
+    \BBERWfs & $\arrw$ & \dgr{2} & $\arrE$ & \BBERWfn \\
+   \fi
+ \end{tabular}
+}
+% Bernau-Friedensthal
+\newcommand{\BBRF}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BBRF} \\\hline
+   \ifwa
+    \BBRFWfs & $\arrw$ & \dgr{2} & $\arre$ & \BBRFWfn \\
+   \fi
+ \end{tabular}
+}
+% Birkenstein
+\newcommand{\BBIS}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{9}{c}{\bfseries BBIS \bus} \\\hline
+  \ifeeza
+     \BBISEcfw & \BBISEafw & \BBISEbpw & $\arrs$ & \por{5} & $\arrn$ & \BBISEafo & \BBISEcfo & \BBISEbpo \\
+  \fi
+  \ifeeaoz
+               & \BBISEafw & \BBISEbpw & $\arrs$ & \por{5} & $\arrn$ & \BBISEafo & \BBISEbpo &           \\
+  \fi
+  \ifezaoe
+               & \BBISEcfw & \BBISEafw & $\arrs$ & \por{5} & $\arrn$ & \BBISEafo & \BBISEcfo &           \\
+  \fi
+  \ifeaoez
+               &           & \BBISEafw & $\arrs$ & \por{5} & $\arrn$ & \BBISEafo &           &           \\
+  \fi
+ \end{tabular}
+}
+% Birkenwerder
+\newcommand{\BBIW}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BBIW \rbahn} \\\hline
+   \ifpa
+    \BBIWPfn  & $\arrw$ & \mgt{1} & $\arre$   & \BBIWPfs  \\
+   \fi
+   \ifnordpol
+    \BBIWNaun & $\arrW$ & \hgr{8} & $\arre$   & \BBIWNaus \\
+   \fi
+  \end{tabular}
+}
+% Blankenfelde
+\newcommand{\BBFD}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BBFD \rbahn \bus} \\\hline
+   \ifwa
+    \BBFDWfs & \BBFDWps & $\arrS$ & \dgr{2} & $\arrn$ & \BBFDWfn & \BBFDWpn \\
+   \fi
+ \end{tabular}
+}
+% Borgsdorf
+\newcommand{\BBOR}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BBOR \bus} \\\hline
+   \ifpa
+    \BBORPfn & $\arrw$ & \mgt{1} & $\arre$ & \BBORPfs \\
+   \fi
+  \end{tabular}
+}
+% Eichwalde
+\newcommand{\BEIW}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BEIW \bus} \\\hline
+   \ifdora
+    \BEIWDfn  & $\arrw$ & \mbr{46} & $\arre$ & \BEIWDfs  \\
+   \fi
+   \ifnordpol
+    \BEIWNahn & $\arrw$ & \hgr{8}  & $\arre$ & \BEIWNahs \\
+   \fi
+ \end{tabular}
+}
+% Erkner
+\newcommand{\BE}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BE \rbahn \bus} \\\hline
+   \ifbb
+    \BEBfw   & \BEBxw   & $\arrw$ & \ebl{3} & $\arrE$ & \BEBfo   & \BEBxo   \\
+   \fi
+   \ifb
+             & \BEBfw   & $\arrw$ & \ebl{3} & $\arrE$ & \BEBfo   &          \\
+   \fi
+ \end{tabular}
+}
+% Fredersdorf
+\newcommand{\BFD}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BFD \bus} \\\hline
+   \ifeza
+     \BFDEcfw & \BFDEafw & $\arrs$ & \por{5} & $\arrn$ & \BFDEafo & \BFDEcfo \\
+   \fi
+   \ifeaoz
+              & \BFDEafw & $\arrs$ & \por{5} & $\arrn$ & \BFDEafo &          \\
+   \fi
+%  \hline
+ \end{tabular}
+}
+% Hennigsdorf
+\newcommand{\BHD}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BHD \rbahn \bus}            \\\hline
+   \ifva
+    \BHDVfs  & $\arrw$ & \dgr{25} & $\arrE$ & \BHDVfn  \\
+   \fi
+  \end{tabular}
+}
+% Hohen Neuendorf
+\newcommand{\BHN}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BHN \bus} \\\hline
+   \ifpa
+    \BHNPfn  & $\arrw$ & \mgt{1} & $\arrs$ & \BHNPfs  \\
+   \fi
+   \ifnordpol
+    \BHNNaun & $\arrw$ & \hgr{8} & $\arre$ & \BHNNaus \\
+   \fi
+  \end{tabular}
+}
+% Hoppegarten
+\newcommand{\BHPG}{%
+ \begin{tabular}{ccccccccc}
+  \multicolumn{9}{c}{\bfseries BHPG \bus} \\\hline
+   \ifeeza
+      \BHPGEcfw & \BHPGEafw & \BHPGEbpw & $\arrs$ & \por{5} & $\arrn$ & \BHPGEafo & \BHPGEcfo & \BHPGEbpo \\
+   \fi
+   \ifeeaoz
+                & \BHPGEafw & \BHPGEbpw & $\arrs$ & \por{5} & $\arrn$ & \BHPGEafo & \BHPGEbpo &           \\
+   \fi
+   \ifezaoe
+                & \BHPGEcfw & \BHPGEafw & $\arrs$ & \por{5} & $\arrn$ & \BHPGEafo & \BHPGEcfo &           \\
+   \fi
+   \ifeaoez
+                &           & \BHPGEafw & $\arrs$ & \por{5} & $\arrn$ & \BHPGEafo &           &           \\
+   \fi
+  \hline
+% \end{tabular}
+}
+% Königs Wusterhausen (S)
+\newcommand{\BKWs}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BKW \rbahn \bus} \\\hline
+   \ifdora
+    \BKWDfn  & $\arrs$ & \mbr{46} & $\arrN$ & \BKWDfs  \\
+   \fi
+ \end{tabular}
+}
+% Lehnitz
+\newcommand{\BLEN}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BLEN} \\\hline
+   \ifpa
+    \BLENPfn & $\arrw$ & \mgt{1} & $\arre$ & \BLENPfs \\
+   \fi
+  \end{tabular}
+}
+% Mahlow
+\newcommand{\BMAH}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BMAH \bus} \\\hline
+   \ifwa
+    \BMAHWfs & \BMAHWps & $\arrs$ & \dgr{2} & $\arrn$ & \BMAHWfn & \BMAHWpn \\
+   \fi
+  \hline
+% \end{tabular}
+}
+% Mühlenbeck-Mönchmühle
+\newcommand{\BMM}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BMM \bus} \\\hline
+   \ifnordpol
+    \BMMNaus & $\arrs$ & \hgr{8} & $\arrw$ & \BMMNaun \\
+   \fi
+ \end{tabular}
+}
+% Neuenhagen (b Berlin)
+\newcommand{\BNG}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BNG \bus} \\\hline
+   \ifeza
+     \BNGEcfw & \BNGEafw & $\arrs$ & \por{5} & $\arrn$ & \BNGEafo & \BNGEcfo \\
+   \fi
+   \ifeaoz
+              & \BNGEafw & $\arrs$ & \por{5} & $\arrn$ & \BNGEafo &          \\
+   \fi
+%  \hline
+ \end{tabular}
+}
+% Oranienburg
+\newcommand{\BORB}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BORB \rbahn \bus} \\\hline
+   \ifpa
+    \BORBPfn & $\arrW$ & \mgt{1} & $\arre$  & \BORBPfs \\
+   \fi
+  \end{tabular}
+}
+% Petershagen Nord
+\newcommand{\BPEN}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BPEN \bus} \\\hline
+   \ifeza
+     \BPENEcfw & \BPENEafw & $\arrs$ & \por{5} & $\arrn$ & \BPENEafo & \BPENEcfo \\
+   \fi
+   \ifeaoz
+               & \BPENEafw & $\arrs$ & \por{5} & $\arrn$ & \BPENEafo &           \\
+   \fi
+%  \hline
+ \end{tabular}
+}
+% Potsdam-Babelsberg
+\newcommand{\BBAB}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BBAB \tram \bus} \\\hline
+   \ifoo
+    \BBABOfw & \BBABOpw & $\arrs$ & \bli{7} & $\arrn$ & \BBABOfo & \BBABOpo \\
+   \fi
+   \ifo
+             & \BBABOfw & $\arrs$ & \bli{7} & $\arrn$ & \BBABOfo &          \\
+   \fi
+  \end{tabular}
+}
+% Potsdam Griebnitzsee
+\newcommand{\BGRI}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BGRI \rbahn \bus} \\\hline
+   \ifoo
+    \BGRIOfw & \BGRIOpw & $\arrs$ & \bli{7} & $\arrn$ & \BGRIOfo & \BGRIOpo \\
+   \fi
+   \ifo
+             & \BGRIOfw & $\arrs$ & \bli{7} & $\arrn$ & \BGRIOfo &          \\
+   \fi
+  \hline
+%  \end{tabular}
+}
+% Potsdam Hauptbahnhof
+\newcommand{\BPDH}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BPDH \rbahn \tram \xbus \bus} \\\hline
+   \ifoo
+    \BPDHOfw & \BPDHOpw & $\arrS$ & \bli{7} & $\arrn$ & \BPDHOfo & \BPDHOpo \\
+   \fi
+   \ifo
+             & \BPDHOfw & $\arrS$ & \bli{7} & $\arrn$ & \BPDHOfo &          \\
+   \fi
+  \end{tabular}
+}
+% Röntgental
+\newcommand{\BRGT}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BRGT} \\\hline
+   \ifwa
+    \BRGTWfs & $\arrw$ & \dgr{2} & $\arre$ & \BRGTWfn \\
+   \fi
+ \end{tabular}
+}
+% Schönfließ
+\newcommand{\BSNF}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BSNF} \\\hline
+   \ifnordpol
+    \BSNFNaun & $\arrw$ & \hgr{8} & $\arre$ & \BSNFNaus \\
+   \fi
+ \end{tabular}
+}
+% Strausberg
+\newcommand{\BSTV}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSTV \rbahn \tram \bus} \\\hline
+   \ifeza
+     \BSTVEcfw & \BSTVEafw & $\arrs$ & \por{5} & $\arrw$ & \BSTVEafo & \BSTVEcfo \\
+   \fi
+   \ifeaoz
+               & \BSTVEafw & $\arrs$ & \por{5} & $\arrw$ & \BSTVEafo &           \\
+   \fi
+%  \hline
+ \end{tabular}
+}
+% Strausberg Hegermühle
+\newcommand{\BHGM}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BHGM} \\\hline
+   \ifeza
+     \BHGMEafo & \BHGMEcfo & $\arrw$ & \por{5} & $\arre$ & \BHGMEcfw & \BHGMEafw \\
+   \fi
+   \ifeaoz
+               & \BHGMEafo & $\arrw$ & \por{5} & $\arre$ & \BHGMEafw &           \\
+   \fi
+ \end{tabular}
+}
+% Strausberg Nord
+\newcommand{\BSTN}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSTN \bus} \\\hline
+  \ifeza
+    \BSTNEafo & \BSTNEcfo & $\arrW$ & \por{5} & $\arre$ & \BSTNEcfw & \BSTNEafw \\
+  \fi
+  \ifeaoz
+              & \BSTNEafo & $\arrW$ & \por{5} & $\arre$ & \BSTNEafw &           \\
+  \fi
+ \end{tabular}
+}
+% Strausberg Stadt
+\newcommand{\BSTR}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BSTR \bus} \\\hline
+  \ifeza
+    \BSTREafo & \BSTREcfo & $\arrw$ & \por{5} & $\arre$ & \BSTREcfw & \BSTREafw \\
+  \fi
+  \ifeaoz
+              & \BSTREafo & $\arrw$ & \por{5} & $\arre$ & \BSTREafw &           \\
+  \fi
+%\hline
+ \end{tabular}
+}
+% Teltow Stadt
+\newcommand{\BTLS}{%
+% \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BTLS \xbus \bus} \\\hline
+   \ifvv
+     \BTLSVfs & \BTLSVps & $\arrS$ & \dos     & $\arrn$ & \BTLSVfn & \BTLSVpn \\
+   \fi
+   \ifv
+              & \BTLSVfs & $\arrS$ & \dgr{25} & $\arrn$ & \BTLSVfn &          \\
+   \fi
+ \end{tabular}
+}
+% Wildau
+\newcommand{\BWI}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BWI \bus} \\\hline
+   \ifdora
+    \BWIDfn  & $\arrw$ & \mbr{46} & $\arrn$ & \BWIDfs  \\
+   \fi
+ \end{tabular}
+}
+% Zepernick
+\newcommand{\BZEP}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BZEP \bus} \\\hline
+   \ifwa
+    \BZEPWfs & $\arrw$ & \dgr{2} & $\arre$ & \BZEPWfn \\
+   \fi
+ \end{tabular}
+}
+% Zeuthen
+\newcommand{\BZTH}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BZTH \bus} \\\hline
+   \ifdora
+    \BZTHDfn  & $\arrw$ & \mbr{46} & $\arre$ & \BZTHDfs  \\
+   \fi
+   \ifnordpol
+    \BZTHNahn & $\arrw$ & \hgr{8}  & $\arrE$ & \BZTHNahs \\
+   \fi
+ \end{tabular}
+}
