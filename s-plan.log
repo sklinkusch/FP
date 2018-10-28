@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=latex 2018.5.11)  28 OCT 2018 16:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/TeX Live for SUSE Linux) (preloaded format=latex 2018.5.11)  28 OCT 2018 17:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9725,10 +9725,10 @@ File: nbus.eps Graphic file (type eps)
 Here is how much of TeX's memory you used:
  19430 strings out of 494042
  266893 string characters out of 6158542
- 978241 words of memory out of 5000000
+ 980188 words of memory out of 5000000
  22316 multiletter control sequences out of 15000+600000
  8512 words of font info for 32 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
  40i,27n,46p,806b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on s-plan.dvi (28 pages, 3346856 bytes).
+Output written on s-plan.dvi (28 pages, 3349624 bytes).
