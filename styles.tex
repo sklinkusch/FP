@@ -1,0 +1,51 @@
+\newcommand{\fat}[1]{\textbf{#1}}                                                         % täglich, vollständige Betriebszeit
+\newcommand{\faa}[1]{\textcolor{gelbgruen}{\bfseries #1}}                                       % täglich (U1)
+\newcommand{\fab}[1]{\textcolor{blutorange}{\bfseries #1}}                                      % täglich (U2)
+\newcommand{\fac}[1]{\textcolor{tuerkisgruen}{\bfseries #1}}                                    % täglich (U3)
+\newcommand{\fad}[1]{\fat{#1}}
+\newcommand{\fae}[1]{\textcolor{rehbraun}{\bfseries #1}}                                        % täglich (U5)
+\newcommand{\faf}[1]{\textcolor{blaulila}{\bfseries #1}}                                        % täglich (U6)
+\newcommand{\fag}[1]{\textcolor{verkehrsblau}{\bfseries #1}}                                    % täglich (U7)
+\newcommand{\fah}[1]{\textcolor{enzianblau}{\bfseries #1}}                                      % täglich (U8)
+\newcommand{\fai}[1]{\textcolor{pastellorange}{\bfseries #1}}                                   % täglich (U9)
+\newcommand{\fau}[1]{\underline{\textbf{#1}}}                                             % täglich außer Mo-Fr vormittags
+\newcommand{\pln}[1]{#1}                                                             % nur tagsüber
+\newcommand{\pla}[1]{\textcolor{gelbgruen}{\normalfont #1}}
+\newcommand{\plb}[1]{\textcolor{blutorange}{\normalfont #1}}
+\newcommand{\plc}[1]{\textcolor{tuerkisgruen}{\normalfont #1}}
+\newcommand{\pld}[1]{\normalfont #1}
+\newcommand{\ple}[1]{\textcolor{rehbraun}{\normalfont #1}}
+\newcommand{\plf}[1]{\textcolor{blaulila}{\normalfont #1}}
+\newcommand{\plg}[1]{\textcolor{verkehrsblau}{\normalfont #1}}
+\newcommand{\plh}[1]{\textcolor{enzianblau}{\normalfont #1}}
+\newcommand{\pli}[1]{\textcolor{pastellorange}{\normalfont #1}}
+\newcommand{\aud}[1]{\colorbox{black}{\textcolor{white}{\textbf{#1}}}}                    % nur Mo-Fr tagsüber
+\newcommand{\aug}[1]{\colorbox{black}{\textcolor{white}{\textbf{\textsl{#1}}}}}      % nur Sa-So tagsüber
+\newcommand{\aub}[1]{\aud{#1}}                                                       % nur Mo-Fr tagsüber
+\newcommand{\auc}[1]{\cellcolor{black}{\textcolor{white}{\textbf{#1}}}}                   % nur außerhalb der NVZ
+\newcommand{\aul}[1]{\{\!#1\!\}}                                                          % Mo-Sa tagsüber
+\newcommand{\auk}[1]{[#1]}                                                            % Mo-Fr tagsüber
+\colorlet{dgrau}{Gray!80}
+\newcommand{\hvz}[1]{\textcolor{dgrau}{\bfseries #1}}
+%\newcommand{\hvz}[1]{\textcolor{Gray}{#1}}                                           % nur zur Hauptverkehrszeit
+\newcommand{\bfg}[1]{\cellcolor{Gray}\textcolor{white}{\textbf{#1}}}
+\newcommand{\hvu}[1]{\underline{\textcolor{Gray}{#1}}}                               % nur HVZ + Mo-Fr vormittags
+\newcommand{\nvz}[1]{\colorbox{dunkelgrau}{\textcolor{white}{\textbf{#1}}}}               % nur Mo-Fr vormittags
+\newcommand{\itx}[1]{\colorbox{black}{\textcolor{white}{\textsl{\bfseries #1}}}}                                           % nur in der NVZ
+\newcommand{\itb}[1]{\colorbox{blutorange}{\textcolor{white}{\bfseries #1}}}
+\newcommand{\itd}[1]{\colorbox{verkehrsgelb}{\textcolor{black}{\bfseries #1}}}
+\newcommand{\itf}[1]{\colorbox{blaulila}{\textcolor{white}{\bfseries #1}}}
+\newcommand{\itg}[1]{\colorbox{verkehrsblau}{\textcolor{white}{\bfseries #1}}}
+\newcommand{\iti}[1]{\colorbox{pastellorange}{\textcolor{white}{\bfseries #1}}}
+\newcommand{\nva}[1]{\colorbox{mittelgrau}{\textmd{#1}}}
+\newcommand{\itu}[1]{\underline{\slshape #1}}
+\newcommand{\uwv}[1]{\uwave{\textbf{#1}}}                                                 % im Abendverkehr alle 60 min
+\newcommand{\oeh}[2]{$\frac{\text{#1}}{\text{#2}}$}                                                % unterschiedliche Zeiten in geraden und ungeraden Stunden (alle 40 Minuten)
+\newcommand{\vnm}[2]{\tiny{\mbox{$^{#1}$/$_{#2}$}}}                                  % unterschiedliche Zeiten vormittags und nachmittags
+\newcommand{\hvztgl}[2]{%
+\ifsommertri
+  \textcolor{#1}{\bfseries #2!}%
+\else
+  \colorbox{lgrau}{\textcolor{#1}{#2}}%
+\fi
+}%
