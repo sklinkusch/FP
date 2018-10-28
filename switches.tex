@@ -1,0 +1,851 @@
+%% Teile des Plans
+% S-Plan
+\newif\ifsplan
+\splantrue
+% Fahrplantabellen
+\newif\iftabellen
+\tabellentrue
+% Nachtverkehr
+\newif\ifnacht
+\nachttrue
+% U-Plan
+\newif\ifuplan
+\uplantrue
+% R-Plan
+\newif\ifrplan
+\rplantrue
+% S-Plan Fahrplantabelle
+\newif\ifstabelle
+\ifsplan
+ \iftabellen
+  \stabelletrue
+ \else
+  \stabellefalse
+ \fi
+\else
+ \stabellefalse
+\fi
+% S-Plan nachts Fahrplantabelle
+\newif\ifsnacht
+\newif\ifsntabelle
+\ifsplan
+ \ifnacht
+  \snachttrue
+  \iftabellen
+   \sntabelletrue
+  \else
+   \sntabellefalse
+  \fi
+ \else
+  \snachtfalse
+  \sntabellefalse
+ \fi
+\else
+ \snachtfalse
+ \sntabellefalse
+\fi
+% U-Plan nachts
+\newif\ifunacht
+\ifuplan
+ \ifnacht
+  \unachttrue
+ \else
+  \unachtfalse
+ \fi
+\else
+ \unachtfalse
+\fi
+% Gleise
+\newif\ifgleise
+\gleisetrue
+% Umsteigebeziehungen
+\newif\ifumsteige
+\umsteigetrue
+\newif\ifumfahrung
+\umfahrungtrue
+\newif\ifbusumsteige
+\busumsteigetrue
+% Wechsel zwischen Sommer- und Winterfahrplan auf der S3
+\newif\ifsommertri
+\sommertrifalse
+% Prüfen ob einzelne Zuggruppen fahren
+% S1 P (Paula)
+\newif\ifpaula
+\paulatrue
+% S1 PI (Panther)
+\newif\ifpanther
+\panthertrue
+% S1 PII (Pastor)
+\newif\ifpastor
+\pastorfalse
+% S1 P/PI/PII-Zuggruppen
+\newif\ifppp % P/PI/PII
+\newif\ifpp  % P/PI
+\newif\ifp   % P
+\newif\ifppa % P/PI oder P/PI/PII
+\newif\ifpa  % P oder P/PI oder P/PI/PII
+\ifpaula
+ \patrue
+ \ifpanther
+  \ppatrue
+  \ifpastor
+   \ppptrue
+  \else
+   \pptrue
+  \fi
+ \else
+  \ptrue
+ \fi
+\fi
+% S2 W (Wulf)
+\newif\ifwulf
+\wulftrue
+% S2 WI (Wespe)
+\newif\ifwespe
+\wespetrue
+% S2 W/WI-Zuggruppen
+\newif\ifww % W/WI
+\newif\ifw  % W
+\newif\ifwa % W oder W/WI
+\ifwulf
+ \watrue
+ \ifwespe
+  \wwtrue
+ \else
+  \wtrue
+ \fi
+\fi
+% S25 V (Viktor)
+\newif\ifviktor
+\viktortrue
+% S26 VI (Vampir)
+\newif\ifvampir
+\vampirtrue
+% S25/26 V/VI-Zuggruppen
+\newif\ifvv % V/VI
+\newif\ifv  % V
+\newif\ifva % V oder V/VI
+\ifviktor
+ \vatrue
+ \ifvampir
+  \vvtrue
+ \else
+  \vtrue
+ \fi
+\fi
+% S2/S25 W/WI/V/VI-Zuggruppen
+\newif\ifduoall  % W/V/WI/VI
+\newif\ifduowwv  % W/V/WI
+\newif\ifduowvv  % W/V/VI
+\newif\ifduowv   % W/V
+\newif\ifduoww   % W/WI
+\newif\ifduovv   % V/VI
+\newif\ifduow    % W
+\newif\ifduov    % V
+\newif\ifduoany  % V(/VI) und/oder W(/WI)
+\ifwulf
+ \ifviktor
+  \ifwespe
+   \ifvampir
+    \duoalltrue
+   \else
+    \duowwvtrue
+   \fi
+  \else
+   \ifvampir
+    \duowvvtrue
+   \else
+    \duowvtrue
+   \fi
+  \fi
+ \else
+  \ifwespe
+   \duowwtrue
+  \else
+   \duowtrue
+  \fi
+ \fi
+\else
+ \ifviktor
+  \ifvampir
+   \duovvtrue
+  \else
+    \duovtrue
+  \fi
+ \fi
+\fi
+\ifva
+ \duoanytrue
+\fi
+\ifwa
+ \duoanytrue
+\fi
+% S1/S2/S25/S26
+\newif\ifsntunnel
+\ifpa
+ \sntunneltrue
+\fi
+\ifduoany
+ \sntunneltrue
+\fi
+% S3 B (Berta)
+\newif\ifberta
+\bertatrue
+% S3 BI (Bussard)
+\newif\ifbussard
+\bussardtrue
+% S3 BII (Benno)
+\newif\ifbenno
+\bennofalse
+% S3 B/BI/BII-Zuggruppen
+\newif\ifbbb
+\newif\ifbba
+\newif\ifbb
+\newif\ifba
+\newif\ifb
+\ifberta
+ \batrue
+ \ifbussard
+  \bbatrue
+  \ifbenno
+   \bbbtrue
+  \else
+   \bbtrue
+  \fi
+ \else
+  \btrue
+ \fi
+\fi
+% S41 A (Anton)
+\newif\ifanton
+\antontrue
+% S41 AI (Adler)
+\newif\ifadler
+\adlertrue
+% S42 R (Richard)
+\newif\ifrichard
+\richardtrue
+% S42 RI (Reiher)
+\newif\ifreiher
+\reihertrue
+% S41/S42 A/R-Zuggruppen
+\newif\ifrgm
+\ifanton
+ \ifrichard
+  \rgmtrue
+ \fi
+\fi
+% S41/S42 AI/RI-Zuggruppen
+\newif\ifrgv
+\ifadler
+ \ifreiher
+  \rgvtrue
+ \fi
+\fi
+% S41/S42 A/AI/R/RI-Zuggruppen
+\newif\ifrgall
+\newif\ifrgf
+\newif\ifrgany
+\ifrgm
+ \rganytrue
+ \ifrgv
+  \rgalltrue
+ \else
+  \rgftrue
+ \fi
+\fi
+% S45 UI (Ulrich)
+\newif\ifulrich
+\ulrichtrue
+% S46 D (Dora)
+\newif\ifdora
+\doratrue
+% S45/S46 UI/D-Zuggruppen
+\newif\ifud     % UI/D
+\newif\ifu      % UI
+\newif\ifd      % D
+\newif\ifudany  % UI oder D
+\ifulrich
+ \udanytrue
+ \ifdora
+  \udtrue
+ \else
+  \utrue
+ \fi
+\else
+ \ifdora
+  \dtrue
+  \udanytrue
+ \fi
+\fi
+% S47 K (Konrad)
+\newif\ifkonrad
+\konradtrue
+% S41/S42/S46 Westring
+\newif\ifwestring
+\ifrgany
+ \westringtrue
+\fi
+\ifdora
+ \westringtrue
+\fi
+% S41/S42/S45/S46 SW-Ring
+\newif\ifswring
+\ifrgany
+ \swringtrue
+\fi
+\ifudany
+ \swringtrue
+\fi
+% S45/S46/S47 Südring - Görlitzer Bahn
+\newif\ifsgb
+\ifudany
+ \sgbtrue
+\fi
+\ifkonrad
+ \sgbtrue
+\fi
+% S41/S42/S45/S46/S47 Südring
+\newif\ifsring
+\ifrgany
+ \sringtrue
+\fi
+\ifsgb
+ \sringtrue
+\fi
+% S5 E (Emil)
+\newif\ifemil
+\emiltrue
+% S5 EI (Elster)
+\newif\ifelster
+\elstertrue
+% S5 EII (Eiche)
+\newif\ifeiche
+\eichefalse
+% S5 EIII (Erna)
+\newif\iferna
+\ernatrue
+% S5 SII (Sirius)
+\newif\ifsirius
+\siriusfalse
+% S5 E/EI/EII/EIII/SII-Zuggruppen
+% Abschnitt Strausberg Nord - Neuenhagen
+\newif\ifeza      % E/EIII + weitere
+\newif\ifeaoz     % E + weitere ohne EIII
+\newif\ifezany    % E oder EIII oder E/EIII
+\ifemil
+ \ezanytrue
+ \iferna
+  \ezatrue
+ \else
+  \eaoztrue
+ \fi
+\else
+ \iferna
+  \ezanytrue
+ \fi
+\fi
+% Abschnitt Hoppegarten - Birkenstein
+\newif\ifeeza     % E/EI/EIII + weitere
+\newif\ifeeaoz    % E/EI + weitere ohne EIII
+\newif\ifezaoe    % E/EIII + weitere ohne EI
+\newif\ifeaoez    % E + weitere ohne EI/EIII
+\newif\ifeezany   % E/EI/EIII oder E/EI oder E/EIII oder E
+\ifemil
+ \ifelster
+  \iferna
+   \eezatrue
+   \eezanytrue
+  \else
+   \eeaoztrue
+   \eezanytrue
+  \fi
+ \else
+  \iferna
+   \ezaoetrue
+   \eezanytrue
+  \else
+   \eaoeztrue
+   \eezanytrue
+  \fi
+ \fi
+\fi
+% Abschnitt Mahlsdorf
+\newif\ifeeezs    % E/EI/EII/EIII/SII
+\newif\ifeeez     % E/EI/EII/EIII
+\newif\ifeez      % E/EI/EIII
+\newif\ifee       % E/EI
+\newif\ifez       % E/EIII
+\newif\ife        % E
+\newif\ifeeezsany % E oder E/EIII oder E/EI oder E/EI/EIII oder E/EI/EII/EIII oder E/EI/EII/EIII/SII
+\ifemil
+ \ifelster
+  \iferna
+   \ifeiche
+    \ifsirius
+     \eeezstrue
+     \eeezsanytrue
+    \else
+     \eeeztrue
+     \eeezsanytrue
+    \fi
+   \else
+    \eeztrue
+    \eeezsanytrue
+   \fi
+  \else
+   \eetrue
+   \eeezsanytrue
+  \fi
+ \else
+  \etrue
+  \eeezsanytrue
+  \iferna
+   \eztrue
+   \eeezsanytrue
+  \fi
+ \fi
+\fi
+% Abschnitt Kaulsdorf - Lichtenberg
+\newif\ifeees      % E/EI/EII/SII
+\newif\ifeee       % E/EI/EII
+\newif\ifeex       % E/EI
+\newif\ifex        % E
+\newif\ifeeesany   % E oder E/EI oder E/EI/EII oder E/EI/EII/SII
+\ifemil
+ \ifelster
+  \ifeiche
+   \ifsirius
+    \eeestrue
+    \eeesanytrue
+   \else
+    \eeetrue
+    \eeesanytrue
+   \fi
+  \else
+   \eextrue
+   \eeesanytrue
+  \fi
+ \else
+  \extrue
+  \eeesanytrue
+ \fi
+\fi
+% Abschnitt Nöldnerplatz - Westkreuz
+\newif\ifeey
+\newif\ifey
+\newif\ifeyany
+\ifemil
+ \ifelster
+  \eeytrue
+  \eyanytrue
+ \else
+  \eytrue
+  \eyanytrue
+ \fi
+\fi
+% S7 O (Otto)
+\newif\ifotto
+\ottotrue
+% S7 OI (Olaf)
+\newif\ifolaf
+\olaftrue
+% S7 O/OI-Zuggruppen
+\newif\ifoa            % O oder O/OI
+\newif\ifoo            % O/OI
+\newif\ifo             % O
+\ifotto
+ \oatrue
+ \ifolaf
+  \ootrue
+ \else
+  \otrue
+ \fi
+\fi
+% S75 T (Theodor)
+\newif\iftheodor
+\theodortrue
+% S75 TI (Tapir)
+\newif\iftapir
+\tapirtrue
+% S75 T/TI-Zuggruppen
+\newif\ifta            % T oder T/TI
+\newif\iftt            % T/TI
+\newif\ift             % T
+\iftheodor
+ \tatrue
+ \iftapir
+  \tttrue
+ \else
+  \ttrue
+ \fi
+\fi
+% S8 N (Nordpol)
+\newif\ifnordpol
+\nordpoltrue
+% S85 NI (Neiße)
+\newif\ifneisse
+\neissetrue
+% S8/S85 N/NI-Zuggruppen
+\newif\ifnn   % N/NI
+\newif\ifn    % N
+\newif\ifna   % N oder N/NI
+\ifnordpol
+ \natrue
+ \ifneisse
+  \nntrue
+ \else
+  \ntrue
+ \fi
+\fi
+% S9 C (Cäsar)
+\newif\ifcaesar
+\caesartrue
+% Switches für Teilstrecken
+% westliche Stadtbahn (Westkreuz - Ostbahnhof)
+\newif\ifwsb
+\ifba
+ \wsbtrue
+\fi
+\ifeyany
+ \wsbtrue
+\fi
+\ifoa
+ \wsbtrue
+\fi
+% östliche Stadtbahn (Ostbahnhof - Ostkreuz)
+\newif\ifosb
+\ifwsb
+ \osbtrue
+\fi
+\ifta
+ \osbtrue
+\fi
+% westliche Stadtbahn bei Nacht (Westkreuz - Ostbahnhof)
+\newif\ifwsbn
+\ifotto
+ \wsbntrue
+\fi
+\ifcaesar
+ \wsbntrue
+\fi
+% Stadtbahn bei Nacht (Ostbahnhof - Ostkreuz)
+\newif\ifsbn
+\ifemil
+ \sbntrue
+\fi
+\ifotto
+ \sbntrue
+\fi
+\ifcaesar
+ \sbntrue
+\fi
+% Abschnitt Nöldnerplatz - Friedrichsfelde Ost
+\newif\ifnlf
+\ifeeesany
+ \nlftrue
+\fi
+\ifoa
+ \nlftrue
+\fi
+\ifta
+ \nlftrue
+\fi
+% Abschnitt Lichtenberg - Friedrichsfelde Ost (bei Nacht)
+\newif\iflfn
+\ifsbn
+ \lfntrue
+\fi
+\iftheodor
+ \lfntrue
+\fi
+% nördliche Nordbahn (Birkenwerder - Hohen Neuendorf)
+\newif\ifnnb
+\ifpa
+ \nnbtrue
+\fi
+\ifnordpol
+ \nnbtrue
+\fi
+% mittlere Nordbahn (Waidmannslust - Wilhelmsruh)
+\newif\ifmnb
+\ifpa
+ \mnbtrue
+\fi
+\ifna
+ \mnbtrue
+\fi
+% südliche Nordbahn (Schönholz - Wollankstraße)
+\newif\ifsnb
+\ifmnb
+ \snbtrue
+\fi
+\ifva
+ \mnbtrue
+\fi
+% südliche Nordbahn nachts (Schönholz - Wollankstraße)
+\newif\ifsnbn
+\ifpaula
+ \snbntrue
+\fi
+\ifviktor
+ \snbntrue
+\fi
+% südliche Stettiner Bahn (Pankow-Heinersdorf - Blankenburg)
+\newif\ifssb
+\ifwa
+ \ssbtrue
+\fi
+\ifnordpol
+ \ssbtrue
+\fi
+% südliche Görlitzer Bahn (Eichwalde - Zeuthen)
+\newif\ifsgrb
+\ifdora
+ \sgrbtrue
+\fi
+\ifna
+ \sgrbtrue
+\fi
+% Flughafenanschluss
+\newif\ifflh
+\ifulrich
+ \flhtrue
+\fi
+\ifcaesar
+ \flhtrue
+\fi
+% mittlere Görlitzer Bahn (Betriebsbahnhof Schöneweide - Adlershof)
+\newif\ifmgb
+\ifcaesar
+ \mgbtrue
+\fi
+\ifudany
+ \mgbtrue
+\fi
+\ifna
+ \mgbtrue
+\fi
+% mittlere Görlitzer Bahn (Bbf Schöneweide - Adlershof) bei Nacht
+\newif\ifmgbn
+\ifdora
+ \mgbntrue
+\fi
+\ifnordpol
+ \mgbntrue
+\fi
+\ifcaesar
+ \mgbntrue
+\fi
+% nördliche Görlitzer Bahn (Baumschulenweg - Schöneweide)
+\newif\ifngb
+\ifmgb
+ \ngbtrue
+\fi
+\ifkonrad
+ \mgbtrue
+\fi
+% Ostring (Ostkreuz - Schönhauser Allee)
+\newif\iforing
+\ifrgany
+ \oringtrue
+\fi
+\ifna
+ \oringtrue
+\fi
+\ifcaesar
+ \oringtrue
+\fi
+% Ostring bei Nacht (Ostkreuz - Schönhauser Allee)
+\newif\ifonring
+\ifrgm
+ \onringtrue
+\fi
+\ifnordpol
+ \onringtrue
+\fi
+% Switches für einzelne Bahnhöfe
+% Berlin Bornholmer Str
+\newif\ifbornholmer
+\ifsntunnel
+ \bornholmertrue
+\fi
+\ifna
+ \bornholmertrue
+\fi
+\ifcaesar
+ \bornholmertrue
+\fi
+% Berlin Bornholmer Str (bei Nacht)
+\newif\ifbbosn
+\ifsntunnel
+ \bbosntrue
+\fi
+\ifnordpol
+ \bbosntrue
+\fi
+% Berlin Friedrichstr
+\newif\iffriedrichstr
+\ifsntunnel
+ \friedrichstrtrue
+\fi
+\ifwsb
+ \friedrichstrtrue
+\fi
+% Berlin Friedrichstr (bei Nacht)
+\newif\iffriedrichstrn
+\ifsntunnel
+ \friedrichstrntrue
+\fi
+\ifsbn
+ \friedrichstrntrue
+\fi
+% Berlin Gesundbrunnen
+\newif\ifgesundbrunnen
+\ifsntunnel
+ \gesundbrunnentrue
+\fi
+\ifrgany
+ \gesundbrunnentrue
+\fi
+% Berlin-Grünau
+\newif\ifgruenau
+\ifsgrb
+ \gruenautrue
+\fi
+% Berlin-Kaulsdorf / Berlin-Mahlsdorf
+\newif\ifkadmdf
+\ifeeezsany
+ \kadmdftrue
+\fi
+\ifeeesany
+ \kadmdftrue
+\fi
+% Berlin-Nikolassee
+\newif\ifnikolassee
+\ifoa
+ \nikolasseetrue
+\fi
+\ifpa
+ \nikolasseetrue
+\fi
+% Berlin Ostkreuz
+\newif\ifostkreuz
+\ifosb
+ \ostkreuztrue
+\fi
+\iforing
+ \ostkreuztrue
+\fi
+% Berlin Ostkreuz (Stadtbahn) bei Nacht
+\newif\ifboksn
+\ifsbn
+ \boksntrue
+\fi
+\ifberta
+ \boksntrue
+\fi
+% Berlin Ostkreuz bei Nacht
+\newif\ifostkreuzn
+\ifboksn
+ \ostkreuzntrue
+\fi
+\ifonring
+ \ostkreuzntrue
+\fi
+% Berlin-Pankow
+\newif\ifpankow
+\ifssb
+ \pankowtrue
+\fi
+\ifcaesar
+ \pankowtrue
+\fi
+% Berlin Plänterwald
+\newif\ifplaenterwald
+\ifna
+ \plaenterwaldtrue
+\fi
+\ifcaesar
+ \plaenterwaldtrue
+\fi
+% Berlin-Schöneberg
+\newif\ifschoeneberg
+\ifswring
+ \schoenebergtrue
+\fi
+\ifpa
+ \schoenebergtrue
+\fi
+% Berlin-Schöneberg (nachts)
+\newif\ifschoenebergn
+\ifrgany
+ \schoenebergntrue
+\fi
+\ifpaula
+ \schoenebergntrue
+\fi
+% Berlin Schöneweide (nachts)
+\newif\ifbswn
+\ifmgbn
+ \bswntrue
+\fi
+\ifkonrad
+ \bswntrue
+\fi
+% Berlin Springpfuhl
+\newif\ifspringpfuhl
+\ifoa
+ \springpfuhltrue
+\fi
+\ifta
+ \springpfuhltrue
+\fi
+% Berlin-Südkreuz
+\newif\ifsuedkreuz
+\ifswring
+ \suedkreuztrue
+\fi
+\ifduoany
+ \suedkreuztrue
+\fi
+% Berlin-Südkreuz (nachts)
+\newif\ifsuedkreuzn
+\ifwestring
+ \suedkreuzntrue
+\fi
+\ifduoany
+ \suedkreuzntrue
+\fi
+% Berlin Treptower Park
+\newif\iftreptow
+\ifrgany
+ \treptowtrue
+\fi
+\ifplaenterwald
+ \treptowtrue
+\fi
+% Berlin-Wannsee
+\newif\ifwannsee
+\ifoa
+ \wannseetrue
+\fi
+\ifpa
+ \wannseetrue
+\fi
+% Berlin-Westkreuz
+\newif\ifwestkreuz
+\ifwestring
+ \westkreuztrue
+\fi
+\ifwsb
+ \westkreuztrue
+\fi
+% Berlin-Westkreuz bei Nacht
+\newif\ifwestkreuzn
+\ifrgm
+ \westkreuzntrue
+\fi
+\ifwsbn
+ \westkreuzntrue
+\fi
