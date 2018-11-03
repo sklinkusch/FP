@@ -798,6 +798,9 @@
 \newcommand{\BOSBn}{%
  \begin{tabular}{ccccccc}
   \multicolumn{7}{c}{\bfseries BOSB \nbus} \\\hline
+   \ifberta
+   \BOSBBanw & \BOSBBbnw & $\arrW$ & \ebl{3} & $\arrs$ & \BOSBBano & \BOSBBbno \\
+   \fi
    \ifemil
    \BOSBEanw & \BOSBEbnw & $\arrW$ & \por{5} & $\arrs$ & \BOSBEano & \BOSBEbno \\
    \fi
@@ -833,7 +836,7 @@
   \ifboksn
   \multicolumn{7}{c}{\bfseries BOKS Bst. D/E \nbus} \\\hline
   \ifberta
-  \BOKSBanw & \BOKSBbnw & $\arrW$ & \ebl{3} & $\arrse$ & \BOKSBano & \BOKSBbno \\
+  \BOKSBanw & \BOKSBbnw & $\arrw$ & \ebl{3} & $\arrse$ & \BOKSBano & \BOKSBbno \\
   \fi
   \ifemil
   \BOKSEanw & \BOKSEbnw & $\arrw$ & \por{5} & $\arre$  & \BOKSEano & \BOKSEbno \\
@@ -1261,6 +1264,9 @@
 \newcommand{\BWRSn}{%
  \begin{tabular}{ccccccc}
   \multicolumn{7}{c}{\bfseries BWRS \ubahn \nubahn \mtram}\\\hline
+   \ifberta
+   \BWRSBanw & \BWRSBbnw & $\arrn$ & \ebl{3} & $\arre$ & \BWRSBano & \BWRSBbno \\
+   \fi
    \ifemil
    \BWRSEanw & \BWRSEbnw & $\arrn$ & \por{5} & $\arre$ & \BWRSEano & \BWRSEbno \\
    \fi
