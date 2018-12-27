@@ -1,87 +1,369 @@
 \ifnacht
 \begin{tabular}{!{\color{hellgruen}\vrule width 3pt}*{5}{l!{\color{hellgruen}\vrule width 3pt}}}
-\hline
-\rowcolor{hellgruen}
-\mcn{3}{|l|}{white}{U1 $\arre$ Uhlandstraße (tagsüber)} & \textcolor{white}{\bfseries (früh/abends)} & \textcolor{white}{\bfseries (nachts)} \\
-\hline
-WA  & \sbahn \udrei \mtram \bus \nbus       & 06 16 26 36 46 56 & 07 17 27 37 47 57 & 07 22 37 52 \\
-S   & \udrei \bus \nbus                     & 08 18 28 38 48 58 & 09 19 29 39 49 59 & 09 24 39 54 \\
-Gr  & \udrei \mbus                          & 10 20 30 40 50 00 & 11 21 31 41 51 01 & 11 26 41 56 \\
-Kbo & \udrei \uacht \bus                    & 12 22 32 42 52 02 & 12 22 32 42 52 02 & 13 28 43 58 \\
-Pr  & \udrei \bus                           & 14 24 34 44 54 04 & 14 24 34 44 54 04 & 15 30 45 00 \\
-Ho  & \udrei \usechs \mbus \bus \nbus       & 16 26 36 46 56 06 & 16 26 36 46 56 06 & 17 32 47 02 \\
-Mo  & \udrei \usieben                       & 17 27 37 47 57 07 & 18 28 38 48 58 08 & 18 33 48 03 \\
-Go  & \uzwei \udrei                         & 19 29 39 49 59 09 & 19 29 39 49 59 09 & 20 35 50 05 \\
-Kus & \udrei \mbus \bus                     & 21 31 41 51 01 11 & 21 31 41 51 01 11 & 22 37 52 07 \\
-Nu  & \uzwei \udrei \uvier \mbus \bus \nbus & 22 32 42 52 02 12 & 23 33 43 53 03 13 & 23 38 53 08 \\
-Wt  & \uzwei \udrei \mbus \nbus             & 24 34 44 54 04 14 & 25 35 45 55 05 15 & 25 40 55 10 \\
-Kfo & \uneun \mbus \xbus \bus \nbus         & 26 36 46 56 06 16 & 27 37 47 57 07 17 & 27 42 57 12 \\
-U   & \mbus \xbus  \bus \nbus               & 27 37 47 57 07 17 & 28 38 48 58 08 18 & 28 43 58 13 \\
-\arrayrulecolor{hellgruen}\myhline
-\end{tabular}
 \else
-\begin{tabular}{!{\color{hellgruen}\vrule width 3pt}*{4}{l!{\color{hellgruen}\vrule width 3pt}}}
+\begin{tabular}{!{\color{hellgruen}\vrule width 3pt}*{5}{l!{\color{hellgruen}\vrule width 3pt}}}
+\fi
 \hline
 \rowcolor{hellgruen}
+\ifnacht
+\mcn{3}{|l|}{white}{U1 $\arre$ Uhlandstraße (tagsüber)} & \textcolor{white}{\bfseries (früh/abends)} & \textcolor{white}{\bfseries (nachts)} \\
+\else
 \mcn{3}{|l|}{white}{U1 $\arre$ Uhlandstraße (tagsüber)} & \textcolor{white}{\bfseries (früh/abends)} \\
+\fi
 \hline
+\ifwtbpone
+ \ifnacht
+WA  & \sbahn \mtram \bus \nbus              & 03 07 11 15 19 23 27 31 35 39 43 47 51 55 59 & 07 17 27 37 47 57 & 07 22 37 52 \\
+ \else
+WA  & \sbahn \mtram \bus                    & 03 07 11 15 19 23 27 31 35 39 43 47 51 55 59 & 07 17 27 37 47 57 \\
+ \fi
+\else
+ \ifnacht
+WA  & \sbahn \udrei \mtram \bus \nbus       & 06 16 26 36 46 56 & 07 17 27 37 47 57 & 07 22 37 52 \\
+ \else
 WA  & \sbahn \udrei \mtram \bus             & 06 16 26 36 46 56 & 07 17 27 37 47 57 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+S   & \bus \nbus                            & 05 09 13 17 21 25 29 33 37 41 45 49 53 57 01 & 09 19 29 39 49 59 & 09 24 39 54 \\
+ \else
+S   & \bus                                  & 05 09 13 17 21 25 29 33 37 41 45 49 53 57 & 09 19 29 39 49 59 \\
+ \fi
+\else
+ \ifnacht
+S   & \udrei \bus \nbus                     & 08 18 28 38 48 58 & 09 19 29 39 49 59 & 09 24 39 54 \\
+ \else
 S   & \udrei \bus                           & 08 18 28 38 48 58 & 09 19 29 39 49 59 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Gr  & \mbus                                 & 07 11 15 19 23 27 31 35 39 43 47 51 55 59 03 & 11 21 31 41 51 01 & 11 26 41 56 \\
+ \else
+Gr  & \mbus                                 & 07 11 15 19 23 27 31 35 39 43 47 51 55 59 03 & 11 21 31 41 51 01 \\
+ \fi
+\else
+ \ifnacht
+Gr  & \udrei \mbus                          & 10 20 30 40 50 00 & 11 21 31 41 51 01 & 11 26 41 56 \\
+ \else
 Gr  & \udrei \mbus                          & 10 20 30 40 50 00 & 11 21 31 41 51 01 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Kbo & \uacht \bus                           & 09 13 17 21 25 29 33 37 41 45 49 53 57 01 05 & 12 22 32 42 52 02 & 13 28 43 58 \\
+ \else
+Kbo & \uacht \bus                           & 09 13 17 21 25 29 33 37 41 45 49 53 57 01 05 & 12 22 32 42 52 02 \\
+ \fi
+\else
+ \ifnacht
+Kbo & \udrei \uacht \bus                    & 12 22 32 42 52 02 & 12 22 32 42 52 02 & 13 28 43 58 \\
+ \else
 Kbo & \udrei \uacht \bus                    & 12 22 32 42 52 02 & 12 22 32 42 52 02 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Pr  & \bus                                  & 11 15 19 23 27 31 35 39 43 47 51 55 59 03 07 & 14 24 34 44 54 04 & 15 30 45 00 \\
+ \else
+Pr  & \bus                                  & 11 15 19 23 27 31 35 39 43 47 51 55 59 03 07 & 14 24 34 44 54 04 \\
+ \fi
+\else
+ \ifnacht
+Pr  & \udrei \bus                           & 14 24 34 44 54 04 & 14 24 34 44 54 04 & 15 30 45 00 \\
+ \else
 Pr  & \udrei \bus                           & 14 24 34 44 54 04 & 14 24 34 44 54 04 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Ho  & \usechs \mbus \bus \nbus              & 13 17 21 25 29 33 37 41 45 49 53 57 01 05 09 & 16 26 36 46 56 06 & 17 32 47 02 \\
+ \else
+Ho  & \usechs \mbus \bus                    & 13 17 21 25 29 33 37 41 45 49 53 57 01 05 09 & 16 26 36 46 56 06 \\
+ \fi
+\else
+ \ifnacht
+Ho  & \udrei \usechs \mbus \bus \nbus       & 16 26 36 46 56 06 & 16 26 36 46 56 06 & 17 32 47 02 \\
+ \else
 Ho  & \udrei \usechs \mbus \bus             & 16 26 36 46 56 06 & 16 26 36 46 56 06 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Mo  & \usieben                              & 14 18 22 26 30 34 38 42 46 50 54 58 02 06 10 & 18 28 38 48 58 08 & 18 33 48 03 \\
+ \else
+Mo  & \usieben                              & 14 18 22 26 30 34 38 42 46 50 54 58 02 06 10 & 18 28 38 48 58 08 \\
+ \fi
+\else
+ \ifnacht
+Mo  & \udrei \usieben                       & 17 27 37 47 57 07 & 18 28 38 48 58 08 & 18 33 48 03 \\
+ \else
 Mo  & \udrei \usieben                       & 17 27 37 47 57 07 & 18 28 38 48 58 08 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Go  & \uzwei                                & 16 20 24 28 32 36 40 44 48 52 56 00 04 08 12 & 19 29 39 49 59 09 & 20 35 50 05 \\
+ \else
+Go  & \uzwei                                & 16 20 24 28 32 36 40 44 48 52 56 00 04 08 12 & 19 29 39 49 59 09 \\
+ \fi
+\else
+ \ifnacht
+Go  & \uzwei \udrei                         & 19 29 39 49 59 09 & 19 29 39 49 59 09 & 20 35 50 05 \\
+ \else
 Go  & \uzwei \udrei                         & 19 29 39 49 59 09 & 19 29 39 49 59 09 \\
-Kus & \udrei \mbus \bus                     & 21 31 41 51 01 11 & 21 31 41 51 01 11 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Kus & \mbus \nbus                           & 18 22 26 30 34 38 42 46 50 54 58 02 06 10 14 & 21 31 41 51 01 11 & 22 37 52 07 \\
+ \else
+Kus & \mbus                                 & 18 22 26 30 34 38 42 46 50 54 58 02 06 10 14 & 21 31 41 51 01 11 \\
+ \fi
+\else
+ \ifnacht
+Kus & \udrei \mbus \nbus                    & 21 31 41 51 01 11 & 21 31 41 51 01 11 & 22 37 52 07 \\
+ \else
+Kus & \udrei \mbus                          & 21 31 41 51 01 11 & 21 31 41 51 01 11 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Nu  & \uvier \mbus \bus \nbus               & 19 23 27 31 35 39 43 47 51 55 59 03 07 11 15 & 23 33 43 53 03 13 & 23 38 53 08 \\
+ \else
+Nu  & \uvier \mbus \bus                     & 19 23 27 31 35 39 43 47 51 55 59 03 07 11 15 & 23 33 43 53 03 13 \\
+ \fi
+\else
+ \ifnacht
+Nu  & \uzwei \udrei \uvier \mbus \bus \nbus & 22 32 42 52 02 12 & 23 33 43 53 03 13 & 23 38 53 08 \\
+ \else
 Nu  & \uzwei \udrei \uvier \mbus \bus       & 22 32 42 52 02 12 & 23 33 43 53 03 13 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Wt  & \mbus \nbus                           & 21 25 29 33 37 41 45 49 53 57 01 05 09 13 17 & 25 35 45 55 05 15 & 25 40 55 10 \\
+ \else
+Wt  & \mbus                                 & 21 25 29 33 37 41 45 49 53 57 01 05 09 13 17 & 25 35 45 55 05 15 \\
+ \fi
+\else
+ \ifnacht
+Wt  & \uzwei \udrei \mbus \nbus             & 24 34 44 54 04 14 & 25 35 45 55 05 15 & 25 40 55 10 \\
+ \else
 Wt  & \uzwei \udrei \mbus                   & 24 34 44 54 04 14 & 25 35 45 55 05 15 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Kfo & \uneun \mbus \xbus \bus \nbus         & 23 27 31 35 39 43 47 51 55 59 03 07 11 15 19 & 27 37 47 57 07 17 & 27 42 57 12 \\
+ \else
+Kfo & \uneun \mbus \xbus \bus               & 23 27 31 35 39 43 47 51 55 59 03 07 11 15 19 & 27 37 47 57 07 17 \\
+ \fi
+\else
+ \ifnacht
+Kfo & \uneun \mbus \xbus \bus \nbus         & 26 36 46 56 06 16 & 27 37 47 57 07 17 & 27 42 57 12 \\
+ \else
 Kfo & \uneun \mbus \xbus \bus               & 26 36 46 56 06 16 & 27 37 47 57 07 17 \\
-U   & \mbus \xbus  \bus                     & 27 37 47 57 07 17 & 28 38 48 58 08 18 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+U   & \mbus \xbus \bus \nbus                & 24 28 32 36 40 44 48 52 56 00 04 08 12 16 20 & 28 38 48 58 08 18 & 28 43 58 13 \\
+ \else
+U   & \mbus \xbus \bus                      & 24 28 32 36 40 44 48 52 56 00 04 08 12 16 20 & 28 38 48 58 08 18 \\
+ \fi
+\else
+ \ifnacht
+U   & \mbus \xbus \bus \nbus                & 27 37 47 57 07 17 & 28 38 48 58 08 18 & 28 43 58 13 \\
+ \else
+U   & \mbus \xbus \bus                      & 27 37 47 57 07 17 & 28 38 48 58 08 18 \\
+ \fi
+\fi
 \arrayrulecolor{hellgruen}\myhline
 \end{tabular}
-\fi
 %
 \ifnacht
 \begin{tabular}{!{\color{hellgruen}\vrule width 3pt}*{5}{l!{\color{hellgruen}\vrule width 3pt}}}
-\hline
-\rowcolor{hellgruen}
-\mcn{3}{|l|}{white}{U1 $\arre$ Warschauer Straße (tagsüber)} & \textcolor{white}{\bfseries (früh/abends)} & \textcolor{white}{\bfseries (nachts)} \\
-\hline
-U   & \mbus \xbus  \bus \nbus               & 00 10 20 30 40 50 & 00 10 20 30 40 50 & 02 17 32 47 \\
-Kfo & \uneun \mbus \xbus \bus \nbus         & 01 11 21 31 41 51 & 01 11 21 31 41 51 & 03 18 33 48 \\
-Wt  & \uzwei \udrei \mbus \nbus             & 02 12 22 32 42 52 & 02 12 22 32 42 52 & 04 19 34 49 \\
-Nm  & \uzwei \udrei \uvier \mbus \bus \nbus & 04 14 24 34 44 54 & 04 14 24 34 44 54 & 06 21 36 51 \\
-Kus & \udrei \mbus \bus                     & 06 16 26 36 46 56 & 06 16 26 36 46 56 & 08 23 38 53 \\
-Go  & \uzwei \udrei                         & 08 18 28 38 48 58 & 08 18 28 38 48 58 & 10 25 40 55 \\
-Mo  & \udrei \usieben                       & 09 19 29 39 49 59 & 09 19 29 39 49 59 & 11 26 41 56 \\
-Ho  & \udrei \usechs \mbus \bus \nbus       & 11 21 31 41 51 01 & 11 21 31 41 51 01 & 13 28 43 58 \\
-Pr  & \udrei \bus                           & 13 23 33 43 53 03 & 13 23 33 43 53 03 & 15 30 45 00 \\
-Kbo & \udrei \uacht \bus                    & 15 25 35 45 55 05 & 15 25 35 45 55 05 & 19 34 49 04 \\
-Gr  & \udrei \mbus                          & 16 26 36 46 56 06 & 16 26 36 46 56 06 & 20 35 50 05 \\
-S   & \udrei \bus \nbus                     & 18 28 38 48 58 08 & 18 28 38 48 58 08 & 22 37 52 07 \\
-WA  & \sbahn \udrei \mtram \bus \nbus       & 20 30 40 50 00 10 & 20 30 40 50 00 10 & 24 39 54 09 \\
-\arrayrulecolor{hellgruen}\myhline
-\end{tabular}
 \else
 \begin{tabular}{!{\color{hellgruen}\vrule width 3pt}*{4}{l!{\color{hellgruen}\vrule width 3pt}}}
+\fi
 \hline
 \rowcolor{hellgruen}
+\ifnacht
+\mcn{3}{|l|}{white}{U1 $\arre$ Warschauer Straße (tagsüber)} & \textcolor{white}{\bfseries (früh/abends)} & \textcolor{white}{\bfseries (nachts)} \\
+\else
 \mcn{3}{|l|}{white}{U1 $\arre$ Warschauer Straße (tagsüber)} & \textcolor{white}{\bfseries (früh/abends)} \\
+\fi
 \hline
-U   & \mbus \xbus  \bus                     & 00 10 20 30 40 50 & 00 10 20 30 40 50 \\
+\ifwtbpone
+ \ifnacht
+U   & \mbus \xbus \bus \nbus                & 01 05 09 13 17 21 25 29 33 37 41 45 49 53 57 & 00 10 20 30 40 50 & 02 17 32 47 \\
+ \else
+U   & \mbus \xbus \bus                      & 01 05 09 13 17 21 25 29 33 37 41 45 49 53 57 & 00 10 20 30 40 50 \\
+ \fi
+\else
+ \ifnacht
+U   & \mbus \xbus \bus \nbus                & 00 10 20 30 40 50 & 00 10 20 30 40 50 & 02 17 32 47 \\
+ \else
+U   & \mbus \xbus \bus                      & 00 10 20 30 40 50 & 00 10 20 30 40 50 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Kfo & \uneun \mbus \xbus \bus \nbus         & 02 06 10 14 18 22 26 30 34 38 42 46 50 54 58 & 01 11 21 31 41 51 & 03 18 33 48 \\
+ \else
+Kfo & \uneun \mbus \xbus \bus               & 02 06 10 14 18 22 26 30 34 38 42 46 50 54 58 & 01 11 21 31 41 51 \\
+ \fi
+\else
+ \ifnacht
+Kfo & \uneun \mbus \xbus \bus \nbus         & 01 11 21 31 41 51 & 01 11 21 31 41 51 & 03 18 33 48 \\
+ \else
 Kfo & \uneun \mbus \xbus \bus               & 01 11 21 31 41 51 & 01 11 21 31 41 51 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Wt  & \mbus \nbus                           & 03 07 11 15 19 23 27 31 35 39 43 47 51 55 59 & 02 12 22 32 42 52 & 04 19 34 49 \\
+ \else
+Wt  & \mbus                                 & 03 07 11 15 19 23 27 31 35 39 43 47 51 55 59 & 02 12 22 32 42 52 \\
+ \fi
+\else
+ \ifnacht
+Wt  & \uzwei \udrei \mbus \nbus             & 02 12 22 32 42 52 & 02 12 22 32 42 52 & 04 19 34 49 \\
+ \else
 Wt  & \uzwei \udrei \mbus                   & 02 12 22 32 42 52 & 02 12 22 32 42 52 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Nm  & \uvier \mbus \bus \nbus               & 05 09 13 17 21 25 29 33 37 41 45 49 53 57 01 & 04 14 24 34 44 54 & 06 21 36 51 \\
+ \else
+Nm  & \uvier \mbus \bus                     & 05 09 13 17 21 25 29 33 37 41 45 49 53 57 01 & 04 14 24 34 44 54 \\
+ \fi
+\else
+ \ifnacht
+Nm  & \uzwei \udrei \uvier \mbus \bus \nbus & 04 14 24 34 44 54 & 04 14 24 34 44 54 & 06 21 36 51 \\
+ \else
 Nm  & \uzwei \udrei \uvier \mbus \bus       & 04 14 24 34 44 54 & 04 14 24 34 44 54 \\
-Kus & \udrei \mbus \bus                     & 06 16 26 36 46 56 & 06 16 26 36 46 56 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Kus & \mbus \nbus                           & 07 11 15 19 23 27 31 35 39 43 47 51 55 59 03 & 06 16 26 36 46 56 & 08 23 38 53 \\
+ \else
+Kus & \mbus                                 & 07 11 15 19 23 27 31 35 39 43 47 51 55 59 03 & 06 16 26 36 46 56 \\
+ \fi
+\else
+ \ifnacht
+Kus & \udrei \mbus \nbus                    & 06 16 26 36 46 56 & 06 16 26 36 46 56 & 08 23 38 53 \\
+ \else
+Kus & \udrei \mbus                          & 06 16 26 36 46 56 & 06 16 26 36 46 56 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Go  & \uzwei                                & 09 13 17 21 25 29 33 37 41 45 49 53 57 01 05 & 08 18 28 38 48 58 & 10 25 40 55 \\
+ \else
+Go  & \uzwei                                & 09 13 17 21 25 29 33 37 41 45 49 53 57 01 05 & 08 18 28 38 48 58 \\
+ \fi
+\else
+ \ifnacht
+Go  & \uzwei \udrei                         & 08 18 28 38 48 58 & 08 18 28 38 48 58 & 10 25 40 55 \\
+ \else
 Go  & \uzwei \udrei                         & 08 18 28 38 48 58 & 08 18 28 38 48 58 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Mo  & \usieben                              & 10 14 18 22 26 30 34 38 42 46 50 54 58 02 06 & 09 19 29 39 49 59 & 11 26 41 56 \\
+ \else
+Mo  & \usieben                              & 10 14 18 22 26 30 34 38 42 46 50 54 58 02 06 & 09 19 29 39 49 59 \\
+ \fi
+\else
+ \ifnacht
+Mo  & \udrei \usieben                       & 09 19 29 39 49 59 & 09 19 29 39 49 59 & 11 26 41 56 \\
+ \else
 Mo  & \udrei \usieben                       & 09 19 29 39 49 59 & 09 19 29 39 49 59 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Ho  & \usechs \mbus \bus \nbus              & 12 16 20 24 28 32 36 40 44 48 52 56 00 04 08 & 11 21 31 41 51 01 & 13 28 43 58 \\
+ \else
+Ho  & \usechs \mbus \bus                    & 12 16 20 24 28 32 36 40 44 48 52 56 00 04 08 & 11 21 31 41 51 01 \\
+ \fi
+\else
+ \ifnacht
+Ho  & \udrei \usechs \mbus \bus \nbus       & 11 21 31 41 51 01 & 11 21 31 41 51 01 & 13 28 43 58 \\
+ \else
 Ho  & \udrei \usechs \mbus \bus             & 11 21 31 41 51 01 & 11 21 31 41 51 01 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Pr  & \bus                                  & 14 18 22 26 30 34 38 42 46 50 54 58 02 06 10 & 13 23 33 43 53 03 & 15 30 45 00 \\
+ \else
+Pr  & \bus                                  & 14 18 22 26 30 34 38 42 46 50 54 58 02 06 10 & 13 23 33 43 53 03 \\
+ \fi
+\else
+ \ifnacht
+Pr  & \udrei \bus                           & 13 23 33 43 53 03 & 13 23 33 43 53 03 & 15 30 45 00 \\
+ \else
 Pr  & \udrei \bus                           & 13 23 33 43 53 03 & 13 23 33 43 53 03 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Kbo & \uacht \bus \nbus                     & 16 20 24 28 32 36 40 44 48 52 56 00 04 08 12 & 15 25 35 45 55 05 & 19 34 49 04 \\
+ \else
+Kbo & \uacht \bus                           & 16 20 24 28 32 36 40 44 48 52 56 00 04 08 12 & 15 25 35 45 55 05 \\
+ \fi
+\else
+ \ifnacht
+Kbo & \udrei \uacht \bus \nbus              & 15 25 35 45 55 05 & 15 25 35 45 55 05 & 19 34 49 04 \\
+ \else
 Kbo & \udrei \uacht \bus                    & 15 25 35 45 55 05 & 15 25 35 45 55 05 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+Gr  & \mbus                                 & 17 21 25 29 33 37 41 45 49 53 57 01 05 09 13 & 16 26 36 46 56 06 & 20 35 50 05 \\
+ \else
+Gr  & \mbus                                 & 17 21 25 29 33 37 41 45 49 53 57 01 05 09 13 & 16 26 36 46 56 06 \\
+ \fi
+\else
+ \ifnacht
+Gr  & \udrei \mbus                          & 16 26 36 46 56 06 & 16 26 36 46 56 06 & 20 35 50 05 \\
+ \else
 Gr  & \udrei \mbus                          & 16 26 36 46 56 06 & 16 26 36 46 56 06 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+S   & \bus \nbus                            & 19 23 27 31 35 39 43 47 51 55 59 03 07 11 15 & 18 28 38 48 58 08 & 22 37 52 07 \\
+ \else
+S   & \bus                                  & 19 23 27 31 35 39 43 47 51 55 59 03 07 11 15 & 18 28 38 48 58 08 \\
+ \fi
+\else
+ \ifnacht
+S   & \udrei \bus \nbus                     & 18 28 38 48 58 08 & 18 28 38 48 58 08 & 22 37 52 07 \\
+ \else
 S   & \udrei \bus                           & 18 28 38 48 58 08 & 18 28 38 48 58 08 \\
+ \fi
+\fi
+\ifwtbpone
+ \ifnacht
+WA  & \sbahn \mtram \bus \nbus              & 21 25 29 33 37 41 45 49 53 57 01 05 09 13 17 & 20 30 40 50 00 10 & 24 39 54 09 \\
+ \else
+WA  & \sbahn \mtram \bus                    & 21 25 29 33 37 41 45 49 53 57 01 05 09 13 17 & 20 30 40 50 00 10 \\
+ \fi
+\else
+ \ifnacht
+WA  & \sbahn \udrei \mtram \bus \nbus       & 20 30 40 50 00 10 & 20 30 40 50 00 10 & 24 39 54 09 \\
+ \else
 WA  & \sbahn \udrei \mtram \bus             & 20 30 40 50 00 10 & 20 30 40 50 00 10 \\
+ \fi
+\fi
 \arrayrulecolor{hellgruen}\myhline
 \end{tabular}
-\fi
