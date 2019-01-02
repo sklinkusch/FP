@@ -28,6 +28,7 @@
  \input{splanc}
 \fi
 \ifuplan
+ \newpage
  \begin{center}
   \input{U1-fp}
 
@@ -50,6 +51,7 @@
  \end{center}
 \fi
 \ifunacht
+ \newpage
  \begin{center}
    \input{N1-fp}
    \input{N3-fp}
@@ -64,38 +66,38 @@
    \input{N9-fp}
  \end{center}
 \fi
-\ifuplan
- \newpage
-\fi
 \ifrplan
+ \newpage
  \input{rplanW}
  \newpage
  \input{rplanE}
- \newpage
 \fi
 \ifsnacht
+ \newpage
  \input{splanan}
  \newpage
  \input{splanbn}
- \newpage
 \fi
 \ifsntabelle
- \input{spland}
  \newpage
+ \input{spland}
 \fi
 \ifgleise
+ \newpage
  \input{gleise}
  \newpage
  \input{ugleise}
- \newpage
 \fi
 \ifumsteige
+ \newpage
  \input{ubahn-umsteige}
 \fi
 \ifumfahrung
+ \newpage
  \input{sbahn-umfahrung2}
 \fi
 \ifbusumsteige
+ \newpage
  \input{umsteige}
 \fi
 \end{document}
