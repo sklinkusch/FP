@@ -3,18 +3,10 @@
 \rowcolor{verkehrsgelb}
 \mcn{3}{|l|}{black}{U4 $\arre$ Innsbrucker Pl. (Mo-Sa HVZ)} & \textcolor{black}{\bfseries (NVZ)} \\
 \hline
-\ifwtbpone
- \ifnacht
-Nm  & \ueins \mbus \bus \nbus               & 00 05 10 15 20 25 30 35 40 45 50 55 & 06 16 26 36 46 56 \\
- \else
-Nm  & \ueins \mbus \bus                     & 00 05 10 15 20 25 30 35 40 45 50 55 & 06 16 26 36 46 56 \\
- \fi
-\else
- \ifnacht
+\ifnacht
 Nm  & \ueins \uzwei \udrei \mbus \bus \nbus & 00 05 10 15 20 25 30 35 40 45 50 55 & 06 16 26 36 46 56 \\
- \else
+\else
 Nm  & \ueins \uzwei \udrei \mbus \bus       & 00 05 10 15 20 25 30 35 40 45 50 55 & 06 16 26 36 46 56 \\
- \fi
 \fi
 V   &                                       & 02 07 12 17 22 27 32 37 42 47 52 57 & 08 18 28 38 48 58 \\
 Bpo & \usieben                              & 03 08 13 18 23 28 33 38 43 48 53 58 & 09 19 29 39 49 59 \\
@@ -40,18 +32,10 @@ RS  & \mbus \bus                            & 02 07 12 17 22 27 32 37 42 47 52 5
 \fi
 Bpo & \usieben                              & 03 08 13 18 23 28 33 38 43 48 53 58 & 08 18 28 38 48 58 \\
 V   &                                       & 05 10 15 20 25 30 35 40 45 50 55 00 & 10 20 30 40 50 00 \\
-\ifwtbpone
- \ifnacht
-Nm  & \ueins \mbus \bus \nbus               & 07 12 17 22 27 32 37 42 47 52 57 02 & 12 22 32 42 52 02 \\
- \else
-Nm  & \ueins \mbus \bus                     & 07 12 17 22 27 32 37 42 47 52 57 02 & 12 22 32 42 52 02 \\
- \fi
-\else
- \ifnacht
+\ifnacht
 Nm  & \ueins \uzwei \udrei \mbus \bus \nbus & 07 12 17 22 27 32 37 42 47 52 57 02 & 12 22 32 42 52 02 \\
- \else
+\else
 Nm  & \ueins \uzwei \udrei \mbus \bus       & 07 12 17 22 27 32 37 42 47 52 57 02 & 12 22 32 42 52 02 \\
- \fi
 \fi
 \arrayrulecolor{verkehrsgelb}\myhline
 \end{tabular}
