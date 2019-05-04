@@ -1305,10 +1305,16 @@
 \newcommand{\BNPL}{%
  \begin{tabular}{ccccccccccc}
   \multicolumn{11}{c}{\bfseries BNPL \bus} \\\hline
-   \ifeey
+   \ifeees
+    \BNPLEafw  & \BNPLShw  & \BNPLEbfw & \BNPLEhw  & $\arrw$ & \pos{5}  & $\arrn$ & \BNPLEafo & \BNPLSho  & \BNPLEbfo & \BNPLEho  \\
+   \fi
+   \ifeee
+               & \BNPLEafw & \BNPLEbfw & \BNPLEhw  & $\arrw$ & \pos{5}  & $\arrn$ & \BNPLEafo & \BNPLEbfo & \BNPLEho  &           \\
+   \fi
+   \ifeex
                &           & \BNPLEafw & \BNPLEbfw & $\arrw$ & \pos{5}  & $\arrn$ & \BNPLEafo & \BNPLEbfo &           &           \\
    \fi
-   \ifey
+   \ifex
                &           &           & \BNPLEafw & $\arrw$ & \pos{5}  & $\arrn$ & \BNPLEafo &           &           &           \\
    \fi
    \ifoo
@@ -1479,10 +1485,16 @@
    \ifb
                &           &           & \BOKSBfw  & $\arrw$ & \ebs{3}  & $\arrse$ & \BOKSBfo  &           &           &           \\
    \fi
-   \ifeey
+   \ifeees
+    \BOKSEafw  & \BOKSShw  & \BOKSEbfw & \BOKSEhw  & $\arrw$ & \pos{5}  & $\arre$  & \BOKSEafo & \BOKSSho  & \BOKSEbfo & \BOKSEho  \\
+   \fi
+   \ifeee
+               & \BOKSEafw & \BOKSEbfw & \BOKSEhw  & $\arrw$ & \pos{5}  & $\arre$  & \BOKSEafo & \BOKSEbfo & \BOKSEho  &           \\
+   \fi
+   \ifeex
                &           & \BOKSEafw & \BOKSEbfw & $\arrw$ & \pos{5}  & $\arre$  & \BOKSEafo & \BOKSEbfo &           &           \\
    \fi
-   \ifey
+   \ifex
                &           &           & \BOKSEafw & $\arrw$ & \pos{5}  & $\arre$  & \BOKSEafo &           &           &           \\
    \fi
    \ifoo
@@ -2192,10 +2204,16 @@
    \ifb
                &           &           & \BWRSBfw  & $\arrn$ & \ebs{3}  & $\arre$ & \BWRSBfo  &           &           &           \\
    \fi
-   \ifeey
+   \ifeees
+    \BWRSEafw  & \BWRSShw  & \BWRSEbfw & \BWRSEhw  & $\arrn$ & \pos{5}  & $\arre$ & \BWRSEafo & \BWRSSho  & \BWRSEbfo & \BWRSEho  \\
+   \fi
+   \ifeee
+               & \BWRSEafw & \BWRSEbfw & \BWRSEhw  & $\arrn$ & \pos{5}  & $\arre$ & \BWRSEafo & \BWRSEbfo & \BWRSEho  &           \\
+   \fi
+   \ifeex
                &           & \BWRSEafw & \BWRSEbfw & $\arrn$ & \pos{5}  & $\arre$ & \BWRSEafo & \BWRSEbfo &           &           \\
    \fi
-   \ifey
+   \ifex
                &           &           & \BWRSEafw & $\arrn$ & \pos{5}  & $\arre$ & \BWRSEafo &           &           &           \\
    \fi
    \ifoo
