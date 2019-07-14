@@ -3,14 +3,17 @@
 timetables for the Berlin S-Bahn (urban railway), U-Bahn (underground or subway), and Regionalbahn (regional railway)
 
 ## Valid from
-4<sup>th</sup> February 2019
+
+29<sup>th</sup> April 2019
 
 ## Files
+
 **print.pdf:** full pdf file with margins in landscape format  
 **print-portrait.pdf:** full pdf file with margins in portrait format (turned, improved for printing)  
 **s-plan.pdf:** full pdf file without margins
 
 ## Pages
+
 **Page 1:** daytime timetable scheme for the S-Bahn (western part of the city)  
 **Page 2:** daytime timetable scheme for the S-Bahn (eastern part of the city)  
 **Page 3-5:** detailed timetables for the S-Bahn (daytime)  
