@@ -45,7 +45,7 @@ Alexanderplatz                & BALE            & BALX            & A, Al, Ap   
 \snr{7} \snr{9} \unr{2} \unr{5} \unr{8} \nunr{2} \mtram M2 M4 M5 \nbus N42 N65                                                                   & 
 \nunr{5} \mtram M2 M4 M5 \nbus N42 N65                                                                                                           \\
                               &                 &                 &                 &
-\mtram M2 M4 M5 M6 \bus 100 200 245 248                                                                                                          &
+\mtram M2 M4 M5 M6 \bus 100 200 245 248 300                                                                                                      &
                                                                                                                                                  &
                                                                                                                                                  \\
 \hline
@@ -285,7 +285,7 @@ Botanischer Garten            &                 & BBGT            &             
 \nbus N88 \ped{} \mbus M48                                                                                                                       \\
 \hline
 Brandenburger Tor             &                 & BTOR            & BRT             &
-\snr{1} \snr{2} \snr{25} \snr{26} \unr{55} \bus 100 245                                                                                          &
+\snr{1} \snr{2} \snr{25} \snr{26} \unr{55} \bus 100 245 \ped{} \bus 300                                                                          &
 \snr{1} \snr{2} \snr{25}                                                                                                                         &
 \ped{} \nunr{2}                                                                                                                                  \\
 \hline
@@ -798,7 +798,7 @@ Jakob-Kaiser-Platz            &                 &                 & JK          
 \nunr{7} \mbus M21                                                                                                                               \\
 \hline
 Jannowitzbrücke               &                 & BJB             & Jn              &
-\snr{3} \snr{5} \snr{7} \snr{9} \unr{8}                                                                                                          &
+\snr{3} \snr{5} \snr{7} \snr{9} \unr{8} \bus 300                                                                                                 &
 \snr{7} \snr{9} \unr{8} \nbus N40 N65                                                                                                            &
 \nunr{8} \nbus N40 N65                                                                                                                           \\
 \hline
@@ -883,7 +883,7 @@ Klosterfelde                  & BKLF            &                 &             
                                                                                                                                                  \\
 \hline
 Klosterstraße                 &                 &                 & Ko              &
-\unr{2}                                                                                                                                          &
+\unr{2} \ped{} \bus 300                                                                                                                          &
 \unr{2} \ped{} \nbus N40 N42                                                                                                                     &
 \ped{} \nunr{8} \nbus N40 N42                                                                                                                    \\
 \hline
@@ -1113,7 +1113,7 @@ Möckernbrücke                 &                 &                 & Mo, Mu    
 \nunr{1}                                                                                                                                         \\
 \hline
 Mohrenstraße                  &                 &                 & MH              &
-\unr{2} \mbus M48                                                                                                                                &
+\unr{2} \mbus M48 \bus 300                                                                                                                       &
 \unr{2} \nunr{2} \mbus M48                                                                                                                       &
 \nunr{2} \mbus M48                                                                                                                               \\
 \hline
@@ -1133,7 +1133,7 @@ Müncheberg (Mark)             & BMB             &                 &            
                                                                                                                                                  \\
 \hline
 Museumsinsel [in Bau]         &                 &                 & MIN             &
-\bus 100 245                                                                                                                                     &
+\bus 100 245 300                                                                                                                                 &
 \nunr{2}                                                                                                                                         &
 \nunr{2}                                                                                                                                         \\
 \hline
@@ -1243,7 +1243,7 @@ Osloer Straße                 &                 &                 & Olo, Olu   
 \nunr{8} \nunr{9} \mtram M13 \nbus N52                                                                                                           \\
 \hline
 Ostbahnhof                    & BHF             & BOSB            &                 &
-\fbahn{} \renr{1} \renr{7} \rbnr{14} \snr{3} \snr{5} \snr{7} \snr{75} \snr{9} \bus 140 142 147 240 347                                           &
+\fbahn{} \renr{1} \renr{7} \rbnr{14} \snr{3} \snr{5} \snr{7} \snr{75} \snr{9} \bus 140 142 147 240 300 347                                       &
 \snr{5} \snr{7} \snr{9} \nbus N40                                                                                                                &
 \nbus N40                                                                                                                                        \\
 \hline
@@ -1366,7 +1366,7 @@ Potsdam Rehbrücke             & BRC             &                 &            
 \nbus N14                                                                                                                                        \\
 \hline
 Potsdamer Platz               & BPOF            & BPOP            & Pd              &
-\renr{3} \renr{4} \renr{5} \rbnr{10} \snr{1} \snr{2} \snr{25} \snr{26} \unr{2} \mbus M41 M48 M85 \bus 200                                        &
+\renr{3} \renr{4} \renr{5} \rbnr{10} \snr{1} \snr{2} \snr{25} \snr{26} \unr{2} \mbus M41 M48 M85 \bus 200 300                                    &
 \snr{1} \snr{2} \snr{25} \unr{2} \nunr{2} \mbus M41 M48                                                                                          &
 \nunr{2} \mbus M41 M48                                                                                                                           \\
 \hline
@@ -1480,7 +1480,7 @@ Rosenthaler Platz             &                 &                 & Ro          
 \nunr{8} \mtram M1 \nbus N40                                                                                                                     \\
 \hline
 Rotes Rathaus [in Bau]        &                 &                 & RHO             &
-\ped{} \bus 200 248                                                                                                                              &
+\ped{} \bus 200 248 300                                                                                                                          &
 \ped{} \nbus N40 N42 N65                                                                                                                         &
 \ped{} \nunr{8} \nbus N40 N42 N65                                                                                                                \\
 \hline
@@ -1813,7 +1813,7 @@ Ullsteinstraße                &                 &                 & Ull        
 \nunr{6}                                                                                                                                         \\
 \hline
 Unter den Linden [in Bau]     &                 &                 & ULO, ULU        &
-\bus 100 147 245 \ped{} \unr{6}                                                                                                                  &
+\bus 100 147 245 300 \ped{} \unr{6}                                                                                                              &
 \nunr{2} \ped{} \unr{6}                                                                                                                          &
 \nunr{2} \nunr{6}                                                                                                                                \\
 \hline
@@ -1863,7 +1863,7 @@ Wannsee                       & BWS             & BWSS            &             
 \nbus N16                                                                                                                                        \\
 \hline 
 Warschauer Straße             &                 & BWRS            & WA              &
-\snr{3} \snr{5} \snr{7} \snr{75} \snr{9} \unr{1} \unr{3} \mtram M10 M13 \bus 347                                                                 &
+\snr{3} \snr{5} \snr{7} \snr{75} \snr{9} \unr{1} \unr{3} \mtram M10 M13 \bus 300 347                                                             &
 \snr{5} \snr{7} \snr{9} \unr{1} \mtram M10 M13                                                                                                   &
 \nunr{1} \mtram M10 M13                                                                                                                          \\
 \hline
