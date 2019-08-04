@@ -4,7 +4,7 @@ timetables for the Berlin S-Bahn (urban railway), U-Bahn (underground or subway)
 
 ## Valid from
 
-29<sup>th</sup> April 2019
+4<sup>th</sup> August 2019
 
 ## Files
 
