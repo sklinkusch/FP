@@ -20,7 +20,7 @@ timetables for the Berlin S-Bahn (urban railway), U-Bahn (underground or subway)
 **Page 6-8:** timetables for the U-Bahn  
 **Page 9-10:** timetables for night buses replacing the U-Bahn at night (only on weekdays)  
 **Page 11:** timetable scheme for the Regionalbahn (western part of the city and around)  
-**Page 12:** timetable scheme for the Regionalbahn (eastern part of the city and around)
+**Page 12:** timetable scheme for the Regionalbahn (eastern part of the city and around)  
 **Page 13:** nighttime timetable scheme for the S-Bahn (western part of the city)  
 **Page 14:** nighttime timetable scheme for the S-Bahn (eastern part of the city)  
 **Page 15:** detailed timetables for the S-Bahn (nighttime)  
