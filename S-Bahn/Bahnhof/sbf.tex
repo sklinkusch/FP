@@ -94,7 +94,7 @@
  \begin{tabular}{ccccccccccc}
   \multicolumn{11}{c}{\bfseries BAHU \mbus} \\\hline
    \ifppp
-               & \BAHUPfs & \BAHUPhs & \BAHUPps & $\arrw$ & \mgt{1}  & $\arrnw$ & \BAHUPfn & \BAHUPhn & \BAHUPpn &          \\
+               & \BAHUPhs & \BAHUPfs & \BAHUPps & $\arrw$ & \mgt{1}  & $\arrnw$ & \BAHUPhn & \BAHUPfn & \BAHUPpn &          \\
    \fi
    \ifpp
                &          & \BAHUPfs & \BAHUPps & $\arrw$ & \mgt{1}  & $\arrnw$ & \BAHUPfn & \BAHUPpn &          &          \\
@@ -140,7 +140,7 @@
               & \BBMWUfs  & $\arrs$ & \mbr{45} & $\arrw$ & \BBMWUfn  &           \\
    \fi
    \ifdora
-    \BBMWDfs  & \BBMWDas  & $\arrs$ & \mbr{46} & $\arre$ & \BBMWDfn  &           \\
+    \BBMWDfs  & \BBMWDas  & $\arrs$ & \mbr{46} & $\arrw$ & \BBMWDfn  &           \\
    \fi
    \ifkonrad
               & \BBMWKpo  & $\arrs$ & \mbr{47} & $\arrw$ & \BBMWKlw  & \BBMWKpw  \\
@@ -270,7 +270,7 @@
 % \begin{tabular}{ccccccccc}
   \multicolumn{9}{c}{\bfseries BBGT \bus} \\\hline
    \ifppp
-      \BBGTPfs & \BBGTPhs & \BBGTPps & $\arrw$ & \mgt{1} & $\arrn$ & \BBGTPfn & \BBGTPhn & \BBGTPpn \\
+      \BBGTPhs & \BBGTPfs & \BBGTPps & $\arrw$ & \mgt{1} & $\arrn$ & \BBGTPhn & \BBGTPfn & \BBGTPpn \\
    \fi
    \ifpp
                & \BBGTPfs & \BBGTPps & $\arrw$ & \mgt{1} & $\arrn$ & \BBGTPfn & \BBGTPpn &          \\
@@ -382,7 +382,7 @@
 % \begin{tabular}{ccccccccc}
   \multicolumn{9}{c}{\bfseries BFB \mbus \xbus \bus} \\\hline
    \ifppp
-      \BFBPfs  & \BFBPhs  & \BFBPps  & $\arrsw$ & \mgt{1}  & $\arrn$  & \BFBPfn  & \BFBPhn  & \BFBPpn  \\
+      \BFBPhs  & \BFBPfs  & \BFBPps  & $\arrsw$ & \mgt{1}  & $\arrn$  & \BFBPhn  & \BFBPfn  & \BFBPpn  \\
    \fi
    \ifpp
                & \BFBPfs  & \BFBPps  & $\arrsw$ & \mgt{1}  & $\arrn$  & \BFBPfn  & \BFBPpn  &          \\
@@ -418,7 +418,7 @@
  \begin{tabular}{ccccccccc}
   \multicolumn{9}{c}{\bfseries BFRU \bus} \\\hline
    \ifppp
-      \BFRUPfs & \BFRUPhs & \BFRUPps & $\arrs$ & \mgt{1}  & $\arrne$ & \BFRUPfn & \BFRUPhn & \BFRUPpn \\
+      \BFRUPhs & \BFRUPfs & \BFRUPps & $\arrs$ & \mgt{1}  & $\arrne$ & \BFRUPhn & \BFRUPfn & \BFRUPpn \\
    \fi
    \ifpp
                & \BFRUPfs & \BFRUPps & $\arrs$ & \mgt{1}  & $\arrne$ & \BFRUPfn & \BFRUPpn &          \\
@@ -468,6 +468,9 @@
    \fi
    \ifb
              & \BFRHBfw & $\arrs$ & \ebs{3} & $\arrn$ & \BFRHBfo &          \\
+   \fi
+   \ifbenno
+               \BFRHBxhw& $\arrs$ & \ebs{3X}& $\arrN$ & \BFRHBxho           \\
    \fi
  \end{tabular}
 }
@@ -610,7 +613,7 @@
   \ifpa
   \multicolumn{11}{c}{\bfseries BGGS \ubahn \mbus} \\\hline
    \ifppp
-               & \BGGSPfs & \BGGSPhs & \BGGSPps & $\arrw$  & \mgt{1}  & $\arre$ & \BGGSPfn & \BGGSPhn & \BGGSPpn &          \\
+               & \BGGSPhs & \BGGSPfs & \BGGSPps & $\arrw$  & \mgt{1}  & $\arre$ & \BGGSPhn & \BGGSPfn & \BGGSPpn &          \\
    \fi
    \ifpp
                &          & \BGGSPfs & \BGGSPps & $\arrw$  & \mgt{1}  & $\arre$ & \BGGSPfn & \BGGSPpn &          &          \\
@@ -911,7 +914,7 @@
  \begin{tabular}{ccccccccc}
   \multicolumn{9}{c}{\bfseries BJLB \bus} \\\hline
    \ifppp
-      \BJLBPfs & \BJLBPhs & \BJLBPps & $\arrs$ & \mgt{1} & $\arre$ & \BJLBPfn & \BJLBPhn & \BJLBPpn \\
+      \BJLBPhs & \BJLBPfs & \BJLBPps & $\arrs$ & \mgt{1} & $\arre$ & \BJLBPhn & \BJLBPfn & \BJLBPpn \\
    \fi
    \ifpp
                & \BJLBPfs & \BJLBPps & $\arrs$ & \mgt{1} & $\arre$ & \BJLBPfn & \BJLBPpn &          \\
@@ -954,6 +957,9 @@
    \fi
    \ifb
              & \BKLHBfo & $\arrs$ & \ebs{3} & $\arrn$  & \BKLHBfw &          \\
+   \fi
+   \ifbenno
+               \BKLHBxho& $\arrs$ & \ebs{3X}& $\arrn$  & \BKLHBxhw           \\
    \fi
  \hline
 % \end{tabular} 
@@ -1018,6 +1024,9 @@
    \fi
    \ifb
              & \BKPKBfo & $\arre$ & \ebs{3} & $\arrn$ & \BKPKBfw &          \\
+   \fi
+   \ifbenno
+               \BKPKBxho& $\arre$ & \ebs{3X}& $\arrn$ & \BKPKBxhw           \\
    \fi
 %  \hline
  \end{tabular}
@@ -1129,7 +1138,7 @@
 % \begin{tabular}{ccccccccc}
   \multicolumn{9}{c}{\bfseries BLWE \mbus} \\\hline
    \ifppp
-      \BLWEPfn & \BLWEPhn & \BLWEPpn & $\arre$ & \mgt{1} & $\arrn$ & \BLWEPfs & \BLWEPhs & \BLWEPps \\
+      \BLWEPhn & \BLWEPfn & \BLWEPpn & $\arre$ & \mgt{1} & $\arrn$ & \BLWEPhs & \BLWEPfs & \BLWEPps \\
    \fi
    \ifpp
                & \BLWEPfn & \BLWEPpn & $\arre$ & \mgt{1} & $\arrn$ & \BLWEPfs & \BLWEPps &          \\
@@ -1425,10 +1434,19 @@
    \ifb
                &           &           & \BOSBBfw  & $\arrw$ & \ebs{3}  & $\arrs$ & \BOSBBfo  &           &           &           \\
    \fi
-   \ifeey
+   \ifbenno
+               &           &             \BOSBBxhw & $\arrW$ & \ebs{3X} & $\arrs$ & \BOSBBxho             &           &           \\
+   \fi
+   \ifeees
+    \BOSBEafw  & \BOSBShw  & \BOSBEbfw & \BOSBEhw  & $\arrw$ & \pos{5}  & $\arrs$ & \BOSBEafo & \BOSBSho  & \BOSBEbfo & \BOSBEho  \\
+   \fi
+   \ifeee
+               & \BOSBEafw & \BOSBEbfw & \BOSBEhw  & $\arrw$ & \pos{5}  & $\arrs$ & \BOSBEafo & \BOSBEbfo & \BOSBEho  &           \\
+   \fi
+   \ifeex
                &           & \BOSBEafw & \BOSBEbfw & $\arrw$ & \pos{5}  & $\arrs$ & \BOSBEafo & \BOSBEbfo &           &           \\
    \fi
-   \ifey
+   \ifex
                &           &           & \BOSBEafw & $\arrw$ & \pos{5}  & $\arrs$ & \BOSBEafo &           &           &           \\
    \fi
    \ifoo
@@ -1436,12 +1454,6 @@
    \fi
    \ifo
                &           &           & \BOSBOfw  & $\arrw$ & \bls{7}  & $\arrs$ & \BOSBOfo  &           &           &           \\
-   \fi
-   \iftt
-               &           & \BOSBTfw  & \BOSBTpw  & $\arrW$ & \bls{75} & $\arrs$ & \BOSBTfo  & \BOSBTpo  &           &           \\
-   \fi
-   \ift
-               &           &           & \BOSBTfw  & $\arrW$ & \bls{75} & $\arrs$ & \BOSBTfo  &           &           &           \\
    \fi
    \ifcaesar
                &           &           & \BOSBCfn  & $\arrw$ & \rbs{9}  & $\arrs$ & \BOSBCfs  &           &           &           \\
@@ -1484,6 +1496,9 @@
    \fi
    \ifb
                &           &           & \BOKSBfw  & $\arrw$ & \ebs{3}  & $\arrse$ & \BOKSBfo  &           &           &           \\
+   \fi
+   \ifbenno
+               &           &             \BOKSBxhw & $\arrw$ & \ebs{3X} & $\arrse$ & \BOKSBxho             &           &           \\
    \fi
    \ifeees
     \BOKSEafw  & \BOKSShw  & \BOKSEbfw & \BOKSEhw  & $\arrw$ & \pos{5}  & $\arre$  & \BOKSEafo & \BOKSSho  & \BOKSEbfo & \BOKSEho  \\
@@ -1592,7 +1607,7 @@
  \begin{tabular}{ccccccccccc}
   \multicolumn{11}{c}{\bfseries BPOP \rbahn \ubahn \mbus \bus}            \\\hline
    \ifppp
-               & \BPOPPfs & \BPOPPhs & \BPOPPps & $\arrse$ & \mgt{1}  & $\arre$   & \BPOPPfn & \BPOPPhn & \BPOPPpn &          \\
+               & \BPOPPhs & \BPOPPfs & \BPOPPps & $\arrse$ & \mgt{1}  & $\arre$   & \BPOPPhn & \BPOPPfn & \BPOPPpn &          \\
    \fi
    \ifpp
                &          & \BPOPPfs & \BPOPPps & $\arrse$ & \mgt{1}  & $\arre$   & \BPOPPfn & \BPOPPpn &          &          \\
@@ -1683,7 +1698,7 @@
  \begin{tabular}{ccccccccc}
   \multicolumn{9}{c}{\bfseries BRST \ubahn \mbus \xbus \bus} \\\hline
    \ifppp
-      \BRSTPfs & \BRSTPhs & \BRSTPps & $\arrs$ & \mgt{1} & $\arrne$ & \BRSTPfn & \BRSTPhn & \BRSTPpn \\
+      \BRSTPhs & \BRSTPfs & \BRSTPps & $\arrs$ & \mgt{1} & $\arrne$ & \BRSTPhn & \BRSTPfn & \BRSTPpn \\
    \fi
    \ifpp
                & \BRSTPfs & \BRSTPps & $\arrs$ & \mgt{1} & $\arrne$ & \BRSTPfn & \BRSTPpn &          \\
@@ -1797,7 +1812,7 @@
  \ifpa
   \multicolumn{11}{c}{\bfseries BSGV \mbus \bus} \\\hline
    \ifppp
-               & \BSGVPfs & \BSGVPhs & \BSGVPps & $\arrsw$ & \mgt{1}  & $\arrn$  & \BSGVPfn & \BSGVPhn & \BSGVPpn &          \\
+               & \BSGVPhs & \BSGVPfs & \BSGVPps & $\arrsw$ & \mgt{1}  & $\arrn$  & \BSGVPhn & \BSGVPfn & \BSGVPpn &          \\
    \fi
    \ifpp
                &          & \BSGVPfs & \BSGVPps & $\arrsw$ & \mgt{1}  & $\arrn$  & \BSGVPfn & \BSGVPpn &          &          \\
@@ -2072,7 +2087,7 @@
  \begin{tabular}{ccccccccc}
   \multicolumn{9}{c}{\bfseries BSDG \xbus} \\\hline
    \ifppp
-      \BSDGPfn & \BSDGPhn & \BSDGPpn & $\arrs$ & \mgt{1} & $\arrn$ & \BSDGPfs & \BSDGPhs & \BSDGPps \\
+      \BSDGPhn & \BSDGPfn & \BSDGPpn & $\arrs$ & \mgt{1} & $\arrn$ & \BSDGPhs & \BSDGPfs & \BSDGPps \\
    \fi
    \ifpp
                & \BSDGPfn & \BSDGPpn & $\arrs$ & \mgt{1} & $\arrn$ & \BSDGPfs & \BSDGPps &          \\
@@ -2204,6 +2219,9 @@
    \ifb
                &           &           & \BWRSBfw  & $\arrn$ & \ebs{3}  & $\arre$ & \BWRSBfo  &           &           &           \\
    \fi
+   \ifbenno
+               &           &             \BWRSBxhw & $\arrn$ & \ebs{3X} & $\arre$ & \BWRSBxho             &           &           \\
+   \fi
    \ifeees
     \BWRSEafw  & \BWRSShw  & \BWRSEbfw & \BWRSEhw  & $\arrn$ & \pos{5}  & $\arre$ & \BWRSEafo & \BWRSSho  & \BWRSEbfo & \BWRSEho  \\
    \fi
@@ -2223,10 +2241,10 @@
                &           &           & \BWRSOfw  & $\arrn$ & \bls{7}  & $\arre$ & \BWRSOfo  &           &           &           \\
    \fi
    \iftt
-               &           & \BWRSTfw  & \BWRSTpw  & $\arrn$ & \bls{75} & $\arre$ & \BWRSTfo  & \BWRSTpo  &           &           \\
+               &           & \BWRSTfw  & \BWRSTpw  & $\arrN$ & \bls{75} & $\arre$ & \BWRSTfo  & \BWRSTpo  &           &           \\
    \fi
    \ift
-               &           &           & \BWRSTfw  & $\arrn$ & \bls{75} & $\arre$ & \BWRSTfo  &           &           &           \\
+               &           &           & \BWRSTfw  & $\arrN$ & \bls{75} & $\arre$ & \BWRSTfo  &           &           &           \\
    \fi
    \ifcaesar
                &           &           & \BWRSCfn  & $\arrn$ & \rbs{9}  & $\arrse$& \BWRSCfs  &           &           &           \\
@@ -2455,7 +2473,7 @@
  \begin{tabular}{ccccccccc}
   \multicolumn{9}{c}{\bfseries BZD \xbus \bus} \\\hline
    \ifppp
-      \BZDPfn  & \BZDPhn  & \BZDPpn  & $\arrs$ & \mgt{1} & $\arrn$ & \BZDPfs  & \BZDPhs  & \BZDPps  \\
+      \BZDPhn  & \BZDPfn  & \BZDPpn  & $\arrs$ & \mgt{1} & $\arrn$ & \BZDPhs  & \BZDPfs  & \BZDPps  \\
    \fi
    \ifpp
                & \BZDPfn  & \BZDPpn  & $\arrs$ & \mgt{1} & $\arrn$ & \BZDPfs  & \BZDPps  &          \\
