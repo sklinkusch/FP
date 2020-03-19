@@ -4,6 +4,14 @@
 \begin{minipage}[t]{0.16\textwidth}
 \begin{tabular}{|l|c|c|c|l|}
 \hline
+\ifcorona
+BADL  & 3/4   & 3  & \mbr{46} & Königs Wusterhausen      \\
+      &       &    & \hgr{8}  & Zeuthen                  \\
+      &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
+      &       & 4  & \lbr{46} & Westend                  \\
+      &       &    & \hgr{8}  & Birkenwerder             \\
+      &       &    & \rbs{9}  & Spandau                  \\\hline
+\else
 BADL  & 3/4   & 3  & \mbr{45} & Schönefeld \flh          \\
       &       &    & \mbr{46} & Königs Wusterhausen      \\
       &       &    & \hgr{8}  & Zeuthen                  \\
@@ -14,15 +22,30 @@ BADL  & 3/4   & 3  & \mbr{45} & Schönefeld \flh          \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\fi
 BAF   & 41    & 41 & \bls{7}  & \vgb{Ankunft}            \\
       &       &    & \bls{7}  & \rgs{Potsdam Hbf}        \\\cline{2-5}
       & 42/44 & 42 & \bls{7}  & \vgb{Ankunft}            \\
       &       &    & \bls{7}  & \rgs{Potsdam Hbf}        \\\cline{3-5}
       &       & 44 &          & \rrd{Regionalverkehr}    \\\hline
+\ifcorona
+BAGL  & 1/2   & 1  & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
+      &       & 2  & \rbs{9}  & Spandau                  \\\hline
+\else
 BAGL  & 1/2   & 1  & \mbr{45} & Schönefeld \flh          \\
       &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
       &       & 2  & \mbr{45} & Südkreuz                 \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\fi
+\ifcorona
+BAHU  & A     & 1  &          & \rrd{kein Zugverkehr}    \\\cline{3-5}
+      &       & 2  & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{2}  & Blankenfelde             \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{2-5}
+      & B     & 3  & \mgt{1}  & Oranienburg              \\\cline{3-5}
+      &       & 4  & \dgr{2}  & Bernau                   \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BAHU  & A     & 1  &          & \rrd{kein Zugverkehr}    \\\cline{3-5}
       &       & 2  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Blankenfelde             \\
@@ -32,6 +55,7 @@ BAHU  & A     & 1  &          & \rrd{kein Zugverkehr}    \\\cline{3-5}
       &       & 4  & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 BALX  & B     & 3  & \ebs{3}  & Erkner                   \\
       &       &    & \pos{5}  & Strausberg Nord          \\
       &       &    & \bls{7}  & Ahrensfelde              \\
@@ -84,6 +108,16 @@ BBLB  & 1/4   & 1  & \dgr{2}  & Blankenfelde             \\
       &       & 4  & \dgr{2}  & Bernau                   \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{8}  & \vgb{Ankunft}            \\\hline
+\ifcorona
+BBMW  & A     & 3  & \hgr{8}  & Zeuthen                  \\
+      &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
+      &       & 5  & \mbr{46} & Königs Wusterhausen      \\
+      &       &    & \mbr{47} & Spindlersfeld            \\\cline{2-5}
+      & B     & 4  & \mbr{46} & Westend                  \\
+      &       &    & \mbr{47} & Hermannstraße            \\
+      &       &    & \hgr{8}  & Birkenwerder             \\
+      &       &    & \rbs{9}  & Spandau                  \\\hline
+\else
 BBMW  & A     & 3  & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{85} & Grünau                   \\
       &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
@@ -96,6 +130,7 @@ BBMW  & A     & 3  & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\fi
 BBOR  & 1/2   & 1  & \mgt{1}  & Oranienburg              \\\cline{3-5}
       &       & 2  & \mgt{1}  & Wannsee                  \\\hline
 \end{tabular}
@@ -103,6 +138,16 @@ BBOR  & 1/2   & 1  & \mgt{1}  & Oranienburg              \\\cline{3-5}
 \begin{minipage}[t]{0.16\textwidth}
 \begin{tabular}{|l|c|c|c|l|}
 \hline
+\ifcorona
+BBOS  & A     & 1  & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \dgr{2}  & Blankenfelde             \\
+      &       &    & \hgr{8}  & Zeuthen                  \\\cline{2-5}
+      & B     & 3  & \dgr{2}  & Bernau                   \\
+      &       &    & \hgr{8}  & Birkenwerder             \\\cline{3-5}
+      &       & 4  & \mgt{1}  & Oranienburg              \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BBOS  & A     & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\\cline{3-5}
@@ -115,6 +160,7 @@ BBOS  & A     & 1  & \mgt{1}  & Wannsee                  \\
       &       & 4  & \mgt{1}  & Oranienburg              \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 BBRF  & 1     & 1  & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{2}  & Blankenfelde             \\\hline
 BBU   & 1/2   & 1  & \dgr{2}  & Bernau                   \\
@@ -143,12 +189,19 @@ BEIW  & 3/4   & 3  & \mbr{46} & Königs Wusterhausen      \\
       &       &    & \hgr{8}  & Zeuthen                  \\\cline{3-5}
       &       & 4  & \mbr{46} & Westend                  \\
       &       &    & \hgr{8}  & Birkenwerder             \\\hline 
+\ifcorona
+BFA   & 1/2   & 1  & \lbr{41} & Ring \clw                \\
+      &       &    & \hgr{8}  & Zeuthen                  \\\cline{3-5}
+      &       & 2  & \lbr{42} & Ring \ccw                \\
+      &       &    & \hgr{8}  & Birkenwerder             \\\hline
+\else
 BFA   & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{85} & Grünau                   \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\\hline
+\fi
 BFB   & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
       &       & 2  & \mgt{1}  & Oranienburg              \\\hline
 BFD   & 15/16 & 15 & \pos{5}  & Strausberg Nord          \\\cline{3-5}
@@ -159,20 +212,33 @@ BFFO  & 1/2   & 1  & \pos{5}  & Strausberg Nord          \\
       &       & 2  & \pos{5}  & Westkreuz                \\
       &       &    & \bls{7}  & Potsdam Hbf              \\
       &       &    & \bls{75} & Warschauer Straße        \\\hline
+\ifcorona
+BFLH  & A     & 11 &          & \rrd{kein Zugverkehr}    \\\cline{3-5}
+\flh  &       & 13 & \rbs{9}  & \vgb{Ankunft}            \\
+      &       &    & \rbs{9}  & \rgs{Spandau}            \\\hline
+\else
 BFLH  & A     & 11 & \mbr{45} & \vgb{Ankunft}            \\
 \flh  &       &    & \mbr{45} & \rgs{Südkreuz}           \\\cline{3-5}
       &       & 13 & \rbs{9}  & \vgb{Ankunft}            \\
       &       &    & \rbs{9}  & \rgs{Spandau}            \\\hline
+\fi
 BFOH  & 1/2   & 1  & \mgt{1}  & \vgb{Ankunft}            \\
       &       &    & \mgt{1}  & Oranienburg              \\\cline{3-5}
       &       & 2  & \mgt{1}  & Wannsee                  \\
       &       &    & \mgt{1}  & \rgs{Wannsee}            \\\hline
+\ifcorona
+BFRH  & 1/4   & 1  & \ebs{3}  & Spandau                  \\
+      &       &    & \ebs{3}  & \rgs{Ostbahnhof}         \\\cline{3-5}
+      &       & 4  & \ebs{3}  & \vgb{Ankunft}            \\
+      &       &    & \ebs{3}  & Erkner                   \\\hline
+\else
 BFRH  & 1/4   & 1  & \ebs{3}  & Spandau                  \\
       &       &    & \ebs{3X} & \rgs{Ostbahnhof}         \\
       &       &    & \ebs{3}  & \rgs{Ostbahnhof}         \\\cline{3-5}
       &       & 4  & \ebs{3}  & \vgb{Ankunft}            \\
       &       &    & \ebs{3X} & \vgb{Ankunft}            \\
       &       &    & \ebs{3}  & Erkner                   \\\hline
+\fi
 BFRU  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
       &       & 2  & \mgt{1}  & Oranienburg              \\\hline
 BFST  & C     & 5  & \ebs{3}  & Erkner                   \\
@@ -183,6 +249,14 @@ BFST  & C     & 5  & \ebs{3}  & Erkner                   \\
       &       &    & \pos{5}  & Westkreuz                \\
       &       &    & \bls{7}  & Potsdam Hbf              \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\ifcorona
+BFSTT & D     & 11 & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{2}  & Blankenfelde             \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 12 & \mgt{1}  & Oranienburg              \\
+      &       &    & \dgr{2}  & Bernau                   \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BFSTT & D     & 11 & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Blankenfelde             \\
       &       &    & \dgr{25} & Teltow Stadt             \\
@@ -191,11 +265,20 @@ BFSTT & D     & 11 & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 \end{tabular}
 \end{minipage}%
 \begin{minipage}[t]{0.16\textwidth}
 \begin{tabular}{|l|c|c|c|l|}
 \hline
+\ifcorona
+BGAS  & A     & 1  & \mbr{46} & Königs Wusterhausen      \\
+      &       &    & \hgr{8}  & Zeuthen                  \\\cline{3-5}
+      &       & 2  & \hgr{8}  & \vgb{Ankunft}            \\\cline{2-5}
+      & B     & 3  & \hgr{8}  & \rgs{Birkenwerder}       \\\cline{3-5}
+      &       & 4  & \mbr{46} & Westend                  \\
+      &       &    & \hgr{8}  & Birkenwerder             \\\hline
+\else
 BGAS  & A     & 1  & \mbr{46} & Königs Wusterhausen      \\
       &       &    & \hgr{8}  & Zeuthen                  \\\cline{3-5}
       &       & 2  & \hgr{8}  & \vgb{Ankunft}            \\
@@ -204,6 +287,19 @@ BGAS  & A     & 1  & \mbr{46} & Königs Wusterhausen      \\
       &       &    & \hgr{85} & \rgs{Pankow}             \\\cline{3-5}
       &       & 4  & \mbr{46} & Westend                  \\
       &       &    & \hgr{8}  & Birkenwerder             \\\hline
+\fi
+\ifcorona
+BGB   & A     & 1  & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{2}  & Blankenfelde             \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \lbr{42} & Ring \ccw                \\
+      &       &    & \mbr{46} & \rgs{Königs Wusterhausen}\\\cline{2-5}
+      & B     & 3  & \lbr{41} & Ring \clw                \\
+      &       &    & \mbr{46} & \vgb{Ankunft}            \\\cline{3-5}
+      &       & 4  & \mgt{1}  & Oranienburg              \\
+      &       &    & \dgr{2}  & Bernau                   \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BGB   & A     & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Blankenfelde             \\
       &       &    & \dgr{25} & Teltow Stadt             \\
@@ -216,22 +312,35 @@ BGB   & A     & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
+\ifcorona
+BGBA  & 1/2   & 1  & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
+      &       & 2  & \rbs{9}  & Spandau                  \\\hline
+\else
 BGBA  & 1/2   & 1  & \mbr{45} & Schönefeld \flh          \\
       &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
       &       & 2  & \mbr{45} & Südkreuz                 \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\fi
 BGGS  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
       &       & 2  & \mgt{1}  & Oranienburg              \\\hline
 BGRI  & 1/2   & 1  & \bls{7}  & Potsdam Hbf              \\\cline{3-5}
       &       & 2  & \bls{7}  & Ahrensfelde              \\\hline
 BGSE  & 1/2   & 1  & \bls{75} & Wartenberg               \\\cline{3-5}
       &       & 2  & \bls{75} & Warschauer Straße        \\\hline
+\ifcorona
+BGSS  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
+      &       &    & \hgr{8}  & Zeuthen                  \\\cline{3-5}
+      &       & 2  & \lbr{42} & Ring \ccw                \\
+      &       &    & \hgr{8}  & Birkenwerder             \\\hline
+\else
 BGSS  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{85} & Grünau                   \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\\hline
+\fi
 BGWD  & A     & 1  & \bls{7}  & Potsdam Hbf              \\\cline{3-5}
       &       & 2  & \ebs{3}  & \vgb{Ankunft}            \\
       &       &    & \pos{5}  & \vgb{Ankunft}            \\
@@ -264,6 +373,14 @@ BHEI  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{46} & Westend                  \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\
       &       &    & \mbr{46} & Königs Wusterhausen      \\\hline
+\ifcorona
+BHER  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
+      &       &    & \mbr{46} & Westend                  \\
+      &       &    & \mbr{47} & \vgb{Ankunft}            \\\cline{3-5}
+      &       & 2  & \lbr{42} & Ring \ccw                \\
+      &       &    & \mbr{46} & Königs Wusterhausen      \\
+      &       &    & \mbr{47} & \rgs{Spindlersfeld}      \\\hline
+\else
 BHER  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{45} & Südkreuz                 \\
       &       &    & \mbr{46} & Westend                  \\
@@ -272,6 +389,7 @@ BHER  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{45} & Schönefeld \flh          \\
       &       &    & \mbr{46} & Königs Wusterhausen      \\
       &       &    & \mbr{47} & \rgs{Spindlersfeld}      \\\hline
+\fi
 BHGM  & 1     & 1  & \pos{5}  & Strausberg Nord          \\
       &       &    & \pos{5}  & Westkreuz                \\\hline
 BHH   & 1/2   & 1  & \bls{75} & Wartenberg               \\\cline{3-5}
@@ -309,6 +427,14 @@ BHST  & 1/2   & 1  & \ebs{3}  & Erkner                   \\
       &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
       &       & 2  & \ebs{3}  & Spandau                  \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\ifcorona
+BHUM  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{2}  & Blankenfelde             \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \mgt{1}  & Oranienburg              \\
+      &       &    & \dgr{2}  & Bernau                   \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BHUM  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Blankenfelde             \\
       &       &    & \dgr{25} & Teltow Stadt             \\
@@ -317,6 +443,7 @@ BHUM  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 BIP   & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{46} & Westend                  \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\
@@ -339,46 +466,78 @@ BKAD  & 1/2   & 1  & \pos{5}  & Westkreuz                \\\cline{3-5}
       &       & 2  & \pos{5}  & Strausberg Nord          \\\hline
 BKBO  & 2     & 2  & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\ifcorona
+BKHD  & 1/2   & 1  & \mbr{46} & Westend                  \\
+      &       &    & \mbr{47} & Hermannstraße            \\\cline{3-5}
+      &       & 2  & \mbr{46} & Königs Wusterhausen      \\
+      &       &    & \mbr{47} & Spindlersfeld            \\\hline
+\else
 BKHD  & 1/2   & 1  & \mbr{45} & Südkreuz                 \\
       &       &    & \mbr{46} & Westend                  \\
       &       &    & \mbr{47} & Hermannstraße            \\\cline{3-5}
       &       & 2  & \mbr{45} & Schönefeld \flh          \\
       &       &    & \mbr{46} & Königs Wusterhausen      \\
       &       &    & \mbr{47} & Spindlersfeld            \\\hline
+\fi
+\ifcorona
+BKLH  & 11/12 & 11 & \ebs{3}  & Spandau                  \\\cline{3-5}
+      &       & 12 & \ebs{3}  & Erkner                   \\\hline
+\else
 BKLH  & 11/12 & 11 & \ebs{3}  & Spandau                  \\
       &       &    & \ebs{3X} & Ostbahnhof               \\\cline{3-5}
       &       & 12 & \ebs{3}  & Erkner                   \\
       &       &    & \ebs{3X} & Friedrichshagen          \\\hline
+\fi
+\ifcorona
+BKPK  & 1/2   & 1  & \ebs{3}  & Spandau                  \\\cline{3-5}
+      &       & 2  & \ebs{3}  & Erkner                   \\\hline
+\else
 BKPK  & 1/2   & 1  & \ebs{3}  & Spandau                  \\
       &       &    & \ebs{3X} & Ostbahnhof               \\\cline{3-5}
       &       & 2  & \ebs{3}  & Erkner                   \\
       &       &    & \ebs{3X} & Friedrichshagen          \\\hline
+\fi
 BKRW  & 1/2   & 1  &          & \rrd{Regionalverkehr}    \\\cline{3-5}
       &       & 2  & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{2}  & Blankenfelde             \\\hline
 BKW   & B     & 2  & \mbr{46} & \vgb{Ankunft}            \\
       &       &    & \mbr{46} & \rgs{Westend}            \\\cline{3-5}
       &       & 3  &          & \rrd{Regionalverkehr}    \\\hline
+\ifcorona
+BLAK  & 2     & 2  & \dgr{25} & Teltow Stadt             \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BLAK  & 2     & 2  & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 BLEN  & 1/2   & 1  & \mgt{1}  & Oranienburg              \\\cline{3-5}
       &       & 2  & \mgt{1}  & Wannsee                  \\\hline
 BLI   & 1/2   & 1  & \pos{5}  & Strausberg Nord          \\
       &       &    & \bls{7}  & Ahrensfelde              \\
-      &       &    & \bls{75} & Wartenberg               \\
+      &       &    & \bls{75} & Wartenberg               \\\cline{3-5}
       &       & 2  & \pos{5}  & Westkreuz                \\
       &       &    & \bls{7}  & Potsdam Hbf              \\
-      &       &    & \bls{75} & Warschauer Straß         \\
+      &       &    & \bls{75} & Warschauer Straße        \\\hline
+\ifcorona
+BLIO  & 1/2   & 1  & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BLIO  & 1/2   & 1  & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\\cline{3-5}
       &       & 2  & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
+\ifcorona
+BLIS  & 1/2   & 1  & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BLIS  & 1/2   & 1  & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\\cline{3-5}
       &       & 2  & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 \end{tabular}
 \end{minipage}%
 \begin{minipage}[t]{0.16\textwidth}
@@ -388,18 +547,33 @@ BLRD  & 1/2   & 1  & \dgr{2}  & Blankenfelde             \\
       &       &    & \dgr{2}  & Bernau                   \\\cline{3-5}
       &       & 2  & \dgr{2}  & \vgb{Ankunft}            \\
       &       &    & \dgr{2}  & \rgs{Buch}               \\\hline
+\ifcorona
+BLST  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
+      &       &    & \hgr{8}  & Zeuthen                  \\\cline{3-5}
+      &       & 2  & \lbr{42} & Ring \ccw                \\
+      &       &    & \hgr{8}  & Birkenwerder             \\\hline
+\else
 BLST  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{85} & Grünau                   \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\\hline
+\fi
 BLWE  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
       &       & 2  & \mgt{1}  & Oranienburg              \\\hline
 BMAH  & 2/3   & 2  & \dgr{2}  & Bernau                   \\\cline{3-5}
       &       & 3  & \dgr{2}  & Blankenfelde             \\\hline
 BMAZ  & 1/2   & 1  & \bls{7}  & Ahrensfelde              \\\cline{3-5}
       &       & 2  & \bls{7}  & Potsdam Hbf              \\\hline
+\ifcorona
+BMDF  & 1/2   & 1  & \pos{5}  & \vgb{Ankunft}            \\
+      &       &    & \pos{5}  & \rgs{Westkreuz}          \\\cline{3-5}
+      &       & 2  & \pos{5}  & Westkreuz                \\\cline{2-5}
+      & 3/4   & 3  & \pos{5}  & Strausberg Nord          \\\cline{3-5}
+      &       & 4  & \pos{5}  & \vgb{Ankunft}            \\
+      &       &    & \pos{5}  & \rgs{Strausberg Nord}    \\\hline
+\else
 BMDF  & 1/2   & 1  & \pos{5}  & \vgb{Ankunft}            \\
       &       &    & \pos{5}  & \rgs{Westkreuz}          \\
       &       &    & \pos{5}  & \rgs{Ostbahnhof}         \\\cline{3-5}
@@ -407,6 +581,7 @@ BMDF  & 1/2   & 1  & \pos{5}  & \vgb{Ankunft}            \\
       & 3/4   & 3  & \pos{5}  & Strausberg Nord          \\\cline{3-5}
       &       & 4  & \pos{5}  & \vgb{Ankunft}            \\
       &       &    & \pos{5}  & \rgs{Strausberg Nord}    \\\hline
+\fi
 BMEA  & 1/2   & 1  & \bls{7}  & Ahrensfelde              \\\cline{3-5}
       &       & 2  & \bls{7}  & Potsdam Hbf              \\\hline
 BMEX  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
@@ -423,6 +598,16 @@ BMS   & 1/2   & 1  & \ebs{3}  & Erkner                   \\
       &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
       &       & 2  & \ebs{3}  & Spandau                  \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\ifcorona
+BNB   & A     & 1  & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{2}  & Blankenfelde             \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \dgr{25} & \rgs{Teltow Stadt}       \\\cline{2-5}
+      & B     & 3  & \dgr{25} & \vgb{Ankunft}            \\\cline{3-5}
+      &       & 4  & \mgt{1}  & Oranienburg              \\
+      &       &    & \dgr{2}  & Bernau                   \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BNB   & A     & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Blankenfelde             \\
       &       &    & \dgr{25} & Teltow Stadt             \\
@@ -433,12 +618,21 @@ BNB   & A     & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 BNIS  & 3/4   & 3  & \bls{7}  & Potsdam Hbf              \\\cline{3-5}
       &       & 4  & \bls{7}  & Ahrensfelde              \\\hline
 BNIW  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
       &       & 2  & \mgt{1}  & Oranienburg              \\\hline
 BNG   & 1     & 1  & \pos{5}  & Strausberg Nord          \\
       &       &    & \pos{5}  & Westkreuz                \\\hline
+\ifcorona
+BNK   & 1/2   & 1  & \lbr{41} & Ring \clw                \\
+      &       &    & \mbr{46} & Westend                  \\
+      &       &    & \mbr{47} & Hermannstraße            \\\cline{3-5}
+      &       & 2  & \lbr{42} & Ring \ccw                \\
+      &       &    & \mbr{46} & Königs Wusterhausen      \\
+      &       &    & \mbr{47} & Spindlersfeld            \\\hline
+\else
 BNK   & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{45} & Südkreuz                 \\
       &       &    & \mbr{46} & Westend                  \\
@@ -447,18 +641,38 @@ BNK   & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{45} & Schönefeld \flh          \\
       &       &    & \mbr{46} & Königs Wusterhausen      \\
       &       &    & \mbr{47} & Spindlersfeld            \\\hline
+\fi
 BNPL  & 1/2   & 1  & \pos{5}  & Strausberg Nord          \\
       &       &    & \bls{7}  & Ahrensfelde              \\
       &       &    & \bls{75} & Wartenberg               \\\cline{3-5}
       &       & 2  & \pos{5}  & Westkreuz                \\
       &       &    & \bls{7}  & Potsdam Hbf              \\
       &       &    & \bls{75} & Warschauer Straße        \\\hline
+\ifcorona
+BOK   & F     & 11 & \lbr{41} & Ring \clw                \\
+      &       &    & \hgr{8}  & Zeuthen                  \\\cline{3-5}
+      &       & 12 & \lbr{42} & Ring \ccw                \\
+      &       &    & \hgr{8}  & Birkenwerder             \\\hline
+\else
 BOK   & F     & 11 & \lbr{41} & Ring \clw                \\
       &       &    & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{85} & Grünau                   \\\cline{3-5}
       &       & 12 & \lbr{42} & Ring \ccw                \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\\hline
+\fi
+\ifcorona
+BOKS  & D     & 5  & \ebs{3}  & Ostbahnhof               \\
+      &       &    & \pos{5}  & Ostbahnhof               \\
+      &       &    & \bls{75} & Warschauer Straße        \\\cline{3-5}
+      &       & 6  & \ebs{3}  & Spandau                  \\
+      &       &    & \pos{5}  & Westkreuz                \\
+      &       &    & \bls{7}  & Potsdam Hbf              \\\cline{2-5}
+      & E     & 3  & \ebs{3}  & Erkner                   \\
+      &       &    & \pos{5}  & Strausberg Nord          \\
+      &       &    & \bls{7}  & Ahrensfelde              \\\cline{3-5}
+      &       & 4  & \bls{75} & Wartenberg               \\\hline
+\else
 BOKS  & D     & 5  & \ebs{3}  & Ostbahnhof               \\
       &       &    & \pos{5}  & Ostbahnhof               \\
       &       &    & \bls{75} & Warschauer Straße        \\\cline{3-5}
@@ -467,9 +681,11 @@ BOKS  & D     & 5  & \ebs{3}  & Ostbahnhof               \\
       &       &    & \pos{5}  & Westkreuz                \\
       &       &    & \bls{7}  & Potsdam Hbf              \\\cline{2-5}
       & E     & 3  & \ebs{3}  & Erkner                   \\
+      &       &    & \ebs{3X} & Friedrichshagen          \\
       &       &    & \pos{5}  & Strausberg Nord          \\
       &       &    & \bls{7}  & Ahrensfelde              \\\cline{3-5}
       &       & 4  & \bls{75} & Wartenberg               \\\hline
+\fi
 \end{tabular}
 \end{minipage}%
 \begin{minipage}[t]{0.16\textwidth}
@@ -483,6 +699,14 @@ BOLS  & A     & 1  & \ebs{3}  & Erkner                   \\
 BORB  & A     & 30 & \mgt{1}  & \vgb{Ankunft}            \\
       &       &    & \mgt{1}  & \rgs{Wannsee}            \\\cline{3-5}
       &       & 32 &          & \rrd{kein Zugverkehr}    \\\hline
+\ifcorona
+BORS  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{2}  & Blankenfelde             \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \mgt{1}  & Oranienburg              \\
+      &       &    & \dgr{2}  & Bernau                   \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BORS  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Blankenfelde             \\
       &       &    & \dgr{25} & Teltow Stadt             \\
@@ -491,6 +715,19 @@ BORS  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
+\ifcorona
+BOSB  & D     & 8  & \ebs{3}  & Erkner                   \\
+      &       &    & \pos{5}  & Strausberg Nord          \\
+      &       &    & \bls{7}  & Ahrensfelde              \\
+      &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
+      &       & 9  & \ebs{3}  & \rgs{Erkner}             \\\cline{2-5}
+      & E     & 10 & \ebs{3}  & \vgb{Ankunft}            \\\cline{3-5}
+      &       & 11 & \ebs{3}  & Spandau                  \\
+      &       &    & \pos{5}  & Westkreuz                \\
+      &       &    & \bls{7}  & Potsdam Hbf              \\
+      &       &    & \rbs{9}  & Spandau                  \\\hline
+\else
 BOSB  & D     & 8  & \ebs{3}  & Erkner                   \\
       &       &    & \pos{5}  & Strausberg Nord          \\
       &       &    & \bls{7}  & Ahrensfelde              \\
@@ -505,12 +742,18 @@ BOSB  & D     & 8  & \ebs{3}  & Erkner                   \\
       &       &    & \pos{5}  & Westkreuz                \\
       &       &    & \bls{7}  & Potsdam Hbf              \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\fi
 BOSP  & 1     & 1  & \mbr{47} & Spindlersfeld            \\
       &       &    & \mbr{47} & Hermannstraße            \\\hline
+\ifcorona
+BOSS  & 1/2   & 1  & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BOSS  & 1/2   & 1  & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\\cline{3-5}
       &       & 2  & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 BPDH  & C     & 6  & \bls{7}  & \vgb{Ankunft}            \\
       &       &    & \bls{7}  & \rgs{Ahrensfelde}        \\\cline{3-5}
       &       & 7  & \bls{7}  & \vgb{Ankunft}            \\
@@ -525,20 +768,44 @@ BPIC  & 1/2   & 1  & \ebs{3}  & Erkner                   \\
       &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
       &       & 2  & \ebs{3}  & Spandau                  \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\ifcorona
+BPKW  & 1/2   & 1  & \dgr{2}  & Bernau                   \\
+      &       &    & \hgr{8}  & Birkenwerder             \\\cline{3-5}
+      &       & 2  & \dgr{2}  & Blankenfelde             \\
+      &       &    & \hgr{8}  & Zeuthen                  \\\hline
+\else
 BPKW  & 1/2   & 1  & \dgr{2}  & Bernau                   \\
       &       &    & \hgr{8}  & Birkenwerder             \\\cline{3-5}
       &       & 2  & \dgr{2}  & Blankenfelde             \\
       &       &    & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{85} & \vgb{Ankunft}            \\
       &       &    & \rbs{85} & \rgs{Grünau}             \\\hline
+\fi
+\ifcorona
+BPLA  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
+      &       &    & \hgr{8}  & Zeuthen                  \\\cline{3-5}
+      &       & 2  & \lbr{42} & Ring \ccw                \\
+      &       &    & \hgr{8}  & Birkenwerder             \\\hline
+\else
 BPLA  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{85} & Grünau                   \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\\hline
+\fi
 BPOE  & 1/2   & 1  & \bls{7}  & Ahrensfelde              \\\cline{3-5}
       &       & 2  & \bls{7}  & Potsdam Hbf              \\\hline
+\ifcorona
+BPOP  & A     & 11 & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{2}  & Blankenfelde             \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 12 & \mgt{1}  & \rgs{Zehlendorf}         \\\cline{2-5}
+      & B     & 14 & \mgt{1}  & Oranienburg              \\
+      &       &    & \mgt{1}  & \vgb{Ankunft}            \\
+      &       &    & \dgr{2}  & Bernau                   \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BPOP  & A     & 11 & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Blankenfelde             \\
       &       &    & \dgr{25} & Teltow Stadt             \\
@@ -551,18 +818,33 @@ BPOP  & A     & 11 & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\
       &       &    & \dgr{26} & \vgb{Ankunft}            \\\hline
+\fi
+\ifcorona
+BPRS  & A     & 1  & \dgr{2}  & Blankenfelde             \\\cline{3-5}
+      &       & 3  & \dgr{25} & Teltow Stadt             \\\cline{2-5}
+      & B     & 2  & \dgr{2}  & Bernau                   \\\cline{3-5}
+      &       & 4  & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BPRS  & A     & 1  & \dgr{2}  & Blankenfelde             \\\cline{3-5}
       &       & 3  & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\\cline{2-5}
       & B     & 2  & \dgr{2}  & Bernau                   \\\cline{3-5}
       &       & 4  & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
+\ifcorona
+BPWA  & 3/4   & 3  & \hgr{8}  & Zeuthen                  \\
+      &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
+      &       & 4  & \hgr{8}  & Birkenwerder             \\
+      &       &    & \rbs{9}  & Spandau                  \\\hline
+\else
 BPWA  & 3/4   & 3  & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{85} & Grünau                   \\
       &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
       &       & 4  & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\fi
 \end{tabular}
 \end{minipage}
 \newpage
@@ -584,12 +866,19 @@ BRST  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
       &       & 2  & \mgt{1}  & Oranienburg              \\\hline
 BRW   & 1/2   & 1  & \bls{7}  & Ahrensfelde              \\\cline{3-5}
       &       & 2  & \bls{7}  & Potsdam Hbf              \\\hline
+\ifcorona
+BSAL  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
+      &       &    & \hgr{8}  & Zeuthen                  \\\cline{3-5}
+      &       & 2  & \lbr{42} & Ring \ccw                \\
+      &       &    & \hgr{8}  & Birkenwerder             \\\hline
+\else
 BSAL  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{85} & Grünau                   \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\\hline
+\fi
 BSAP  & 3/4   & 3  & \ebs{3}  & Erkner                   \\
       &       &    & \pos{5}  & Strausberg Nord          \\
       &       &    & \bls{7}  & Ahrensfelde              \\
@@ -600,6 +889,14 @@ BSAP  & 3/4   & 3  & \ebs{3}  & Erkner                   \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
 BSC   & 1/2   & 1  & \dgr{2}  & Blankenfelde             \\\cline{3-5}
       &       & 2  & \dgr{2}  & Bernau                   \\\hline
+\ifcorona
+BSCF  & 3/4   & 3  & \mbr{46} & Königs Wusterhausen      \\
+      &       &    & \hgr{8}  & Zeuthen                  \\
+      &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
+      &       & 4  & \mbr{46} & Westend                  \\
+      &       &    & \hgr{8}  & Birkenwerder             \\
+      &       &    & \rbs{9}  & Spandau                  \\\hline
+\else
 BSCF  & 3/4   & 3  & \mbr{45} & Schönefeld \flh          \\
       &       &    & \mbr{46} & Königs Wusterhausen      \\
       &       &    & \hgr{8}  & Zeuthen                  \\
@@ -610,12 +907,18 @@ BSCF  & 3/4   & 3  & \mbr{45} & Schönefeld \flh          \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\fi
 BSLS  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
       &       & 2  & \mgt{1}  & Oranienburg              \\\hline
+\ifcorona
+BSDE  & 1/2   & 1  & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BSDE  & 1/2   & 1  & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\\cline{3-5}
       &       & 2  & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 BSDG  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
       &       & 2  & \mgt{1}  & Oranienburg              \\\hline
 BSGR  & 11/12 & 11 & \lbr{41} & Ring \clw                \\
@@ -624,26 +927,47 @@ BSGR  & 11/12 & 11 & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{46} & Königs Wusterhausen      \\\hline
 BSGV  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
       &       & 2  & \mgt{1}  & Oranienburg              \\\hline
+\ifcorona
+BSKR  & 11/12 & 11 & \lbr{41} & Ring \clw                \\
+      &       &    & \mbr{46} & Westend                  \\\cline{3-5}
+      &       & 12 & \lbr{42} & Ring \ccw                \\
+      &       &    & \mbr{46} & Königs Wusterhausen      \\\hline
+\else
 BSKR  & 11/12 & 11 & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{45} & \vgb{Ankunft}            \\
       &       &    & \mbr{46} & Westend                  \\\cline{3-5}
       &       & 12 & \lbr{42} & Ring \ccw                \\
       &       &    & \mbr{45} & \rgs{Schönefeld \flh}    \\
       &       &    & \mbr{46} & Königs Wusterhausen      \\\hline
+\fi
+\ifcorona
+BSKV  & 1/2   & 1  & \dgr{2}  & Blankenfelde             \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \dgr{2}  & Bernau                   \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BSKV  & 1/2   & 1  & \dgr{2}  & Blankenfelde             \\
       &       &    & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\\cline{3-5}
       &       & 2  & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 BSNF  & 6/8   & 6  & \hgr{8}  & Birkenwerder             \\\cline{3-5}
       &       & 8  & \hgr{8}  & Zeuthen                  \\\hline
+\ifcorona
+BSNH  & 3/4   & 3  & \mgt{1}  & Oranienburg              \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\cline{3-5}
+      &       & 4  & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\hline
+\else
 BSNH  & 3/4   & 3  & \mgt{1}  & Oranienburg              \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\cline{3-5}
       &       & 4  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\\hline
+\fi
 BSO   & 1/2   & 1  & \lbr{41} & Ring \clw                \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\\hline
 BSPA  & A     & 1  & \ebs{3}  & \vgb{Ankunft}            \\
@@ -667,18 +991,38 @@ BSRW  & 1/2   & 1  & \ebs{3}  & Spandau                  \\
 \hline
 BSTN  & 1     & 1  & \pos{5}  & \vgb{Ankunft}            \\
       &       &    & \pos{5}  & \rgs{Westkreuz}          \\\hline
+\ifcorona
+BSTO  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
+      &       &    & \hgr{8}  & Zeuthen                  \\\cline{3-5}
+      &       & 2  & \lbr{42} & Ring \ccw                \\
+      &       &    & \hgr{8}  & Birkenwerder             \\\hline
+\else
 BSTO  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \hgr{8}  & Zeuthen                  \\
       &       &    & \hgr{85} & Grünau                   \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\
       &       &    & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\\hline
+\fi
 BSTR  & 1     & 1  & \pos{5}  & Strausberg Nord          \\
       &       &    & \pos{5}  & Westkreuz                \\\hline
 BSTV  & 8/9   & 8  & \pos{5}  & Strausberg Nord          \\
       &       &    & \pos{5}  & Westkreuz                \\\cline{3-5}
       &       & 9  & \pos{5}  & \vgb{Ankunft}            \\
       &       &    & \pos{5}  & \rgs{Westkreuz}          \\\hline
+\ifcorona
+BSW   & 3/4   & 3  & \mbr{46} & Königs Wusterhausen      \\
+      &       &    & \hgr{8}  & Zeuthen                  \\
+      &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
+      &       & 4  & \mbr{47} & Spindlersfeld            \\
+      &       &    & \mbr{47} & \vgb{Ankunft}            \\
+      &       &    & \mbr{47} & \rgs{Spindlersfeld}      \\\cline{2-5}
+      & 5/6   & 5  & \mbr{46} & Westend                  \\
+      &       &    & \mbr{47} & Hermannstraße            \\
+      &       &    & \hgr{8}  & Birkenwerder             \\
+      &       &    & \rbs{9}  & Spandau                  \\\cline{3-5}
+      &       & 6  &          & \rrd{kein Zugverkehr}    \\\hline
+\else
 BSW   & 3/4   & 3  & \mbr{45} & Schönefeld \flh          \\
       &       &    & \mbr{46} & Königs Wusterhausen      \\
       &       &    & \hgr{8}  & Zeuthen                  \\
@@ -696,6 +1040,7 @@ BSW   & 3/4   & 3  & \mbr{45} & Schönefeld \flh          \\
       &       &    & \hgr{85} & Pankow                   \\
       &       &    & \rbs{9}  & Spandau                  \\\cline{3-5}
       &       & 6  &          & \rrd{kein Zugverkehr}    \\\hline
+\fi
 BSZF  & 1     & 1  & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{25} & Hennigsdorf              \\\hline
 BTG   & 1/6   & 1  & \dgr{25} & Hennigsdorf              \\\cline{3-5}
@@ -708,16 +1053,37 @@ BTGN  & 3/4   & 3  & \ebs{3}  & Erkner                   \\
       &       &    & \pos{5}  & Westkreuz                \\
       &       &    & \bls{7}  & Potsdam Hbf              \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\ifcorona
+BTHF  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
+      &       &    & \mbr{46} & Westend                  \\\cline{3-5}
+      &       & 2  & \lbr{42} & Ring \ccw                \\
+      &       &    & \mbr{46} & Königs Wusterhausen      \\\hline
+\else
 BTHF  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{45} & Südkreuz                 \\
       &       &    & \mbr{46} & Westend                  \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\
       &       &    & \mbr{45} & Schönefeld \flh          \\
       &       &    & \mbr{46} & Königs Wusterhausen      \\\hline
+\fi
+\ifcorona
+BTLS  & 1/2   & 1  &          & \rrd{kein Zugverkehr}    \\\cline{3-5}
+      &       & 2  & \dgr{25} & \vgb{Ankunft}            \\
+      &       &    & \dgr{25} & \rgs{Hennigsdorf}        \\\hline
+\else
 BTLS  & 1/2   & 1  & \dgr{26} & \vgb{Ankunft}            \\
       &       &    & \dgr{26} & \rgs{Waidmannslust}      \\\cline{3-5}
       &       & 2  & \dgr{25} & \vgb{Ankunft}            \\
       &       &    & \dgr{25} & \rgs{Hennigsdorf}        \\\hline
+\fi
+\ifcorona
+BTOR  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{2}  & Blankenfelde             \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \mgt{1}  & Oranienburg              \\
+      &       &    & \dgr{2}  & Bernau                   \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BTOR  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Blankenfelde             \\
       &       &    & \dgr{25} & Teltow Stadt             \\
@@ -726,6 +1092,15 @@ BTOR  & 1/2   & 1  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
+\ifcorona
+BTP   & A     & 1  & \lbr{41} & Ring \clw                \\\cline{3-5}
+      &       & 3  & \hgr{8}  & Zeuthen                  \\
+      &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{2-5}
+      & B     & 2  & \lbr{42} & Ring \ccw                \\\cline{3-5}
+      &       & 4  & \hgr{8}  & Birkenwerder             \\
+      &       &    & \rbs{9}  & Spandau                  \\\hline
+\else
 BTP   & A     & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \hgr{85} & Grünau                   \\\cline{3-5}
       &       & 3  & \hgr{8}  & Zeuthen                  \\
@@ -734,14 +1109,20 @@ BTP   & A     & 1  & \lbr{41} & Ring \clw                \\
       &       & 4  & \hgr{8}  & Birkenwerder             \\
       &       &    & \hgr{85} & Pankow                   \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\fi
 BWAB  & 11/12 & 11 & \bls{75} & \vgb{Ankunft}            \\
       &       &    & \bls{75} & \rgs{Warschauer Straße}  \\\cline{3-5}
       &       & 12 & \bls{75} & \vgb{Ankunft}            \\
       &       &    & \bls{75} & \rgs{Warschauer Straße}  \\\hline
+\ifcorona
+BWAI  & 1/2   & 1  & \mgt{1}  & Oranienburg              \\\cline{3-5}
+      &       & 2  & \mgt{1}  & Wannsee                  \\\hline
+\else
 BWAI  & 1/2   & 1  & \mgt{1}  & Oranienburg              \\\cline{3-5}
       &       & 2  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{26} & \vgb{Ankunft}            \\
       &       &    & \dgr{26} & \rgs{Teltow Stadt}       \\\hline
+\fi
 BWED  & 1/2   & 1  & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{46} & Gesundbrunnen            \\\cline{3-5}
       &       & 2  & \lbr{42} & Ring \ccw                \\
@@ -767,10 +1148,15 @@ BWI   & 3/4   & 3  & \mbr{46} & Königs Wusterhausen      \\\cline{3-5}
       &       & 4  & \mbr{46} & Westend                  \\\hline
 BWIG  & 1/2   & 1  & \ebs{3}  & Spandau                  \\\cline{3-5}
       &       & 2  & \ebs{3}  & Erkner                   \\\hline
+\ifcorona
+BWIN  &       & 1  & \mgt{1}  & Oranienburg              \\\cline{3-5}
+      &       & 2  & \mgt{1}  & Wannsee                  \\\hline
+\else
 BWIN  &       & 1  & \mgt{1}  & Oranienburg              \\
       &       &    & \dgr{26} & Waidmannslust            \\\cline{3-5}
       &       & 2  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{26} & Teltow Stadt             \\\hline
+\fi
 BWKRR & 11/12 & 11 & \lbr{41} & Ring \clw                \\
       &       &    & \mbr{46} & Westend                  \\\cline{3-5}
       &       & 12 & \lbr{42} & Ring \ccw                \\
@@ -783,16 +1169,42 @@ BWKS  & A     & 1  & \ebs{3}  & Spandau                  \\
       &       & 4  & \ebs{3}  & Erkner                   \\
       &       &    & \bls{7}  & Ahrensfelde              \\
       &       &    & \rbs{9}  & Schönefeld \flh          \\\hline
+\ifcorona
+BWM   & 1/2   & 1  & \mgt{1}  & Oranienburg              \\\cline{3-5}
+      &       & 2  & \mgt{1}  & Wannsee                  \\\hline
+\else
 BWM   & 1/2   & 1  & \mgt{1}  & Oranienburg              \\
       &       &    & \dgr{26} & Waidmannslust            \\\cline{3-5}
       &       & 2  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{26} & Teltow Stadt             \\\hline
+\fi
+\ifcorona
+BWOK  & 3/4   & 3  & \mgt{1}  & Oranienburg              \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\cline{3-5}
+      &       & 4  & \mgt{1}  & Wannsee                  \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\hline
+\else
 BWOK  & 3/4   & 3  & \mgt{1}  & Oranienburg              \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\cline{3-5}
       &       & 4  & \mgt{1}  & Wannsee                  \\
       &       &    & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\\hline
+\fi
+\ifcorona
+BWRS  & A     & 1  & \ebs{3}  & Erkner                   \\
+      &       &    & \pos{5}  & Strausberg Nord          \\
+      &       &    & \bls{7}  & Ahrensfelde              \\
+      &       &    & \rbs{9}  & Schönefeld \flh          \\\cline{3-5}
+      &       & 2  & \ebs{3}  & Erkner                   \\
+      &       &    & \bls{75} & \rgs{Wartenberg}         \\\cline{2-5}
+      & B     & 3  & \ebs{3}  & Ostbahnhof               \\
+      &       &    & \bls{75} & \vgb{Ankunft}            \\\cline{3-5}
+      &       & 4  & \ebs{3}  & Spandau                  \\
+      &       &    & \pos{5}  & Westkreuz                \\
+      &       &    & \bls{7}  & Potsdam Hbf              \\
+      &       &    & \rbs{9}  & Spandau                  \\\hline
+\else
 BWRS  & A     & 1  & \ebs{3}  & Erkner                   \\
       &       &    & \ebs{3X} & Friedrichshagen          \\
       &       &    & \pos{5}  & Strausberg Nord          \\
@@ -809,6 +1221,7 @@ BWRS  & A     & 1  & \ebs{3}  & Erkner                   \\
       &       &    & \pos{5}  & Westkreuz                \\
       &       &    & \bls{7}  & Potsdam Hbf              \\
       &       &    & \rbs{9}  & Spandau                  \\\hline
+\fi
 BWSS  & A     & 1  & \bls{7}  & Potsdam Hbf              \\\cline{3-5}
       &       & 2  & \mgt{1}  & \vgb{Ankunft}            \\\cline{2-5}
       & B     & 3  & \mgt{1}  & \rgs{Oranienburg}        \\\cline{3-5}
@@ -817,12 +1230,19 @@ BWT   & 11/1  & 11 & \pos{5}  & Westkreuz                \\\cline{3-5}
       &       & 1  & \rbs{U5} & Alexanderplatz           \\\cline{2-5}
       & 12/2  & 2  & \rbs{U5} & Hönow                    \\\cline{3-5}
       &       & 12 & \pos{5}  & Strausberg Nord          \\\hline
+\ifcorona
+BYOR  & 1/2   & 1  & \dgr{2}  & Blankenfelde             \\
+      &       &    & \dgr{25} & Teltow Stadt             \\\cline{3-5}
+      &       & 2  & \dgr{2}  & Bernau                   \\
+      &       &    & \dgr{25} & Hennigsdorf              \\\hline
+\else
 BYOR  & 1/2   & 1  & \dgr{2}  & Blankenfelde             \\
       &       &    & \dgr{25} & Teltow Stadt             \\
       &       &    & \dgr{26} & Teltow Stadt             \\\cline{3-5}
       &       & 2  & \dgr{2}  & Bernau                   \\
       &       &    & \dgr{25} & Hennigsdorf              \\
       &       &    & \dgr{26} & Waidmannslust            \\\hline
+\fi
 BZD   & 1/2   & 1  & \mgt{1}  & Wannsee                  \\\cline{3-5}
       &       & 2  & \mgt{1}  & Oranienburg              \\
       &       &    & \mgt{1}  & \vgb{Ankunft}            \\
