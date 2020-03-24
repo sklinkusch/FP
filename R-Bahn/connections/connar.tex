@@ -139,6 +139,12 @@
 \ncline[linecolor=Gray,linewidth=2pt,offset=0.8em]{BZOO}{BL} % Zoologischer Garten - Hbf
 \ncline[linecolor=Gray,linewidth=2pt,offset=0.8em,nodesepB=-0.75em]{BL}{BFRI} % Hbf - Friedrichstraße
 % RB 23
+\ifcorona
+\ncline[linecolor=rbxxiii,linewidth=2pt,offset=0.6em,linestyle=dotted]{BPD}{BPDC} % Potsdam Hbf - Charlottenhof
+\ncline[linecolor=rbxxiii,linewidth=2pt,linestyle=dotted]{BPDC}{BPDP} % Charlottenhof - Pirschheide
+\ncline[linecolor=rbxxiii,linewidth=2pt,linestyle=dotted]{BPDP}{BCAP} % Pirschheide - Caputh-Geltow
+\ncline[linecolor=rbxxiii,linewidth=2pt,linestyle=dotted]{BCAP}{BSIS} % Caputh-Geltow - Schwielowsee
+\else
 \ncline[linecolor=rbxxiii,linewidth=2pt,offset=0.6em]{BPD}{BPDC} % Potsdam Hbf - Charlottenhof
 \ncline[linecolor=rbxxiii,linewidth=2pt]{BPDC}{BPDP} % Charlottenhof - Pirschheide
 \ncline[linecolor=rbxxiii,linewidth=2pt]{BPDP}{BCAP} % Pirschheide - Caputh-Geltow
@@ -146,6 +152,7 @@
 \ncline[linecolor=rbxxiii,linewidth=2pt]{BSIS}{BFLZ} % Schwielowsee - Ferch-Lienewitz
 \ncline[linecolor=rbxxiii,linewidth=2pt]{BFLZ}{BSE} % Ferch-Lienewitz - Seddin
 \ncline[linecolor=rbxxiii,linewidth=2pt,offset=0.4em]{BSE}{BMIP} % Seddin - Michendorf
+\fi
 % RB 33
 \ncline[linecolor=rbxxxiii,linewidth=2pt]{BBZS}{BSE} % Beelitz Stadt - Seddin
 \ncline[linecolor=rbxxxiii,linewidth=2pt,offset=-0.4em]{BSE}{BMIP} % Seddin - Michendorf

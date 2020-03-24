@@ -192,8 +192,8 @@
 \newcommand{\BKAR}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BKAR}\\\hline
-		\fat{--} & $\arrsw$ & \rec{3}   & $\arre$  & \fat{--} \\
-		\fat{--} & $\arrs$  & \rbg{24}  & $\arre$  & \fat{--} \\
+		%\fat{--} & $\arrsw$ & \rec{3}   & $\arre$  & \fat{--} \\
+		%\fat{--} & $\arrs$  & \rbg{24}  & $\arre$  & \fat{--} \\
 		\fat{23} & $\arrS$  & \rea{27a} & $\arrne$ & \fat{57} \\
 		\fat{53} & $\arrS$  & \rea{27b} & $\arrne$ & \fat{27} \\
 	\end{tabular}
@@ -379,7 +379,7 @@
 \newcommand{\BBST}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BBST}\\\hline
-		\fat{--} & $\arrs$ & \reb{2}  & $\arrn$ & \fat{--} \\
+		%\fat{--} & $\arrs$ & \reb{2}  & $\arrn$ & \fat{--} \\
 		\fat{27} & $\arrs$ & \rbg{24} & $\arrn$ & \fat{30} \\
 	\end{tabular}
 }
@@ -387,7 +387,7 @@
 \newcommand{\WBT}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries WBT}\\\hline
-		\fat{--} & $\arrw$ & \rec{3}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \rec{3}  & $\arre$ & \fat{--} \\
 		\fat{21} & $\arrw$ & \rbg{24} & $\arre$ & \fat{38} \\
 	\end{tabular}
 }
@@ -395,7 +395,7 @@
 \newcommand{\BBGN}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BBGN}\\\hline
-		\fat{--} & $\arrw$ & \rec{3} & $\arrn$ & \fat{--}     \\
+		%\fat{--} & $\arrw$ & \rec{3} & $\arrn$ & \fat{--}     \\
 		\fat{32} & $\arrw$ & \rdd{4} & $\arrn$ & \oef{24}{27} \\
 	\end{tabular}
 }
@@ -403,8 +403,8 @@
 \newcommand{\BBI}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BBI}\\\hline
-		\fat{--} & $\arrs$ & \ree{5}  & $\arrn$ & \fat{--} \\
-		\fat{--} & $\arre$ & \rbb{12} & $\arrn$ & \fat{--} \\
+		%\fat{--} & $\arrs$ & \ree{5}  & $\arrn$ & \fat{--} \\
+		%\fat{--} & $\arre$ & \rbb{12} & $\arrn$ & \fat{--} \\
 		\auk{20} & $\arrw$ & \reg{20} & $\arrn$ & \auk{54} \\
 	\end{tabular}
 }
@@ -454,14 +454,22 @@
 \newcommand{\BCAP}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BCAP}\\\hline
+		\ifcorona
+		\woe{09}{[09]}{[44]}{44} & $\arrw$ & \rbb{23} & $\arrn$ & \woe{18}{[18]}{[53]}{53} \\ 
+		\else
 		\woe{[51]}{51}{[34]}{34} & $\arrw$ & \rbb{23} & $\arrn$ & \woe{26}{[26]}{09}{[09]} \\ 
+		\fi
 	\end{tabular}
 }
 % Caputh Schwielowsee
 \newcommand{\BSIS}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BSIS}\\\hline
+		\ifcorona
+		\woe{12}{[12]}{[47]}{47} & $\arrS$ & \rbb{23} & $\arre$ & \woe{15}{[15]}{[50]}{50} \\
+		\else
 		\woe{[53]}{53}{[36]}{36} & $\arrs$ & \rbb{23} & $\arre$ & \woe{25}{[25]}{07}{[07]} \\
+		\fi
 	\end{tabular}
 }
 % Dabendorf
@@ -531,7 +539,7 @@
 \newcommand{\BFS}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BFS}\\\hline
-		\fat{--} & $\arrw$ & \rea{1a} & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \rea{1a} & $\arre$ & \fat{--} \\
 		\pln{02} & $\arre$ & \rea{1b} & $\arre$ & \pln{58} \\
 	\end{tabular}
 }
@@ -592,16 +600,16 @@
 \newcommand{\BGSB}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BGSB}\\\hline
-		\fat{--} & $\arrs$  & \rec{3} & $\arrw$ & \fat{--}     \\
+		%\fat{--} & $\arrs$  & \rec{3} & $\arrw$ & \fat{--}     \\
 		\fat{28} & $\arrs$  & \rdd{4} & $\arrw$ & \oef{27}{30} \\
-		\fat{--} & $\arrse$ & \ree{5} & $\arrw$ & \fat{--}     \\
+		%\fat{--} & $\arrse$ & \ree{5} & $\arrw$ & \fat{--}     \\
 	\end{tabular}
 }
 % Groß Köris
 \newcommand{\BTPI}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BTPI}\\\hline
-		\fat{--} & $\arrs$ & \reb{2}  & $\arrn$ & \fat{--} \\
+		%\fat{--} & $\arrs$ & \reb{2}  & $\arrn$ & \fat{--} \\
 		\fat{32} & $\arrs$ & \rbg{24} & $\arrn$ & \fat{24} \\
 	\end{tabular}
 }
@@ -616,7 +624,7 @@
 \newcommand{\WGRG}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries WGRG}\\\hline
-		\fat{--} & $\arrw$ & \ree{5}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \ree{5}  & $\arre$ & \fat{--} \\
 		\fat{14} & $\arrw$ & \rbb{12} & $\arre$ & \fat{34} \\
 	\end{tabular}
 }
@@ -624,7 +632,7 @@
 \newcommand{\BHGB}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BHGB}\\\hline
-		\fat{--} & $\arrw$ & \rea{1a} & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \rea{1a} & $\arre$ & \fat{--} \\
 		\pln{57} & $\arrw$ & \rea{1b} & $\arre$ & \pln{03} \\
 	\end{tabular}
 }
@@ -726,7 +734,7 @@
 \newcommand{\WMCH}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries WMCH}\\\hline
-		\fat{--} & $\arrw$ & \rec{3}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \rec{3}  & $\arre$ & \fat{--} \\
 		\fat{18} & $\arrw$ & \rbg{24} & $\arre$ & \fat{41} \\
 	\end{tabular}
 }
@@ -735,7 +743,7 @@
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BMIP}\\\hline
 		\fat{50}                 & $\arrw$ & \reg{7}  & $\arre$ & \fat{10}                 \\
-		\woe{12}{[12]}{[54]}{54} & $\arrw$ & \rbb{23} & $\arrE$ & \woe{06}{[06]}{[49]}{49} \\
+		%\woe{12}{[12]}{[54]}{54} & $\arrw$ & \rbb{23} & $\arrE$ & \woe{06}{[06]}{[49]}{49} \\
 		\oef{[29]}{29}           & $\arrw$ & \rea{33} & $\arre$ & \oef{31}{[31]}           \\
 	\end{tabular}
 }
@@ -750,7 +758,7 @@
 \newcommand{\WNAS}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries WNAS}\\\hline
-		\fat{--} & $\arrw$ & \ree{5}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \ree{5}  & $\arre$ & \fat{--} \\
 		\fat{19} & $\arrw$ & \rbb{12} & $\arre$ & \fat{28} \\
 	\end{tabular} 
 }
@@ -786,20 +794,23 @@
 \newcommand{\BPDC}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BPDC} \\\hline
-		\fat{--}                 & $\arrw$  & \rea{1a} & $\arre$ & \fat{--}                 \\
+		%\fat{--}                 & $\arrw$  & \rea{1a} & $\arre$ & \fat{--}                 \\
 		\pln{12}                 & $\arrw$  & \rea{1b} & $\arre$ & \pln{50}                 \\
 		\auk{03}                 & $\arrw$  & \reg{20} & $\arre$ & \auk{23-25}              \\
 		\aud{[20]}               & $\arrw$  & \bfg{21} & $\arre$ & \aud{[38]}               \\
 		\fat{50}                 & $\arrw$  & \ppy     & $\arre$ & \fat{09}                 \\
+		\ifcorona
+		\else
 		\woe{[45]}{45}{[28]}{28} & $\arrsw$ & \rbb{23} & $\arre$ & \woe{34}{[34]}{16}{[16]} \\
+		\fi
 	\end{tabular}
 }
 % Potsdam Griebnitzsee
 \newcommand{\BGBS}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BGBS} \\\hline
-		\fat{--}   & $\arrw$ & \rea{1a} & $\arrne$ & \fat{--}   \\
-		\pln{--}   & $\arrw$ & \rea{1b} & $\arrne$ & \pln{--}   \\
+		%\fat{--}   & $\arrw$ & \rea{1a} & $\arrne$ & \fat{--}   \\
+		%\pln{--}   & $\arrw$ & \rea{1b} & $\arrne$ & \pln{--}   \\
 		\aud{[12]} & $\arrw$ & \bfg{21} & $\arrne$ & \aud{[46]} \\
 		\fat{[42]} & $\arrw$ & \ppy     & $\arrne$ & \fat{[16]} \\
 	\end{tabular}
@@ -813,14 +824,18 @@
 		\auk{00}                 & $\arrw$ & \reg{20} & $\arrE$ & \auk{28}                 \\
 		\aud{[15-17]}            & $\arrw$ & \bfg{21} & $\arre$ & \aud{[41-43]}            \\
 		\fat{45-47}              & $\arrw$ & \ppy     & $\arre$ & \fat{11-13}              \\
+		\ifcorona
+		\woe{[55]}{55}{[30]}{30} & $\arrw$ & \rbb{23} & $\arrE$ & \woe{32}{[32]}{07}{[07]} \\
+		\else
 		\woe{[42]}{42}{[25]}{25} & $\arrw$ & \rbb{23} & $\arrE$ & \woe{36}{[36]}{19}{[19]} \\
+		\fi
 	\end{tabular}
 }
 % Potsdam-Marquardt
 \newcommand{\BMQU}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BMQU}\\\hline
-		\fat{--}       & $\arrs$ & \reg{20} & $\arrn$ & \fat{--}       \\
+		%\fat{--}       & $\arrs$ & \reg{20} & $\arrn$ & \fat{--}       \\
 		\oef{49}{[49]} & $\arrs$ & \rbd{21} & $\arrn$ & \oef{03}{[03]} \\
 	\end{tabular}
 }
@@ -836,7 +851,7 @@
 \newcommand{\BWP}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BWP} \\\hline
-		\fat{--}         & $\arrw$  & \rea{1a} & $\arre$ & \fat{--}      \\
+		%\fat{--}         & $\arrw$  & \rea{1a} & $\arre$ & \fat{--}      \\
 		\pln{14}         & $\arrw$  & \rea{1b} & $\arre$ & \pln{47}      \\ 
 		\auk{06}         & $\arrnw$ & \reg{20} & $\arre$ & \auk{19-21}   \\
 		\aud{[22]}       & $\arrnw$ & \bfg{21} & $\arre$ & \aud{[36]}    \\
@@ -847,8 +862,11 @@
 \newcommand{\BPDP}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BPDP}\\\hline
-		\fat{--}                 & $\arrnw$ & \rbe{22} & $\arre$  & \fat{--}                 \\
+		%\fat{--}                 & $\arrnw$ & \rbe{22} & $\arre$  & \fat{--}                 \\
+		\ifcorona
+		\else
 		\woe{[49]}{49}{[32]}{32} & $\arrs$  & \rbb{23} & $\arrne$ & \woe{30}{[30]}{12}{[12]} \\
+		\fi
 	\end{tabular}
 }
 % Potsdam-Rehbrücke
@@ -873,7 +891,7 @@
 \newcommand{\BPOT}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BPOT} \\\hline
-		\fat{--}       & $\arrs$ & \reg{20} & $\arrn$  & \fat{--}       \\
+		%\fat{--}       & $\arrs$ & \reg{20} & $\arrn$  & \fat{--}       \\
 		\oef{44}{[44]} & $\arrs$ & \rbd{21} & $\arrnw$ & \oef{09}{[09]} \\
 	\end{tabular}
 }
@@ -896,7 +914,7 @@
 \newcommand{\WRZ}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries WRZ}\\\hline
-		\fat{--} & $\arrw$ & \rec{3}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \rec{3}  & $\arre$ & \fat{--} \\
 		\fat{26} & $\arrw$ & \rbg{24} & $\arre$ & \fat{34} \\
 	\end{tabular}
 }
@@ -918,7 +936,7 @@
 \newcommand{\BSAH}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BSAH}\\\hline
-		\fat{--} & $\arrs$ & \ree{5}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrs$ & \ree{5}  & $\arre$ & \fat{--} \\
 		\fat{24} & $\arrs$ & \rbb{12} & $\arre$ & \fat{23} \\
 	\end{tabular}
 }
@@ -944,8 +962,8 @@
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BSE}\\\hline
 		\fat{54}                 & $\arrsw$ & \reg{7}   & $\arre$ & \fat{06}     \\
-		\woe{15}{[15]}{[57]}{57} & $\arrw$  & \rbb{23}  & $\arre$ & \woe{03}{[03]}{[46]}{46} \\
-		\fat{--}                 & $\arrs$  & \rea{33}  & $\arre$ & \fat{--}     \\
+		%\woe{15}{[15]}{[57]}{57} & $\arrw$  & \rbb{23}  & $\arre$ & \woe{03}{[03]}{[46]}{46} \\
+		%\fat{--}                 & $\arrs$  & \rea{33}  & $\arre$ & \fat{--}     \\
 	\end{tabular}
 }
 % Seegefeld
@@ -979,9 +997,9 @@
 \newcommand{\BTL}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BTL}\\\hline
-		\fat{--} & $\arre$ & \rec{3} & $\arrne$ & \fat{--}     \\
+		%\fat{--} & $\arre$ & \rec{3} & $\arrne$ & \fat{--}     \\
 		\fat{24} & $\arre$ & \rdd{4} & $\arrne$ & \oef{32}{35} \\
-		\fat{--} & $\arre$ & \ree{5} & $\arrne$ & \fat{--}     \\
+		%\fat{--} & $\arre$ & \ree{5} & $\arrne$ & \fat{--}     \\
 	\end{tabular}
 }
 % Velten (Mark)
@@ -1055,7 +1073,7 @@
 \newcommand{\BZS}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BZS}\\\hline
-		\fat{--} & $\arrs$ & \reb{2}  & $\arrn$ & \fat{--} \\
+		%\fat{--} & $\arrs$ & \reb{2}  & $\arrn$ & \fat{--} \\
 		\fat{24} & $\arrs$ & \rbg{24} & $\arrn$ & \fat{33} \\
 	\end{tabular}
 }
