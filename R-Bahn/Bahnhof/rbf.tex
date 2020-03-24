@@ -68,10 +68,13 @@
 \newcommand{\BAS}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BAS}\\\hline
-		\fat{--} & $\arrw$ & \reb{2}  & $\arrs$ & \fat{--} \\
-		\fat{--} & $\arrw$ & \rff{6}  & $\arrs$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \reb{2}  & $\arrs$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \rff{6}  & $\arrs$ & \fat{--} \\
 		\fat{31} & $\arrw$ & \rba{10} & $\arrs$ & \fat{29} \\
+		\ifcorona
+		\else
 		\fat{01} & $\arrw$ & \rbb{14} & $\arrs$ & \fat{54} \\
+		\fi
 	\end{tabular}
 }
 % Berlin Alexanderplatz
@@ -82,7 +85,10 @@
 		\pln{33}    & $\arrw$ & \rea{1b} & $\arre$ & \pln{28}    \\
 		\fat{15-17} & $\arrw$ & \reb{2}  & $\arre$ & \fat{41-43} \\
 		\fat{08}    & $\arrw$ & \reg{7}  & $\arre$ & \fat{53}    \\
+		\ifcorona
+		\else
 		\fat{29}    & $\arrw$ & \rbb{14} & $\arre$ & \fat{23}    \\
+		\fi
 	\end{tabular}
 }
 % Berlin-Charlottenburg
@@ -91,9 +97,12 @@
 		\multicolumn{5}{c}{\bfseries BCHB}\\\hline
 		\fat{21}    & $\arrs$  & \rea{1a} & $\arre$ & \fat{41}   \\
 		\pln{51}    & $\arrs$  & \rea{1b} & $\arre$ & \pln{11}   \\
-		\fat{--}    & $\arrnw$ & \reb{2}  & $\arre$ & \fat{--}   \\
+		%\fat{--}    & $\arrnw$ & \reb{2}  & $\arre$ & \fat{--}   \\
 		\fat{23-25} & $\arrs$  & \reg{7}  & $\arre$ & \fat{36}   \\
+		\ifcorona
+		\else
 		\fat{46-48} & $\arrnw$ & \rbb{14} & $\arre$ & \fat{06}   \\
+		\fi
 		%\hvz{--}    & $\arrs$  & \bfg{21} & $\arre$ & \hvz{[01]} \\
 		%\hvz{--}    & $\arrs$  & \ppy     & $\arre$ & \hvz{[31]} \\
 	\end{tabular}
@@ -106,7 +115,10 @@
 		\pln{37}    & $\arrw$ & \rea{1b} & $\arre$ & \pln{25}    \\
 		\fat{19-21} & $\arrw$ & \reb{2}  & $\arre$ & \fat{37-39} \\
 		\fat{11}    & $\arrw$ & \reg{7}  & $\arre$ & \fat{49}    \\
+		\ifcorona
+		\else
 		\fat{33}    & $\arrw$ & \rbb{14} & $\arre$ & \fat{19}    \\
+		\fi
 		\hvz{[48]}  & $\arrw$ & \bfg{21} & $\arrE$ & \hvz{[11]}  \\
 		\hvz{[18]}  & $\arrw$ & \ppy     & $\arrE$ & \hvz{[41]}  \\
 	\end{tabular}
@@ -128,7 +140,10 @@
 		\pln{39-41} & $\arrw$ & \rea{1b} & $\arre$  & \pln{19-21} \\
 		\fat{25}    & $\arrw$ & \reb{2}  & $\arre$  & \fat{35}    \\
 		\fat{13-15} & $\arrw$ & \reg{7}  & $\arre$  & \fat{44-46} \\
+		\ifcorona
+		\else
 		\fat{35-37} & $\arrw$ & \rbb{14} & $\arre$  & \fat{14-16} \\
+		\fi
 		\hvz{[51]}  & $\arrw$ & \bfg{21} & $\arre$  & \hvz{[08]}  \\
 		\hvz{[21]}  & $\arrw$ & \ppy     & $\arre$  & \hvz{[39]}  \\
 		\hline
@@ -215,9 +230,12 @@
 		\multicolumn{5}{c}{\bfseries BHF}\\\hline
 		\fat{57-59} & $\arrw$ & \rea{1a} & $\arre$ & \fat{02-04} \\
 		\pln{27-29} & $\arrw$ & \rea{1b} & $\arre$ & \pln{32-34} \\
-		\fat{--}    & $\arrw$ & \reb{2}  & $\arre$ & \fat{--}    \\
+		%\fat{--}    & $\arrw$ & \reb{2}  & $\arre$ & \fat{--}    \\
 		\fat{01-03} & $\arrw$ & \reg{7}  & $\arre$ & \fat{55-57} \\
+		\ifcorona
+		\else
 		\fat{21-25} & $\arrw$ & \rbb{14} & $\arre$ & \fat{26-28} \\
+		\fi
 	\end{tabular}
 }
 % Berlin Ostkreuz (oben, Ringbahn)
@@ -253,7 +271,10 @@
 		\pln{22-24} & $\arrw$ & \rea{1b} & $\arre$ & \pln{37-39} \\
 		\fat{08-10} & $\arrw$ & \reb{2}  & $\arre$ & \fat{49-51} \\
 		\fat{57-59} & $\arrw$ & \reg{7}  & $\arre$ & \fat{00-02} \\
+		\ifcorona
+		\else
 		\fat{16-18} & $\arrw$ & \rbb{14} & $\arre$ & \fat{30-32} \\
+		\fi
 	\end{tabular}
 }
 % Berlin Potsdamer Platz
@@ -271,7 +292,10 @@
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BFHS \flh}\\\hline
 		\fat{14-17} & $\arrw$ & \reg{7}  & $\arrne$ & \fat{40-45} \\
+		\ifcorona
+		\else
 		\fat{44}    & $\arrW$ & \rbb{14} & $\arrne$ & \fat{03}    \\
+		\fi
 		\fat{18-20} & $\arrw$ & \rbe{22} & $\arre$  & \fat{36-40} \\
 	\end{tabular}
 }
@@ -291,7 +315,10 @@
 		\oef{22}{19-22} & $\arrn$ & \rff{6}  & $\arre$  & \fat{36-39}   \\
 		\fat{25-27}     & $\arrn$ & \rba{10} & $\arre$  & \fat{34}      \\
 		\hvz{[41-43]}   & $\arrw$ & \rbc{13} & $\arre$  & \hvz{[19-21]} \\
+		\ifcorona
+		\else
 		\fat{54-57}     & $\arrn$ & \rbb{14} & $\arrse$ & \fat{57-59}   \\
+		\fi
 	\end{tabular}
 }
 % Berlin-Staaken
@@ -332,7 +359,10 @@
 		\pln{47}      & $\arrw$ & \rea{1b} & $\arre$ & \pln{15}      \\
 		\fat{31}      & $\arrw$ & \reb{2}  & $\arre$ & \fat{30}      \\
 		\fat{21}      & $\arrw$ & \reg{7}  & $\arre$ & \fat{40}      \\
+		\ifcorona
+		\else
 		\fat{41-43}   & $\arrw$ & \rbb{14} & $\arre$ & \fat{10}      \\
+		\fi
 		\hvz{[55-57]} & $\arrw$ & \bfg{21} & $\arre$ & \hvz{[03]}    \\
 		\hvz{[25-27]} & $\arrw$ & \ppy     & $\arre$ & \hvz{[33]}    \\
 	\end{tabular}
@@ -404,9 +434,12 @@
 \newcommand{\BBRI}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BBRI}\\\hline
-		\fat{--} & $\arrw$ & \reb{2}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \reb{2}  & $\arre$ & \fat{--} \\
 		\fat{45} & $\arrw$ & \rba{10} & $\arre$ & \fat{15} \\
+		\ifcorona
+		\else
 		\fat{14} & $\arrw$ & \rbb{14} & $\arre$ & \fat{40} \\
+		\fi
 	\end{tabular}
 }
 % Britz
@@ -488,7 +521,10 @@
 		\fat{46}    & $\arrw$ & \reb{2}  & $\arre$ & \fat{14}    \\
 		\fat{29}    & $\arrw$ & \rff{6}  & $\arre$ & \fat{30}    \\
 		\fat{38}    & $\arrw$ & \rba{10} & $\arre$ & \fat{23}    \\
+		\ifcorona
+		\else
 		\fat{05-07} & $\arrw$ & \rbb{14} & $\arre$ & \fat{46-48} \\
+		\fi
 	\end{tabular}
 }
 % Fangschleuse
@@ -510,10 +546,13 @@
 \newcommand{\BFIN}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BFIN}\\\hline
-		\fat{--} & $\arrw$ & \reb{2}  & $\arre$ & \fat{--} \\
-		\fat{--} & $\arrn$ & \rff{6}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \reb{2}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrn$ & \rff{6}  & $\arre$ & \fat{--} \\
 		\fat{41} & $\arrw$ & \rba{10} & $\arre$ & \fat{19} \\
+		\ifcorona
+		\else
 		\fat{10} & $\arrw$ & \rbb{14} & $\arre$ & \fat{44} \\
+		\fi
 	\end{tabular}
 }
 % Friedersdorf (bei Königs Wusterhausen)
@@ -721,7 +760,10 @@
 		\multicolumn{5}{c}{\bfseries BNAU}\\\hline
 		\fat{54-56} & $\arrw$ & \reb{2}  & $\arre$ & \fat{57-01}  \\
 		\fat{51}    & $\arrW$ & \rba{10} & $\arre$ & \fat{08}     \\
+		\ifcorona
+		\else
 		\fat{20}    & $\arrW$ & \rbb{14} & $\arre$ & \oef{33}{29} \\
+		\fi
 	\end{tabular}
 }
 % Niederlehme
@@ -910,10 +952,13 @@
 \newcommand{\BSFD}{%
 	\begin{tabular}{ccccc}
 		\multicolumn{5}{c}{\bfseries BSFD}\\\hline
-		\fat{--} & $\arrw$ & \reb{2}  & $\arre$ & \fat{--} \\
-		\fat{--} & $\arrw$ & \rff{6}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \reb{2}  & $\arre$ & \fat{--} \\
+		%\fat{--} & $\arrw$ & \rff{6}  & $\arre$ & \fat{--} \\
 		\fat{34} & $\arrw$ & \rba{10} & $\arre$ & \fat{27} \\
+		\ifcorona
+		\else
 		\fat{03} & $\arrw$ & \rbb{14} & $\arre$ & \fat{51} \\
+		\fi
 	\end{tabular}
 }
 % Storkow (Mark)
