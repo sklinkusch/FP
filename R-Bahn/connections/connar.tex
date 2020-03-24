@@ -96,6 +96,8 @@
 \ncline[linecolor=rbxiii,linewidth=2pt,offset=-0.2em]{BSTA}{BSPD} % Staaken - Spandau
 \ncline[linecolor=rbxiii,linewidth=2pt,offset=-0.6em]{BSPD}{BJUF} % Spandau - Jungfernheide
 % RB 14
+\ifcorona
+\else
 \ncline[linecolor=rbxiv,linewidth=2pt,offset=-0.4em]{BNAU}{BBRI} % Nauen - Brieselang
 \ncline[linecolor=rbxiv,linewidth=2pt,offset=-0.4em]{BBRI}{BFIN} % Brieselang - Finkenkrug
 \ncline[linecolor=rbxiv,linewidth=2pt,offset=-0.6em]{BFIN}{BFKS} % Finkenkrug - Falkensee
@@ -106,6 +108,7 @@
 \ncline[linecolor=rbxiv,linewidth=2pt,offset=0.4em]{BCHB}{BZOO} % Charlottenburg - Zoologischer Garten
 \ncline[linecolor=rbxiv,linewidth=2pt,offset=0.4em]{BZOO}{BL} % Zoologischer Garten - Hbf
 \ncline[linecolor=rbxiv,linewidth=2pt,offset=0.4em,nodesepB=-0.75em]{BL}{BFRI} % Hbf - Friedrichstraße
+\fi
 % RB 20
 \ncline[linecolor=rbxx,linewidth=2pt,offset=-0.4em]{BOR}{BBI} % Oranienburg - Birkenwerder
 \ncline[linecolor=rbxx,linewidth=2pt]{BBI}{BHOW} % Birkenwerder - Hohen Neuendorf West
@@ -136,6 +139,12 @@
 \ncline[linecolor=Gray,linewidth=2pt,offset=0.8em]{BZOO}{BL} % Zoologischer Garten - Hbf
 \ncline[linecolor=Gray,linewidth=2pt,offset=0.8em,nodesepB=-0.75em]{BL}{BFRI} % Hbf - Friedrichstraße
 % RB 23
+\ifcorona
+\ncline[linecolor=rbxxiii,linewidth=2pt,offset=0.6em,linestyle=dotted]{BPD}{BPDC} % Potsdam Hbf - Charlottenhof
+\ncline[linecolor=rbxxiii,linewidth=2pt,linestyle=dotted]{BPDC}{BPDP} % Charlottenhof - Pirschheide
+\ncline[linecolor=rbxxiii,linewidth=2pt,linestyle=dotted]{BPDP}{BCAP} % Pirschheide - Caputh-Geltow
+\ncline[linecolor=rbxxiii,linewidth=2pt,linestyle=dotted]{BCAP}{BSIS} % Caputh-Geltow - Schwielowsee
+\else
 \ncline[linecolor=rbxxiii,linewidth=2pt,offset=0.6em]{BPD}{BPDC} % Potsdam Hbf - Charlottenhof
 \ncline[linecolor=rbxxiii,linewidth=2pt]{BPDC}{BPDP} % Charlottenhof - Pirschheide
 \ncline[linecolor=rbxxiii,linewidth=2pt]{BPDP}{BCAP} % Pirschheide - Caputh-Geltow
@@ -143,6 +152,7 @@
 \ncline[linecolor=rbxxiii,linewidth=2pt]{BSIS}{BFLZ} % Schwielowsee - Ferch-Lienewitz
 \ncline[linecolor=rbxxiii,linewidth=2pt]{BFLZ}{BSE} % Ferch-Lienewitz - Seddin
 \ncline[linecolor=rbxxiii,linewidth=2pt,offset=0.4em]{BSE}{BMIP} % Seddin - Michendorf
+\fi
 % RB 33
 \ncline[linecolor=rbxxxiii,linewidth=2pt]{BBZS}{BSE} % Beelitz Stadt - Seddin
 \ncline[linecolor=rbxxxiii,linewidth=2pt,offset=-0.4em]{BSE}{BMIP} % Seddin - Michendorf
