@@ -283,11 +283,8 @@
 % Berlin Brandenburger Tor
 \newcommand{\BTOR}{%
  \begin{tabular}{ccccccccccc}
-  \ifcorona
   \multicolumn{11}{c}{\bfseries BTOR \bus} \\\hline
-  \else
-  \multicolumn{11}{c}{\bfseries BTOR \ubahn \bus} \\\hline
-  \fi
+%  \multicolumn{11}{c}{\bfseries BTOR \ubahn \bus} \\\hline
    \ifppa
               &          & \BTORPfs & \BTORPps & $\arrw$ & \mgt{1}  & $\arrn$ & \BTORPfn & \BTORPpn &          &          \\
    \fi
@@ -399,11 +396,7 @@
 % Berlin Frankfurter Allee
 \newcommand{\BFA}{%
  \begin{tabular}{ccccccccccc}
-  \ifcorona
-  \multicolumn{11}{c}{\bfseries BFA \ubahn \mtram} \\\hline
-  \else
   \multicolumn{11}{c}{\bfseries BFA \ubahn \mtram \tram} \\\hline
-  \fi
    \ifrgall
     \BFAAaf  & \BFAAah  & \BFAAbf  & \BFAAbh   & $\arrs$ & \ring    & $\arrn$ & \BFARaf   & \BFARah  & \BFARbf  & \BFARbh  \\
    \fi
@@ -719,11 +712,8 @@
 \newcommand{\BHBF}{%
  \begin{tabular}{ccccccccccc}
   \multicolumn{11}{c}{\bfseries BHBF} \\
-  \ifcorona
   \multicolumn{11}{c}{\fbahn \rbahn \mtram \mbus \xbus \bus} \\\hline
-  \else
-  \multicolumn{11}{c}{\fbahn \rbahn \ubahn \mtram \mbus \xbus \bus} \\\hline
-  \fi
+%  \multicolumn{11}{c}{\fbahn \rbahn \ubahn \mtram \mbus \xbus \bus} \\\hline
    \ifba
                &           &           & \BHBFBfw  & $\arrw$ & \ebs{3}  & $\arre$ & \BHBFBfo  &           &           &           \\
    \fi
@@ -1204,11 +1194,7 @@
 % Berlin-Marzahn
 \newcommand{\BMAZ}{%
  \begin{tabular}{ccccccc}
- \ifcorona
- \multicolumn{7}{c}{\bfseries BMAZ \mtram \xbus \bus} \\\hline
- \else
   \multicolumn{7}{c}{\bfseries BMAZ \mtram \tram \xbus \bus} \\\hline
-  \fi
    \ifoo
     \BMAZOfw & \BMAZOpw & $\arrs$ & \bls{7} & $\arrn$ & \BMAZOfo & \BMAZOpo \\
    \fi
@@ -1993,11 +1979,7 @@
 % Berlin Springpfuhl
 \newcommand{\BSPH}{%
  \begin{tabular}{ccccccc}
-  \ifcorona
-  \multicolumn{7}{c}{\bfseries BSPH \mtram \bus} \\\hline
-  \else
   \multicolumn{7}{c}{\bfseries BSPH \mtram \tram \bus} \\\hline
-  \fi
    \ifoo
     \BSPHOfw & \BSPHOpw & $\arrs$ & \bls{7}  & $\arrn$  & \BSPHOfo & \BSPHOpo \\
    \fi
