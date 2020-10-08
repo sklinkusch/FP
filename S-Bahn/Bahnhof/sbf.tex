@@ -73,10 +73,10 @@
  \begin{tabular}{ccccc}
   \multicolumn{5}{c}{\bfseries BAGL \bus} \\\hline
    \ifulrich
-     \BAGLUfs & $\arrw$ & \mbr{45} & $\arre$ & \BAGLUfn \\
+     \BAGLUfn & $\arre$ & \mbr{45} & $\arrn$ & \BAGLUfs \\
    \fi
    \ifcaesar
-     \BAGLCfs & $\arrw$ & \rbs{9}  & $\arre$ & \BAGLCfn \\
+     \BAGLCfn & $\arre$ & \rbs{9}  & $\arrn$ & \BAGLCfs \\
    \fi
  \end{tabular}
 }
@@ -650,10 +650,10 @@
  \begin{tabular}{ccccc}
   \multicolumn{5}{c}{\bfseries BGBA}\\\hline
    \ifulrich
-     \BGBAUfs & $\arrw$ & \mbr{45} & $\arre$ & \BGBAUfn \\
+     \BGBAUfn & $\arrs$ & \mbr{45} & $\arrn$ & \BGBAUfs \\
    \fi
    \ifcaesar
-     \BGBACfs & $\arrw$ & \rbs{9}  & $\arre$ & \BGBACfn \\
+     \BGBACfn & $\arrs$ & \rbs{9}  & $\arrn$ & \BGBACfs \\
    \fi
  \end{tabular}
 }
@@ -1825,15 +1825,27 @@
   \fi
   \end{tabular}
 }
-% Berlin Schönefeld Flughafen
-\newcommand{\BFLH}{%
+% Berlin Flughafen BER Terminal 1-2
+\newcommand{\BFBI}{%
  \begin{tabular}{ccccc}
-  \multicolumn{5}{c}{\bfseries BFLH \ding{40} \rbahn \bus} \\\hline
+  \multicolumn{5}{c}{\bfseries BFBI \ding{40} \rbahn \xbus \bus} \\\hline
    \ifulrich
-    \BFLHUfs & $\arrw$ & \mbr{45} & $\arre$ & \BFLHUfn \\
+    \BFBIUfs & $\arrS$ & \mbr{45} & $\arrn$ & \BFBIUfn \\
    \fi
    \ifcaesar
-     \BFLHCfs & $\arrw$ & \rbs{9}  & $\arre$ & \BFLHCfn \\
+    \BFBICfs & $\arrS$ & \rbs{9}  & $\arrn$ & \BFBICfn \\
+   \fi
+ \end{tabular}
+}
+% Berlin Flughafen BER Terminal 5
+\newcommand{\BFLH}{%
+ \begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BFLH \ding{40} \rbahn \xbus \bus} \\\hline
+   \ifulrich
+    \BFLHUfn & $\arrs$ & \mbr{45} & $\arrw$ & \BFLHUfs \\
+   \fi
+   \ifcaesar
+    \BFLHCfn & $\arrs$ & \rbs{9}  & $\arrw$ & \BFLHCfs \\
    \fi
  \end{tabular}
 }
@@ -2841,6 +2853,18 @@
    \fi
  \end{tabular}
 }
+% Waßmannsdorf
+\newcommand{\BWAF}{%
+\begin{tabular}{ccccc}
+  \multicolumn{5}{c}{\bfseries BWAF}\\\hline
+   \ifulrich
+     \BWAFUfs & $\arrw$ & \mbr{45} & $\arre$ & \BWAFUfn \\
+   \fi
+   \ifcaesar
+     \BWAFCfs & $\arrs$ & \rbs{9}  & $\arre$ & \BWAFCfn \\
+   \fi
+ \end{tabular}%
+ }
 % Wildau
 \newcommand{\BWI}{%
  \begin{tabular}{ccccc}
