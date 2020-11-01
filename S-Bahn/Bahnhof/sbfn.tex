@@ -366,7 +366,7 @@
 \newcommand{\BGBAn}{%
  \begin{tabular}{ccccccc}
   \multicolumn{7}{c}{\bfseries BGBA}\\\hline
-   \BGBACann & \BGBACbnn & $\arrs$ & \rbs{9} & $\arrw$ & \BGBACans & \BGBACbns \\
+   \BGBACann & \BGBACbnn & $\arrs$ & \rbs{9} & $\arrn$ & \BGBACans & \BGBACbns \\
  \end{tabular}
 }
 % Berlin-Grunewald
@@ -1018,11 +1018,20 @@
   \fi
   \end{tabular}
 }
-% Berlin Schönefeld Flughafen
+% Berlin Flughafen BER Terminal 1-2
+\newcommand{\BFBBn}{%
+ \begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BFBB \ding{40} \nbus} \\\hline
+   \ifcaesar
+    \BFBBCans & \BFBBCbns & $\arrS$ & \rbs{9}  & $\arrn$ & \BFBBCann & \BFBBCbnn \\
+   \fi
+ \end{tabular}
+}
+% Berlin Flughafen BER Terminal 5
 \newcommand{\BFLHn}{%
  \begin{tabular}{ccccccc}
   \multicolumn{7}{c}{\bfseries BFLH \ding{40} \nbus}\\\hline
-   \BFLHCans & \BFLHCbns & $\arrW$ & \rbs{9} & $\arre$ & \BFLHCann & \BFLHCbnn \\
+   \BFLHCann & \BFLHCbnn & $\arrs$ & \rbs{9} & $\arrw$ & \BFLHCans & \BFLHCbns \\
  \end{tabular}
 }
 % Berlin-Schöneweide
@@ -1641,6 +1650,15 @@
   \BZEPWans & \BZEPWbns & $\arrw$ & \dgr{2} & $\arre$ & \BZEPWann & \BZEPWbnn \\
  \end{tabular}
 }
+% Waßmannsdorf
+\newcommand{\BWAFn}{%
+\begin{tabular}{ccccccc}
+  \multicolumn{7}{c}{\bfseries BWAF}\\\hline
+   \ifcaesar
+     \BWAFCans & \BWAFCbns & $\arrs$ & \rbs{9}  & $\arre$ & \BWAFCann & \BWAFCbnn \\
+   \fi
+ \end{tabular}%
+ }
 % Zeuthen
 \newcommand{\BZTHn}{%
  \begin{tabular}{ccccccc}

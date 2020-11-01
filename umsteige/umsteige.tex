@@ -12,8 +12,8 @@ Adenauerplatz                 &                 &                 & Ad          
 \hline
 Adlershof                     &                 & BADL            &                 &
 \snr{45} \snr{46} \snr{8} \snr{85} \snr{9} \tram 61 63 \bus 162 163 164 260                                                                      &
-\snr{46} \snr{8} \snr{9} \nbus N60 N65 N68                                                                                                       &
-\nbus N60 N65 N68                                                                                                                                \\
+\snr{46} \snr{8} \snr{9} \nbus N60 N60 N68                                                                                                       &
+\nbus N60 N64 N68                                                                                                                                \\
 \hline
 Afrikanische Straße           &                 &                 & Afr             & 
 \unr{6} \bus 221                                                                                                                                 & 
@@ -42,8 +42,8 @@ Albrechtshof                  & BAS             &                 &             
 \hline
 Alexanderplatz                & BALE            & BALX            & A, Al, Ap       & 
 \renr{1} \renr{2} \renr{7} \rbnr{14} \snr{3} \snr{5} \snr{7} \snr{9} \unr{2} \unr{5} \unr{8}                                                     &
-\snr{7} \snr{9} \unr{2} \unr{5} \unr{8} \mtram M2 M4 M5 \nbus N42 N65                                                                            & 
-\nunr{2} \nunr{5} \nunr{8} \mtram M2 M4 M5 \nbus N40 N42 N65                                                                                     \\
+\snr{7} \snr{9} \unr{2} \unr{5} \unr{8} \mtram M2 M4 M5 \nbus N42 N60 N65                                                                        & 
+\nunr{2} \nunr{5} \nunr{8} \mtram M2 M4 M5 \nbus N40 N42 N60 N65                                                                                 \\
                               &                 &                 &                 &
 \mtram M2 M4 M5 M6 \bus 100 200 245 248 300                                                                                                      &
                                                                                                                                                  &
@@ -72,7 +72,7 @@ Alt-Tegel                     &                 & \ped{} BTG      & Tg          
 Alt-Tempelhof                 &                 &                 & At              &
 \unr{6} \mbus M46 \bus 140 184 246                                                                                                               &
 \unr{6} \mbus M46 \nbus N84                                                                                                                      & 
-\nunr{6} \mbus M46 \nbus N84                                                                                                                     \\
+\nunr{6} \mbus M46 \nbus N84 N7X                                                                                                                    \\
 \hline
 Altglienicke                  &                 & BAGL            &                 &
 \snr{45} \snr{9} \bus 160 \ped{} \bus 363                                                                                                        &
@@ -144,6 +144,16 @@ Bellevue                      &                 & BBEV            &             
 \snr{7} \snr{9}                                                                                                                                  &
                                                                                                                                                  \\
 \hline
+BER Terminal 1-2 \flh         & BFBI            & BFBB            &                 &
+\renr{F} \renr{7} \rbnr{14} \rbnr{22} \snr{45} \snr{9} \xbus X7 X71 \bus 734 735 736 743                                                         &
+\snr{9} \nbus N7 N36 N60                                                                                                                         &
+\nbus N7 N36 N60 N7X                                                                                                                             \\
+\hline
+BER Terminal 5 \flh           & BFHS            & BFLH            &                 &
+\snr{45} \snr{9} \xbus X7 X71 \bus 163 164 171 743 744                                                                                           &
+\snr{9} \nbus N7 N60                                                                                                                             &
+\nbus N7 N60 N7X                                                                                                                                 \\
+\hline
 Bergfelde                     &                 & BBFE            &                 &
 \snr{8} \bus 809                                                                                                                                 &
                                                                                                                                                  &
@@ -152,7 +162,7 @@ Bergfelde                     &                 & BBFE            &             
 Berliner Straße               &                 &                 & Beo, Beu        &
 \unr{7} \unr{9} \bus 104                                                                                                                         &
 \unr{7} \unr{9} \nbus N42                                                                                                                        & 
-\nunr{7} \nunr{9} \nbus N42                                                                                                                      \\
+\nunr{7} \nunr{9} \nbus N42 N7X                                                                                                                     \\
 \hline
 Bernau                        & BBRN            & BBER            &                 &
 \fbahn{} \renr{3} \rbnr{24} \rbnr{66} \snr{2} \bus 868 869 870 890 891 892 894 895 896 897 898 899 901 907 908 909                               &
@@ -185,7 +195,7 @@ Betriebsbahnhof Schöneweide   &                 & BSCF            &            
                                                                                                                                                  \\
 \hline
 Beusselstraße                 &                 & BBEU            &                 &
-\snr{41} \snr{42} \snr{46} \xbus TXL \bus 106 123                                                                                                &
+\snr{41} \snr{42} \snr{46} \bus 106 123                                                                                                          &
 \snr{41} \snr{42} \nbus N26                                                                                                                      &
 \nbus N26                                                                                                                                        \\
 \hline
@@ -417,7 +427,7 @@ Erkner                        & BERK            & BE              &             
                                                                                                                                                  \\
 \hline
 Ernst-Reuter-Platz            &                 &                 & RP              &
-\unr{2} \mbus M45 \xbus X9 \bus 245                                                                                                              &
+\unr{2} \mbus M45 \bus 245                                                                                                                       &
 \unr{2} \mbus M45                                                                                                                                &
 \nunr{2} \mbus M45                                                                                                                               \\
 \hline
@@ -450,11 +460,6 @@ Finkenkrug                        & BFIN            &                 &         
 \rbnr{10} \rbnr{14} \bus 653 656                                                                                                                 &
                                                                                                                                                  &
                                                                                                                                                  \\
-\hline
-Flughafen Schönefeld \flh         & BFHS            & BFLH            &                 &
-\renr{7} \rbnr{14} \rbnr{22} \snr{45} \snr{9} \bus 163 164 171 734 735 736 738 741 742                                                           &
-\snr{9} \nunr{7} \nbus N60                                                                                                                       &
-\nunr{7} \nbus N60                                                                                                                               \\
 \hline
 Frankfurter Allee             &                 & BFA             & Ff              &
 \snr{41} \snr{42} \snr{8} \snr{85} \unr{5} \mtram M13 \tram 16                                                                                   &
@@ -508,8 +513,8 @@ Friedrichsfelde Ost           &                 & BFFO            &             
 \hline
 Friedrichshagen               &                 & BFRH            &                 &
 \snr{3} \tram 60 61 88                                                                                                                           &
-\snr{3} \nbus N61 N67                                                                                                                            &
-\nbus N61 N67                                                                                                                                    \\
+\snr{3} \nbus N61 N65                                                                                                                            &
+\nbus N61 N65                                                                                                                                    \\
 \hline
 Friedrichstraße               & BFRI            & BFST, BFSTT     & F               &
 \renr{1} \renr{2} \renr{7} \rbnr{14} \rbnr{21} \rbnr{22} \snr{1} \snr{2} \snr{25} \snr{26} \snr{3} \snr{5} \snr{7} \snr{9}                       &
@@ -628,12 +633,12 @@ Grunewald                     &                 & BGWD            &             
 Güntzelstraße                 &                 &                 & Gt              &
 \unr{9}                                                                                                                                          &
 \unr{9}                                                                                                                                          &
-\nunr{9}                                                                                                                                         \\
+\nunr{9} N7X                                                                                                                                     \\
 \hline
 Hackescher Markt              &                 & BHKM            &                 &
 \snr{3} \snr{5} \snr{7} \snr{9} \mtram M1 M4 M5 M6                                                                                               &
 \snr{7} \snr{9} \mtram M1 M4 M5 \nbus N42                                                                                                        &
-\nbus N40 N42 N65                                                                                                                                \\
+\nbus N40 N42                                                                                                                                    \\
 \hline
 Halemweg                      &                 &                 & Hl              &
 \unr{7} \bus 123                                                                                                                                 &
@@ -701,8 +706,8 @@ Heiligensee                   &                 & BHLS            &             
 \hline
 Heinrich-Heine-Straße         &                 &                 & He \ped{} Mk    &
 \unr{8} \bus 165 265 \ped{} \unr{2} \bus 147                                                                                                     &
-\unr{8} \nbus N65 \ped{} \unr{2}                                                                                                                 &
-\nuacht{} \nbus N65                                                                                                                              \\
+\unr{8} \nbus N60 N65 \ped{} \unr{2}                                                                                                             &
+\nuacht{} \nbus N60 N65                                                                                                                          \\
 \hline
 Hellersdorf                   &                 &                 & Hd              &
 \unr{5} \mtram M6 \tram 18 \xbus X54 \bus 195                                                                                                    &
@@ -736,8 +741,8 @@ Herrensee                     & BHE             &                 &             
 \hline
 Hirschgarten                  &                 & BHI             &                 &
 \snr{3} \ped{} \tram 60                                                                                                                          &
-\snr{3} \ped{} \nbus N60 N67                                                                                                                     &
-\ped{} \nbus N60 N67                                                                                                                             \\
+\snr{3} \ped{} \nbus N60                                                                                                                         &
+\ped{} \nbus N60                                                                                                                                 \\
 \hline
 Hohen Neuendorf               &                 & BHN             &                 &
 \snr{1} \snr{8} \bus 809 822                                                                                                                     &
@@ -790,17 +795,17 @@ Innsbrucker Platz (Hauptstraße) &               & BIP             & Ip         
 \mbus M48                                                                                                                                        \\
 \hline
 Jakob-Kaiser-Platz            &                 &                 & JK              &
-\unr{7} \mbus M21 \xbus X9 X21 \bus 109 123                                                                                                      &
+\unr{7} \mbus M21 \xbus X21 \bus 109 123                                                                                                         &
 \unr{7} \mbus M21                                                                                                                                &
 \nunr{7} \mbus M21                                                                                                                               \\
 \hline
 Jannowitzbrücke               &                 & BJB             & Jn              &
 \snr{3} \snr{5} \snr{7} \snr{9} \unr{8} \bus 300                                                                                                 &
-\snr{7} \snr{9} \unr{8} \nbus N40 N65                                                                                                            &
-\nunr{8} \nbus N40 N65                                                                                                                           \\
+\snr{7} \snr{9} \unr{8} \nbus N40 N60 N65                                                                                                        &
+\nunr{8} \nbus N40 N60 N65                                                                                                                       \\
 \hline
 Johannisthaler Chaussee (Gropiusstadt) &        &                 & Jt              &
-\unr{7} \mbus M11 \xbus X11 \bus 172 744                                                                                                         &
+\unr{7} \mbus M11 \xbus X11 X71 \bus 172 744                                                                                                     &
 \unr{7} \mbus M11                                                                                                                                &
 \mbus M11 \ped{} \nunr{7}                                                                                                                        \\
 \hline
@@ -810,7 +815,7 @@ Julius-Leber-Brücke           &                 & BJLB            &            
 \nbus N42 \ped{} \mbus M48                                                                                                                       \\
 \hline
 Jungfernheide                 & BJUF            & BJUN            & Jho, Jhu        &
-\renr{4} \renr{6} \rbnr{10} \rbnr{13} \snr{41} \snr{42} \snr{46} \unr{7} \mbus M21 M27 \xbus X9 \bus 109                                         &
+\renr{4} \renr{6} \rbnr{10} \rbnr{13} \snr{41} \snr{42} \snr{46} \unr{7} \mbus M21 M27 \bus 109                                                  &
 \snr{41} \snr{42} \unr{7} \mbus M21 M27                                                                                                          &
 \nunr{7} \mbus M21 M27                                                                                                                           \\
 \hline
@@ -851,8 +856,8 @@ Karow                         & BKAR            & BKRW            &             
 \hline
 Kaulsdorf                     &                 & BKAD            &                 &
 \snr{5} \bus 197 269 399                                                                                                                         &
-\snr{5} \nbus N95                                                                                                                                &
-\nbus N95                                                                                                                                        \\
+\snr{5} \nbus N64 N95                                                                                                                            &
+\nbus N64 N95                                                                                                                                    \\
 \hline
 Kaulsdorf-Nord                &                 &                 & KL              &
 \unr{5} \bus 191 197 269 291                                                                                                                     &
@@ -906,8 +911,8 @@ Konstanzer Straße             &                 &                 & Kn         
 \hline
 Köpenick                      &                 & BKPK            &                 &
 \snr{3} \tram 62 63 68 \xbus X69 \bus 164 169 269                                                                                                &
-\snr{3} \nbus N69 N90                                                                                                                            &
-\nbus N69 N90                                                                                                                                    \\
+\snr{3} \nbus N64 N90                                                                                                                            &
+\nbus N64 N90                                                                                                                                    \\
 \hline
 Kottbusser Tor                &                 &                 & Kbo, Kbu        &
 \unr{1} \unr{3} \unr{8} \bus 140                                                                                                                 &
@@ -927,7 +932,7 @@ Kummersdorf                   & BKUM            &                 &             
 Kurfürstendamm                &                 &                 & Kfo, Kfu        &
 \unr{1} \unr{9} \mbus M19 M29 M46 \xbus X10 \bus 109 110 204 249                                                                                 &
 \unr{1} \unr{9} \mbus M19 M29 M46 \nbus N10 N26                                                                                                  &
-\nunr{1} \nunr{2} \nunr{3} \nunr{9} \mbus M19 M29 M46 \nbus N10 N26                                                                              \\
+\nunr{1} \nunr{2} \nunr{3} \nunr{9} \mbus M19 M29 M46 \nbus N10 N26 N7X                                                                              \\
 \hline
 Kurfürstenstraße              &                 &                 & Kus \ped{} Bs   &
 \unr{1} \unr{3} \mbus M48 M85 \ped{} \unr{2} \mbus M19                                                                                           &
@@ -970,7 +975,7 @@ Lichtenberg                   & BLO             & BLI             & Li          
 \nbus N50 N94 \ped{} \nunr{5}                                                                                                                    \\
 \hline
 Lichtenrade                   &                 & BLRD            &                 &
-\snr{2} \mbus M76 \bus 172 175 275                                                                                                               &
+\snr{2} \mbus M76 \bus 172 175 275 743                                                                                                           &
 \snr{2} \mbus M76                                                                                                                                &
 \mbus M76                                                                                                                                        \\
 \hline
@@ -995,7 +1000,7 @@ Lindauer Allee                &                 &                 & LD          
 \nunr{8} \ped{} \mbus M21                                                                                                                        \\
 \hline
 Lipschitzallee                &                 &                 & La              &
-\unr{7} \bus 373 \ped{} \mbus M11 \bus 172                                                                                                       &
+\unr{7} \bus 744 \ped{} \mbus M11 \bus 172                                                                                                       &
 \unr{7} \ped{} \mbus M11                                                                                                                         &
 \ped{} \mbus M11                                                                                                                                 \\
 \hline
@@ -1030,7 +1035,7 @@ Magdalenenstraße              &                 &                 & Md         
 \nunr{5} \nbus N50 N56 N94                                                                                                                       \\
 \hline
 Mahlow                        &                 & BMAH            &                 &
-\snr{2} \bus 600 742 794 797                                                                                                                     &
+\snr{2} \bus 600 794 797                                                                                                                         &
 \snr{2}                                                                                                                                          &
                                                                                                                                                  \\
 \hline
@@ -1046,8 +1051,8 @@ Marienfelde                   &                 & BMF             &             
 \hline
 Märkisches Museum             &                 &                 & Mk \ped{} He    &
 \unr{2} \bus 147 165 265 \ped{} \unr{8} \bus 200 248                                                                                             &
-\unr{2} \ped{} \unr{8} \nbus N42 N65                                                                                                             &
-\ped{} \nunr{2} \nunr{8} \nbus N42 N65                                                                                                           \\
+\unr{2} \ped{} \unr{8} \nbus N42                                                                                                                 &
+\ped{} \nunr{2} \nunr{8} \nbus N42                                                                                                               \\
 \hline
 Marquardt                     & BMQU            &                 &                 &
 \rbnr{20} \rbnr{21} \ped{} \bus 609 614 650                                                                                                      &
@@ -1095,12 +1100,12 @@ Mexikoplatz                   &                 & BMEX            & \ped{} K    
 \nunr{3}                                                                                                                                         \\
 \hline
 Michendorf                    & BMIP            &                 &                 &
-\renr{7} \rbnr{23} \rbnr{33} \xbus X43 \bus 608 613 643 646                                                                                   &
+\renr{7} \rbnr{23} \rbnr{33} \xbus X43 \bus 608 613 643 646                                                                                      &
 \bus 643                                                                                                                                         &
                                                                                                                                                  \\
 \hline
 Mierendorffplatz              &                 &                 & Mp              &
-\unr{7} \mbus M27 \ped{} \xbus X9                                                                                                                &
+\unr{7} \mbus M27                                                                                                                                &
 \unr{7} \mbus M27                                                                                                                                &
 \nunr{7} \mbus M27                                                                                                                               \\
 \hline
@@ -1309,8 +1314,8 @@ Pankow                        &                 & BPKW            & PA          
 \nunr{2} \mtram M1 \mbus M27 \nbus N50                                                                                                           \\
 Plänterwald                   &                 & BPWA            &                 &
 \snr{8} \snr{85} \snr{9} \bus 165 166 377 \ped{} \bus 265                                                                                        &
-\snr{8} \snr{9} \nbus N65 N77                                                                                                                    &
-\nbus N65 N77                                                                                                                                    \\
+\snr{8} \snr{9} \nbus N60 N65 N77                                                                                                                &
+\nbus N60 N65 N77                                                                                                                                \\
 \hline
 Platz der Luftbrücke          &                 &                 & PL              &
 \unr{6} \bus 104 248                                                                                                                             &
@@ -1456,7 +1461,7 @@ Residenzstraße                &                 &                 & RE         
 \nunr{8}                                                                                                                                         \\
 \hline
 Richard-Wagner-Platz          &                 &                 & Rw              &
-\unr{7} \mbus M45 \xbus X9                                                                                                                       &
+\unr{7} \mbus M45                                                                                                                                &
 \unr{7} \mbus M45                                                                                                                                &
 \nunr{7} \mbus M45                                                                                                                               \\
 \hline
@@ -1482,8 +1487,8 @@ Rosenthaler Platz             &                 &                 & Ro          
 \hline
 Rotes Rathaus [in Bau]        &                 &                 & RHO             &
 \ped{} \bus 200 248 300                                                                                                                          &
-\ped{} \nbus N40 N42 N65                                                                                                                         &
-\ped{} \nunr{2} \nunr{8} \nbus N40 N42 N65                                                                                                       \\
+\ped{} \nbus N40 N42 N60                                                                                                                         &
+\ped{} \nunr{2} \nunr{8} \nbus N40 N42 N60                                                                                                       \\
 \hline
 Rüdesheimer Platz             &                 &                 & Rd              &
 \unr{3} \bus 186 \ped{} \bus 101 248                                                                                                             &
@@ -1496,7 +1501,7 @@ Rüdnitz                       & WRZ             &                 &            
                                                                                                                                                  \\
 \hline
 Rudow                         &                 &                 & R               &
-\unr{7} \xbus X7 \bus 162 171 172 260 271 371 372 373 744                                                                                        &
+\unr{7} \xbus X7 X71 \bus 162 171 172 260 271 371 372 744                                                                                        &
 \unr{7} \nunr{7}                                                                                                                                 &
 \nunr{7}                                                                                                                                         \\
 \hline
@@ -1557,8 +1562,8 @@ Schlachtensee                 &                 & BSLS            &             
 \hline
 Schlesisches Tor              &                 &                 & S               &
 \unr{1} \unr{3} \bus 165 265                                                                                                                     &
-\unr{1} \nbus N65                                                                                                                                &
-\nunr{1} \nbus N65                                                                                                                               \\
+\unr{1} \nbus N60 N65                                                                                                                            &
+\nunr{1} \nbus N60 N65                                                                                                                           \\
 \hline
 Schloßstraße                  &                 &                 & Slo, Slu        &
 \unr{9} \mbus M48 M85 \bus 186 282                                                                                                               &
@@ -1573,7 +1578,7 @@ Schmachtenhagen               & BSHN            &                 &             
 Schöneberg                    &                 & BSGR, BSGV      &                 &
 \snr{1} \snr{41} \snr{42} \snr{46} \mbus M46 \bus 248                                                                                            &
 \snr{1} \snr{41} \snr{42} \mbus M46                                                                                                              &
-\mbus M46                                                                                                                                        \\
+\mbus M46 \nbus N7X                                                                                                                              \\
 \hline
 Schönerlinde                  & BSL             &                 &                 &
 \rbnr{27} \ped{} \bus 891                                                                                                                        &
@@ -1582,8 +1587,8 @@ Schönerlinde                  & BSL             &                 &            
 \hline
 Schöneweide                   & BSWP            & BSW             &                 &
 \rbnr{24} \snr{45} \snr{46} \snr{47} \snr{8} \snr{85} \snr{9} \mtram M17 \tram 21 37 60 67                                                       &
-\snr{46} \snr{47} \snr{8} \snr{9} \mtram M17 \mbus M11 \nbus N65 N67                                                                             &
-\mtram M17 \mbus M11 \nbus N65 N67                                                                                                               \\
+\snr{46} \snr{47} \snr{8} \snr{9} \mtram M17 \mbus M11 \nbus N60 N65                                                                             &
+\mtram M17 \mbus M11 \nbus N60 N65                                                                                                               \\
                               &                 &                 &                 &
 \mbus M11 \xbus X11 \bus 160 163 165 166 265                                                                                                     &
                                                                                                                                                  &
@@ -1676,12 +1681,12 @@ Spandau                       & BSPD            & BSPA            & \ped{} RSp  
 Spichernstraße                &                 &                 & Sno, Snu        &
 \unr{3} \unr{9} \bus 204                                                                                                                         &
 \unr{3} \unr{9}                                                                                                                                  &
-\nunr{3} \nunr{9}                                                                                                                                \\
+\nunr{3} \nunr{9} N7X                                                                                                                             \\
 \hline
 Spindlersfeld                 &                 & BSPF            &                 &
 \snr{47} \tram 61 63 \bus 165                                                                                                                    &
-\snr{47} \nbus N65                                                                                                                               &
-\nbus N65                                                                                                                                        \\
+\snr{47} \nbus N64 N65                                                                                                                           &
+\nbus N64 N65                                                                                                                                    \\
 \hline
 Spittelmarkt                  &                 &                 & Sp              &
 \unr{2} \bus 200 248 265                                                                                                                         &
@@ -1795,11 +1800,11 @@ Tierpark                      &                 &                 & Tk          
 \hline
 Treptower Park                &                 & BTP             &                 &
 \snr{41} \snr{42} \snr{8} \snr{85} \snr{9} \bus 104 165 166 194 265                                                                              &
-\snr{41} \snr{42} \snr{8} \snr{9} \nbus N65 N94                                                                                                  &
-\nbus N65 N94                                                                                                                                    \\
+\snr{41} \snr{42} \snr{8} \snr{9} \nbus N60 N65 N94                                                                                              &
+\nbus N60 N65 N94                                                                                                                                \\
 \hline
 Turmstraße                    &                 &                 & Tm              &
-\unr{9} \mbus M27 \xbus TXL \bus 101 123 187 245                                                                                                 &
+\unr{9} \mbus M27 \bus 101 123 187 245                                                                                                           &
 \unr{9} \mbus M27 \nbus N40                                                                                                                      &
 \nunr{9} \mbus M27 \nbus N40                                                                                                                     \\
 \hline
@@ -1873,9 +1878,14 @@ Wartenberg                    &                 & BWAB            &             
 \snr{75} \nbus N56 \ped{} \mtram M5                                                                                                              &
 \nbus N56 \ped{} \mtram M5                                                                                                                       \\
 \hline
+Waßmannsdorf                  &                 & BWAF            &                 &
+\snr{45} \snr{9} \bus 600 720 743                                                                                                                &
+\snr{9}                                                                                                                                          &
+                                                                                                                                                 \\
+\hline
 Weberwiese                    &                 &                 & WR              &
 \unr{5} \bus 347                                                                                                                                 &
-\unr{5}                                                                                                                                        &
+\unr{5}                                                                                                                                          &
 \nunr{5}                                                                                                                                         \\
 \hline
 Wedding                       &                 & BWED            & We              &
@@ -1885,8 +1895,8 @@ Wedding                       &                 & BWED            & We          
 \hline
 Weinmeisterstraße             &                 &                 & W               &
 \unr{8} \mtram M1                                                                                                                                &
-\unr{8} \mtram M1 \nbus N40 N42 N65                                                                                                              &
-\nunr{8} \mtram M1 \nbus N40 N42 N65                                                                                                             \\
+\unr{8} \mtram M1 \nbus N40 N42                                                                                                                  &
+\nunr{8} \mtram M1 \nbus N40 N42                                                                                                                 \\
 \hline
 Wensickendorf                 & BWSD            &                 &                 &
 \rbnr{27} \bus 805                                                                                                                               &
@@ -1966,7 +1976,7 @@ Wollankstraße                 &                 & BWOK            &            
 Wuhletal                      &                 & BWT             & Wh              &
 \snr{5} \unr{5} \bus 191 291                                                                                                                     &
 \snr{5} \unr{5} \nbus N69 N90 N91 N95                                                                                                            &
-\nunr{5} \nbus N69 N90 N91 N95                                                                                                                   \\
+\nunr{5} \nbus N64 N90 N91 N95                                                                                                                   \\
 \hline
 Wuhlheide                     &                 & BWHH            &                  &
 \snr{3} \bus 190                                                                                                                                 &
@@ -2026,9 +2036,9 @@ Zitadelle                     &                 &                 & Zi          
 Zoologischer Garten           & BZOO            & BZOS            & Zo, Zu           &
 \renr{1} \renr{2} \renr{7} \rbnr{14} \rbnr{21} \rbnr{22} \snr{3} \snr{5} \snr{7} \snr{9} \unr{2} \unr{9} \mbus M45 M46 M49                       &
 \snr{7} \snr{9} \unr{2} \unr{9} \mbus M45 M46 M49 \nbus N10 N26                                                                                  &
-\nunr{1} \nunr{2} \nunr{9} \mbus M45 M46 M49 \nbus N10 N26                                                                                       \\
-                              &                 &                 &                  &
-\xbus X9 X10 X34 \bus 100 109 110 200 204 245 249                                                                                                &
+\nunr{1} \nunr{2} \nunr{9} \mbus M45 M46 M49 \nbus N10 N26 N7X                                                                                       \\
+                        &                 &                 &                  &
+\xbus X10 X34 \bus 100 109 110 200 204 245 249                                                                                                   &
                                                                                                                                                  &
                                                                                                                                                  \\
 \hline
@@ -2043,7 +2053,7 @@ Zühlsdorf                     & BZUH            &                 &            
                                                                                                                                                  \\
 \hline
 Zwickauer Damm                &                 &                 & Zd               &
-\unr{7} \bus 373 \ped{} \mbus M11 \bus 171                                                                                                       &
+\unr{7} \bus 271 \ped{} \mbus M11 \bus 171                                                                                                       &
 \unr{7} \ped{} \mbus M11                                                                                                                         &
 \ped{} \nunr{7} \mbus M11                                                                                                                        \\
 \hline

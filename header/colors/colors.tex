@@ -70,6 +70,9 @@
 \colorlet{tbl-gruen}{ral-gruen!50}
 \colorlet{tbl-yellow}{yellow!50}
 % Symbole für Regionalexpresslinien
+\definecolor{fex}{HTML}{000000}
+\newcommand{\fex}[1]{\cellcolor{fex}{\textcolor{white}{\bfseries #1}}}
+\newcommand{\fexp}{\colorbox{fex}{\textcolor{white}{\bfseries FEX}}}
 \definecolor{rei}{HTML}{ED1C24}
 \newcommand{\rea}[1]{\cellcolor{rei}{\textcolor{white}{\bfseries #1}}}
 \newcommand{\reeins}{\colorbox{rei}{\textcolor{white}{\bfseries RE1}}}
@@ -95,6 +98,7 @@
 \newcommand{\redef}[1]{\colorbox{bahnrot}{\textcolor{white}{\bfseries RE#1}}}
 \newcommand{\renr}[1]{%
  \begin{switch}{#1}%
+  \case{F}{\fexp}%
   \case{1}{\reeins}%
   \case{2}{\rezwei}%
   \case{3}{\redrei}%
