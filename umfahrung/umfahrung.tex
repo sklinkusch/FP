@@ -69,6 +69,7 @@
 \xbus{} X21   & BWIN $\xarwe{6}$ BKBO $\xarwe{4}$ Sch $\xarwe{8}$ JK                                                                                                                & t: 10, f/a: 20             \\
 \xbus{} X33   & BSPA $\xarwe{2}$ AS $\xarwe{3}$ Zi $\xarwe{2}$ Hs $\xarwe{17}$ Hh $\xarwe{8}$ RR $\xarwe{3}$ BWIN                                                                   & t: 6-10, f/a: 20           \\
 \xbus{} X34   & BHST $\xarwe{2}$ Th $\xarwe{3}$ BMN $\xarwe{5}$ Wd $\xarwe{7}$ BZOS                                                                                                 & t: 10, f/a: 20             \\
+\xbus{} X37   & BFKS $\xarwe{26}$ BSPA $\xarwe{9}$ Rl                                                & t: 20/20/30, f/a: 30/30/60 \\ 
 \xbus{} X49   & BHST $\xarwe{2}$ Th $\xarwe{3}$ BMN $\xarwe{4}$ BCHS                                                                                                                & H: 10-20, So: --           \\
 \hline
 \end{tabular}
@@ -120,7 +121,8 @@
 \bus{} 139    & P $\xarwe{2}$ Rm $\xarwe{2}$ Sie $\xarwe{11}$ Kd $\xarwe{3}$ BMN                                                                                                    & t: 20                      \\
 \bus{} 140    & BTHF $\xarwe{2}$ At $\xarwe{14}$ Me $\xarwe{1}$ Gs $\xarwe{6}$ Pr $\xarwe{7}$ Kbo $\xarwe{12}$ BOSB                                                                 & t: 10-20, f/a: 20          \\
 \bus{} 142    & BOSB $\xarwe{5}$ Sr $\xarwe{10}$ Lu $\xarwe{2}$ Ro $\xarwe{4}$ Ob $\xarwe{8}$ BHBF ($\xarwe{17}$ Am $\xarwe{3}$ Lpo, nur Mo-Sa tagsüber)                            & t: 20, a/f: 20             \\
-\bus{} 147    & Lpo $\xarwe{3}$ BWED $\xarwe{1}$ Ri $\xarwe{11}$ BHBF $\xarwe{8}$ BFST $\xarwe{1}$ ULO $\xarwe{}$ Mk ($\xarwe{10}$ BOSB, nur Mo-Sa tagsüber)                                                         & t: 10-20, a/f: 20          \\
+\bus{} 147N   & Lpo $\xarwe{3}$ BWED $\xarwe{1}$ Ri $\xarwe{11}$ BHBF $\xarwe{8}$ BFST $\xarwe{1}$ ULO $\rightarrow$ weiter als 265N nach Mi & t: 10-20, a/f: 20 \\
+\bus{} 147S   & BOSB $\xarwe{10}$ Mk & t: 20, f/a: 20 \\
 \bus{} 150    & Olo $\xarwe{6}$ BSNH $\xarwe{15}$ BBLB $\xarwe{26}$ BBU                                                                                                             & H: 10, N: 20               \\
 \bus{} 154    & BBLB $\xarwe{25}$ BHH $\xarwe{11}$ BRWA $\xarwe{17}$ E
 & t: 20, a/f: 20-30          \\
@@ -197,7 +199,8 @@
 \bus{} 256    & BWAB $\xarwe{4}$ BHH $\xarwe{26}$ BLI                                                                                                                               & t: 20, f/a: 20             \\
 \bus{} 260    & BADL $\xarwe{24}$ R                                                                                                                                                 & t: 10-20, f/a: 20          \\
 \bus{} 263    & BGAS $\xarwe{25}$ BFBB & t: 60 \\
-\bus{} 265    & BSW $\xarwe{16}$ BBMW $\xarwe{11}$ BTP $\xarwe{7}$ S $\xarwe{6}$ He $\xarwe{2}$ Mk ($\xarwe{3}$ Sp $\xarwe{3}$ Mi, nur Mo-Sa tagsüber)                              & t: 20, f/a: 20             \\
+\bus{} 265N   & Mi $\xarwe{3}$ Sp $\rightarrow$ weiter als 147N nach HBF & t: 20, f/a: 20 \\
+\bus{} 265S   & BSW $\xarwe{16}$ BBMW $\xarwe{11}$ BTP $\xarwe{7}$ S $\xarwe{6}$ He $\xarwe{2}$ Mk & t: 20, f/a: 20             \\
 \bus{} 269    & KL $\xarwe{3}$ BKAD $\xarwe{21}$ BKPK
 & t: 20, f/a: 20             \\
 \bus{} 271    & Zd $\xarre{6}$ R $\xarre{14}$ R $\xarre{6}$ Zd                      & H: 10, N: 20, WE: 20 \\
@@ -227,7 +230,6 @@
 \bus{} 310    & BCHS $\xarwe{3}$ Ad $\xarwe{18}$ BHEI $\xarwe{6}$ Bli                                                                                                               & H: 20, N: --, Sa-So: --    \\
 \bus{} 322    & PB $\xarwe{2}$ LD $\xarwe{6}$ BEBD $\xarwe{6}$ RR $\xarwe{7}$ BWAI                                                                                                  & t: 20, Sa-So: --           \\
 \bus{} 327    & Lpo $\xarwe{4}$ Np $\xarwe{5}$ FN $\xarwe{3}$ RE $\xarwe{9}$ BSNH                                                                                                   & t: 20, So: --              \\
-\bus{} 337    & BFKS $\xarwe{29}$ BSPA                                                                                                                                              & H: 20, N: 30, a/So: 60     \\
 \bus{} 347    & BOK $\xarwe{9}$ BWRS ($\xarwe{6}$ WR $\xarwe{5}$ BOSB, nur Mo-Sa tagsüber)                                                                                          & t: 20, a/f: 20             \\
 \hline
 \end{tabular}
