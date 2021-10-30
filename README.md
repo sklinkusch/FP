@@ -4,7 +4,7 @@ timetables for the Berlin S-Bahn (urban railway), U-Bahn (underground or subway)
 
 ## Valid from
 
-24<sup>th</sup> June 2021
+31<sup>st</sup> October 2021
 
 ## Files
 
